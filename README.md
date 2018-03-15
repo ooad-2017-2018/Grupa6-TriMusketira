@@ -16,8 +16,14 @@ lakse zaradjuju, kao i jednostavno narucivanje hrane iz vise gradova sirom Bosne
 
 ### Procesi
 
-- **Registracija uposlenika restorana** - Administrator aplikacije registruje predstavnika restorana, te mu omogucava da unese sve potrebne
-informacije o restoranu i svome jelovniku.
-- **Registracija korisnika** - Korisnik se prije koristenja aplikacije mora registrovati. Nakon unosenja svih potrebnih podataka(e-mail, username,
-podaci potrebni za dostavljanje hrane, itd.) korisnik moze pronaci svoje omiljeno jelo i uzivati u istom.
+- **Registracija uposlenika restorana** - Administrator aplikacije registruje predstavnika restorana, te mu omogucava da unese sve potrebne informacije o restoranu i svome jelovniku.
+- **Registracija korisnika** - Korisnik se prije koristenja aplikacije mora registrovati. Nakon unosenja svih potrebnih podataka(e-mail, username, podaci potrebni za dostavljanje hrane, itd.) korisnik moze pronaci svoje omiljeno jelo i uzivati u istom.
+- **Izbor jela** - Ponudjen je sirok asortiman jela sortiranih po vrstama, kao sto su fastfood, cevabdzinice, slasticarne itd. Takodjer u svakom objektu stoji njegov opis adrese, radnig vremena, izbor jelovnika i slicno. 
+- **Sortiranje** - Korisniku je omogucen laksi izbor jela koje zeli. Kao naprimjer, ukoliko zeli samo slatko, izabere opciju "Slatko". Ukoliko zeli brzu hranu odaberu odgovarajucu opciju i tako dalje.
+- **Jelovnik** - Ovdje se nalaze sva jela od odredjenog objekta, kao i njihove cijene. Kupac moze dodati koliko i koje proizvode zeli naruciti. Ovdje se takodjer nalaze i informacije o dostavama, vrijeme dostave, od nase lokacije do vase lokacije itd.
+- **Nacini placanja** - Postoje dvije vrste placanja, a to su kreditnom karticom ili gotovinom.
+- **Akcije** - Sakupljanje "tanjirica" i ostvarivanje popusta. Podsticanje kupaca za sto vecu posjecenost ovoj aplikaciji, jer se drugaciji popust, na objekte navedene u istoj, ne mogu ostvariti.
+- **Posebne ponude** - Pod ovim se podrazumijevaju neki posebni paketi, kao sto su sedvic, sok i pomfrit po manjoj cijeni i sl.
+- **Smjernice popunjavanja** - Jasno date upute korisniku za koristenje aplikacije.
+
  
