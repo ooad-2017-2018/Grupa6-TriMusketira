@@ -6,9 +6,9 @@ Clanovi tima su:
 3. Kovacevic Faris
 ### Opis teme
 
-- Ova aplikacija je namijenjena za sve osobe koje su ljubitelji ukusne hrane. Osnovna ideja jeste da korisnici ove aplikacije
+- Ova aplikacija je namjenjena za sve osobe koje su ljubitelji ukusne hrane. Osnovna ideja jeste da korisnici ove aplikacije
 mogu vrlo lahko naruciti hranu i uzivati u istoj. Medjutim, ova aplikacija sluzi i restoranima koji postavljaju svoje jelovnike i tako 
-lakse zaradjuju. Ova aplikacija omogucuje jednostavno narucivanje hrane iz vise gradova sirom Bosne i Hercegovine.
+lakse zaradjuju, kao i jednostavno narucivanje hrane iz vise gradova sirom Bosne i Hercegovine. 
 Uzivajte u odlicnoj ponudi, preglednim jelovnicima, mnogim akcijama, ali prije svega u ukusnoj hrani.
 
 ### Procesi
