@@ -26,4 +26,26 @@ lakse zaradjuju, kao i jednostavno narucivanje hrane iz vise gradova sirom Bosne
 - **Posebne ponude** - Pod ovim se podrazumijevaju neki posebni paketi, kao sto su sedvic, sok i pomfrit po manjoj cijeni i sl.
 - **Smjernice popunjavanja** - Jasno date upute korisniku za koristenje aplikacije.
 
- 
+### Funkcionalnosti
+
+- Registracija uposlenika
+- Registracija korisnika
+- Odabir konkretne vrste jela u cilju brzeg nalazenja zeljenog
+- Pregled jelovnika sa jasno naznacenim cijenama
+- Mogucnost placanja karticom i gotovinom
+- Mogicnost odabira vise jela
+- Ostvarivanje popusta samo pomocu ove aplikacije
+- Odabir posebnih paketa
+- Raznovrsnost jela (slatko, slano, predjelo, brza hrana...)
+- Sve informacije o objektima koji se nalaze na aplikaciji
+
+### Akteri
+
+- Objekti - Vlasnici objekta koji odobravaju ili zahtjevaju detaljniji opis njihovih usluga
+- Kupci - Korisnici koji biraju hranu, narucuju, placaju.
+- Neregistrovani kupci - Korisnici koji nemaju svoj racun na ovoj aplikaciji, te nemaju pravo na odredjene popuste koje im nude objekti
+
+
+
+
+
