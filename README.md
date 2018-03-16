@@ -43,7 +43,6 @@ lakse zaradjuju, kao i jednostavno narucivanje hrane iz vise gradova sirom Bosne
 
 - Objekti - Vlasnici objekta koji odobravaju ili zahtjevaju detaljniji opis njihovih usluga
 - Kupci - Korisnici koji biraju hranu, narucuju, placaju.
-- Neregistrovani kupci - Korisnici koji nemaju svoj racun na ovoj aplikaciji, te nemaju pravo na odredjene popuste koje im nude objekti
 
 
 
