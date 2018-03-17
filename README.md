@@ -50,12 +50,17 @@ lakse zaradjuju, kao i jednostavno narucivanje hrane iz vise gradova sirom Bosne
 - Sve informacije o objektima koji se nalaze na aplikaciji
 - Dodavanje jela i nakon registracije od strane predstavnika objekata
 - Prijava s nalogom gost, te mogucnost narucivanja bez same registracije
-
+- Kontrolisanje rada sistema
+- Mogucnost ocjenjivanja usluge nakon izvrsene dostave
+- Brisanje nepozeljnih kupaca
+- Mogucnost prijave kupaca od strane objekata
+- Brisanje nepozeljnih objekata
+- Mogucnost svojevoljnog brisanja svog profila iz sistema
 
 
 ### Akteri
 
-- Objekti - Vlasnici objekta koji odobravaju ili zahtjevaju detaljniji opis njihovih usluga
+- Objekti - Predstavnici objekata koji unose podatke o svom objektu i jelovnicima, te ih azuriraju ukoliko dodje do potrebe za tim.
 - Registrovani kupci - Osobe koje koriste usluge aplikacije, biraju hranu, narucuju, placaju, te imaju posebne popuste, gratis jela i sl. u zavisnosti od ucestalosti koristenja naseg sistema
 - Neregistrovani kupci - Osobe koje koriste usluge aplikacije, biraju hranu, narucuju, placaju, ali ne dobijaju nikakve popuste
 - Administrator - Osoba koja nadgleda cijeli sistem, odobrava unos podataka objekata koji zadovoljavaju uslove koji su unaprijed postavljeni,  uklanja nepozeljne korisnike ukoliko dodje do potrebe za tim i sl.
