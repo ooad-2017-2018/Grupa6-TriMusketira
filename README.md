@@ -13,9 +13,9 @@ Clanovi tima su:
 
 - Ova aplikacija je namjenjena za sve osobe koje su ljubitelji ukusne hrane. Osnovna ideja jeste da korisnici ove aplikacije
 mogu vrlo lahko naruciti hranu i uzivati u istoj. Medjutim, ova aplikacija sluzi i objektima koji postavljaju svoje jelovnike i tako 
-lakse zaradjuju, kao i jednostavno narucivanje hrane iz vise gradova sirom Bosne i Hercegovine. Najvecu korist imaju ljudi koji nisu u stanju odlaziti po hranu, te traziti najpovoljniju. Jednostavan i brz nacin pretrage nudi upravo ova aplikacija.  Aplikacija nudi i veliki izbor dostava poslastica, kao sto su torte, kolaci, krofne i slicno. Na veoma brz i lagan nacin mozete naruciti zeljeno jelo, ali najveca prednost je i ta sto je omoguceno placanje kreditnom karticom, sto je danas velika olaksica za mnoge. Svaki objekat ima opis svojih usluga, kao i cijene dostave. Pored toga, svaki objekat ima ocjenu koja je zasnovana na ocjenama dotadasnjih korisnika njihovih usluga, sto pomaze kupcima sigurnije narucivanje. Takodjer se mogu pronaci adrese svih vecih restorana, fastfood-ova, slasticarnih, te sve sto se tice hrane. Svaki korak je jasno naveden za korisnika u cilju sto lakseg koristenja, sto je jako bitno, s obzirom da je svrha to da se omoguci upotrebu za sve generacije. 
+lakse zaradjuju, kao i jednostavnom narucivanju hrane iz vise gradova sirom Bosne i Hercegovine. Najvecu korist imaju ljudi koji nisu u stanju odlaziti po hranu, te traziti najpovoljniju. Jednostavan i brz nacin pretrage nudi upravo ova aplikacija.  Aplikacija nudi i veliki izbor dostava poslastica, kao sto su torte, kolaci, krofne i slicno. Na veoma brz i lagan nacin mozete naruciti zeljeno jelo, ali najveca prednost je i ta sto je omoguceno placanje kreditnom karticom, sto je danas velika olaksica za mnoge. Svaki objekat ima opis svojih usluga, kao i cijene dostave. Pored toga, svaki objekat ima ocjenu koja je zasnovana na ocjenama dotadasnjih korisnika njihovih usluga, sto pomaze kupcima sigurnije narucivanje. Takodjer se mogu pronaci adrese svih vecih restorana, fastfood-ova, slasticarnih, te sve sto se tice hrane. Svaki korak je jasno naveden za korisnika u cilju sto lakseg koristenja, sto je jako bitno, s obzirom da je svrha to da se omoguci upotreba za sve generacije. 
 
-- U cilju vece posjecenosti osmisljeno je i to da kupac ostvaruje odredjeni popust, na nacin sakupljanja "tanjirica". Za svaku narudzbu iz odredjenog objekta kupac dobije po jedan tanjiric za taj objekat, te kada skupi 5 tanjirica dobija popust od 50% na sestu narudzbu iz tog lokala, nakon cega se resetuju tanjirici, te ih kupac skuplja ispocetka. Nakon neaktivnosti od godinu dana "tanjirici" se resetuju. Na taj nacin podsticemo nase kupce na sto vecu azurnost ove aplikacije.
+- U cilju vece posjecenosti osmisljeno je i to da kupac ostvaruje odredjeni popust, na nacin sakupljanja "tanjirica". Za svaku narudzbu iz odredjenog objekta kupac dobije po jedan "tanjiric" za taj objekat, te kada skupi 5 "tanjirica" dobija popust od 50% na sestu narudzbu iz tog lokala, nakon cega se resetuju "tanjirici", te ih kupac skuplja ispocetka. Nakon neaktivnosti od godinu dana "tanjirici" se resetuju. Na taj nacin podsticemo nase kupce na sto vecu azurnost ove aplikacije.
 
 - Uzivajte u odlicnoj ponudi, preglednim jelovnicima, mnogim akcijama, ali prije svega u ukusnoj hrani. 
 
@@ -29,7 +29,7 @@ lakse zaradjuju, kao i jednostavno narucivanje hrane iz vise gradova sirom Bosne
 - **Izbor jela** - Ponudjen je sirok asortiman jela sortiranih po vrstama, kao sto su fastfood, cevabdzinice, slasticarne itd. Takodjer u svakom objektu stoji njegov opis adrese, radnog vremena, izbor jelovnika, minimalni iznos cijene narudzbe i slicno. 
 - **Izbor restorana** - Korisnik moze birati lokal iz kojeg zeli naruciti bez odabira vrste jela i sl. 
 - **Sortiranje** - Korisniku je omogucen laksi izbor jela koje zeli. Kao naprimjer, ukoliko zeli samo slatko, izabere opciju "Slatko", ukoliko zeli brzu hranu odaberu odgovarajucu opciju i tako dalje.
-- **Jelovnik** - Ovdje se nalaze sva jela odredjenog objekta, kao i njihove cijene. Kupac moze dodati koliko i koje proizvode zeli naruciti. Ovdje se takodjer nalaze i informacije o dostavama, vrijeme dostave od lokacije objekta do vase lokacije itd.
+- **Jelovnik** - Ovdje se nalaze sva jela odredjenog objekta, kao i njihove cijene. Kupac moze izabrati koliko i koje proizvode zeli naruciti. Ovdje se takodjer nalaze i informacije o dostavama, vrijeme dostave od lokacije objekta do vase lokacije itd.
 - **Nacini placanja** - Postoje dvije vrste placanja, a to su kreditnom karticom ili gotovinom.
 - **Akcije** - Sakupljanje "tanjirica" i ostvarivanje popusta. Podsticanje kupaca za sto vecu posjecenost ovoj aplikaciji, jer se drugaciji popust, na objekte navedene u istoj, ne mogu ostvariti.
 - **Posebne ponude** - Pod ovim se podrazumijevaju neki posebni paketi, kao sto su sendvic, sok i pomfrit po manjoj cijeni i sl.
@@ -54,13 +54,14 @@ lakse zaradjuju, kao i jednostavno narucivanje hrane iz vise gradova sirom Bosne
 - Raznovrsnost jela (slatko, slano, predjelo, brza hrana...)
 - Sve informacije o objektima koji se nalaze na aplikaciji
 - Dodavanje jela i nakon registracije od strane predstavnika objekata
+- Mogucnost svojevoljnog brisanja svog profila iz sistema
+- Mogucnost azuriranja podataka svog profila
 - Prijava s nalogom gost, te mogucnost narucivanja bez same registracije
 - Kontrolisanje rada sistema
 - Mogucnost ocjenjivanja usluge nakon izvrsene dostave
 - Brisanje nepozeljnih kupaca
 - Mogucnost prijave kupaca od strane objekata
 - Brisanje nepozeljnih objekata
-- Mogucnost svojevoljnog brisanja svog profila iz sistema
 
 
 ### Akteri
