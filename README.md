@@ -1,7 +1,9 @@
 # Grupa6-TriMusketira
 ## Tema: Online narudzba hrane
 
-![hrana](https://user-images.githubusercontent.com/37142772/37622025-e2657652-2bc0-11e8-891f-d240677f48ec.jpg)
+<p align="center">
+  <img src ="https://user-images.githubusercontent.com/37142772/37622025-e2657652-2bc0-11e8-891f-d240677f48ec.jpg"/>
+</p>
 
 Clanovi tima su:
 1. Kurtovic Amina
