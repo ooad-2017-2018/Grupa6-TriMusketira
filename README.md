@@ -66,7 +66,7 @@ lakse zaradjuju, kao i jednostavnom narucivanju hrane iz vise gradova sirom Bosn
 
 ### Akteri
 
-- Objekti - Predstavnici objekata koji unose podatke o svom objektu i jelovnicima, te ih azuriraju ukoliko dodje do potrebe za tim.
+- Predstavnici objekata - Predstavnici objekata koji unose podatke o svom objektu i jelovnicima, te ih azuriraju ukoliko dodje do potrebe za tim.
 - Registrovani kupci - Osobe koje koriste usluge aplikacije, biraju hranu, narucuju, placaju, te imaju posebne popuste, gratis jela i sl. u zavisnosti od ucestalosti koristenja naseg sistema
 - Neregistrovani kupci - Osobe koje koriste usluge aplikacije, biraju hranu, narucuju, placaju, ali ne dobijaju nikakve popuste
 - Administrator - Osoba koja nadgleda cijeli sistem, odobrava unos podataka objekata koji zadovoljavaju uslove koji su unaprijed postavljeni,  uklanja nepozeljne korisnike ukoliko dodje do potrebe za tim i sl.
