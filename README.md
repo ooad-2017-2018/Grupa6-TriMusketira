@@ -35,10 +35,10 @@ lakse zaradjuju, kao i jednostavnom narucivanju hrane iz vise gradova sirom Bosn
 - **Posebne ponude** - Pod ovim se podrazumijevaju neki posebni paketi, kao sto su sendvic, sok i pomfrit po manjoj cijeni i sl.
 - **Smjernice popunjavanja** - Jasno date upute korisniku za koristenje aplikacije.
 - **Ocjenjivanje usluge** - Nakon sto je izvrsena dostava, svaki korisnik ove aplikacije ukoliko zeli moze ocijeniti uslugu u vidu davanja ocjene od 1 do 5, uz mogucnost stavljanja komentara, te time pomoci narednim korisnicima aplikacije prilikom odabira objekata iz kojih ce narucivati hranu.
-- **Prijava "laznih" korisnika** - Ukoliko uposlenici dostave imaju problem sa dostavom, u vidu nepojavljivanja korisnika na adresi naznacenoj za dostavu, unosa nepostojece adrese i slicno, predstavnici tog objekta imaju opciju prijave tog korisnika, nakon prve prijave korisnik ima zuti karton, a nakon druge mu slijedi crveni.
-- **Brisanje nepozeljnih korisnika** - Kada korisnik dobije zuti karton, administrator provjerava informacije o tom korisniku, te ukoliko je ocigledno da je profil napravljen u lose svrhe moze ga odmah obrisati. Nakon dobijanja crvenog kartona profil se automatski brise.
+- **Prijava neodgovornih korisnika** - Ukoliko uposlenici dostave imaju problem sa dostavom, u vidu nepojavljivanja korisnika na adresi naznacenoj za dostavu, unosa nepostojece adrese i slicno, predstavnici tog objekta imaju opciju prijave tog korisnika, nakon prve prijave korisnik ima zuti karton, a nakon druge mu slijedi crveni.
+- **Deaktiviranje nepozeljnih korisnika** - Kada korisnik dobije zuti karton, administrator provjerava informacije o tom korisniku, te ukoliko je ocigledno da je profil napravljen u lose svrhe moze ga odmah obrisati. Nakon dobijanja crvenog kartona profil se automatski brise.
 - **Azuriranje informacija o objektima** - Ukoliko dodje do promjene lokacije objekta, oblasti za koju izvrsavaju dostavu, dodavanja novih jela i sl. objekti to mogu obaviti veoma lahko.
-- **Brisanje objekata** - Ukoliko odredjeni objekat zeli svojevoljno da se iskljuci iz sistema ove aplikacije, moze se sam obrisati veoma lahko. Takodjer, ukoliko odredjenom lokalu duze vrijeme ocjena bude preniska, te administrator uoci da se dati objekat ne odaziva na zahtjeve korisnika i sl. objekat ce biti obrisan iz sistema.
+- **Deaktiviranje objekata** - Ukoliko odredjeni objekat zeli svojevoljno da se iskljuci iz sistema ove aplikacije, moze se sam obrisati veoma lahko. Takodjer, ukoliko odredjenom lokalu duze vrijeme ocjena bude preniska, te administrator uoci da se dati objekat ne odaziva na zahtjeve korisnika i sl. objekat ce biti obrisan iz sistema.
 
 
 ### Funkcionalnosti
@@ -59,9 +59,9 @@ lakse zaradjuju, kao i jednostavnom narucivanju hrane iz vise gradova sirom Bosn
 - Prijava s nalogom gost, te mogucnost narucivanja bez same registracije
 - Kontrolisanje rada sistema
 - Mogucnost ocjenjivanja usluge nakon izvrsene dostave
-- Brisanje nepozeljnih kupaca
+- Deaktiviranje nepozeljnih kupaca
 - Mogucnost prijave kupaca od strane objekata
-- Brisanje nepozeljnih objekata
+- Deaktiviranje nepozeljnih objekata
 
 
 ### Akteri
