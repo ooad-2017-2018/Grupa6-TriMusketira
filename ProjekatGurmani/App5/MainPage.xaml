@@ -1,0 +1,46 @@
+﻿<Page
+    x:Class="App5.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App5"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <ImageSource x:Key="ImageSource1">Assets/1.jpg</ImageSource>
+    </Page.Resources>
+
+    <Grid >
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/NewFolder1/29751084_1942480566062170_640125772_n.jpg"/>
+        </Grid.Background>
+
+
+
+        <RelativePanel HorizontalAlignment="Left" Height="565" Margin="25,100,0,0" VerticalAlignment="Top" Width="1230" BorderBrush="White" BorderThickness="20" Background="Green">
+            <TextBox HorizontalAlignment="Left" Height="40" Margin="35,160,0,0" Text="" VerticalAlignment="Top" Width="380" PlaceholderText="Ime i prezime"/>
+            <TextBox HorizontalAlignment="Left" Height="40" Margin="40,280,0,0" Text="" VerticalAlignment="Top" Width="370" PlaceholderText="Adresa stanovanja"/>
+            <TextBox HorizontalAlignment="Left" Height="40" Margin="45,380,-5,0" Text="" VerticalAlignment="Top" Width="360" PlaceholderText="Broj telefona/mobitela" InputScope="TelephoneNumber"/>
+            <TextBox HorizontalAlignment="Left" Height="40" Margin="780,180,-20,-5" Text="" VerticalAlignment="Top" Width="380" PlaceholderText="Korisnicko ime"/>
+            <TextBox HorizontalAlignment="Left" Height="40" Margin="780,275,-35,0" Text="" VerticalAlignment="Top" Width="380" PlaceholderText="Email"/>
+            <TextBlock HorizontalAlignment="Left" Height="51" Margin="40,118,0,0" Text="Unesite ime i prezime" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" Foreground="#FFF7F7F7" FontSize="24"/>
+            <TextBlock HorizontalAlignment="Left" Height="51" Margin="43,233,0,0" Text="Unesite adresu stanovanja" TextWrapping="Wrap" VerticalAlignment="Top" Width="377" Foreground="#FFF7F7F7" FontSize="24"/>
+            <TextBlock HorizontalAlignment="Left" Height="51" Margin="49,338,-4,0" Text="Unesite broj telefona" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" Foreground="#FFF7F7F7" FontSize="24"/>
+            <TextBlock HorizontalAlignment="Left" Height="51" Margin="782,131,-140,0" Text="Unesite korisnicko ime" TextWrapping="Wrap" VerticalAlignment="Top" Width="355" Foreground="#FFF7F7F7" FontSize="24"/>
+            <TextBlock HorizontalAlignment="Left" Height="51" Margin="780,228,-23,0" Text="Unesite e-mail" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" Foreground="#FFF7F7F7" FontSize="24"/>
+            <TextBlock HorizontalAlignment="Left" Height="51" Margin="794,333,-20,0" Text="Unesite sifru" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" Foreground="#FFF7F7F7" FontSize="24"/>
+            <PasswordBox HorizontalAlignment="Left" Height="51" Margin="790,365,-25,0" VerticalAlignment="Top" Width="380" PlaceholderText="Sifra"/>
+            <Button Content="Registrujte se" HorizontalAlignment="Stretch" Height="50" VerticalAlignment="Top" Margin="405,460,-800,-478" Background="White" Foreground="#FF21680C" FontSize="24" FontWeight="Bold"/>
+            <TextBlock HorizontalAlignment="Left" Height="45" Margin="411,430,-559,-455" Text="Registrovanjem prihvatite" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Foreground="#FFF0E4E4"/>
+            <HyperlinkButton Content="uslove i pravila koristenja" HorizontalAlignment="Left" Height="35" Margin="590,420,-652,-423" VerticalAlignment="Top" Width="170" Foreground="#FFFF3414" FontFamily="Segoe UI"/>
+        </RelativePanel>
+
+        <RelativePanel HorizontalAlignment="Left" Height="195" Margin="420,40,0,0" VerticalAlignment="Top" Width="455">
+            <RelativePanel.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/NewFolder1/29852606_1942481246062102_1876803708_n.png"/>
+            </RelativePanel.Background>
+            <RelativePanel HorizontalAlignment="Left" Height="0" VerticalAlignment="Top" Width="0"/>
+        </RelativePanel>
+
+    </Grid>
+</Page>
