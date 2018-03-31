@@ -14,7 +14,7 @@
 
 
 
-        <RelativePanel HorizontalAlignment="Left" Height="565" Margin="601,118,0,0" VerticalAlignment="Top" Width="636" BorderBrush="Green" BorderThickness="20" Background="White">
+        <RelativePanel HorizontalAlignment="Left" Height="668" Margin="601,15,0,0" VerticalAlignment="Top" Width="636" BorderBrush="Green" BorderThickness="20" Background="White">
             <TextBox HorizontalAlignment="Left" Height="35" Margin="116,148,-60,0" Text="" VerticalAlignment="Top" Width="380" PlaceholderText="Korisnicko ime ili e-mail" InputScope="EmailNameOrAddress"/>
             <PasswordBox HorizontalAlignment="Left" Height="35" Margin="116,208,-60,0" VerticalAlignment="Top" Width="380" PlaceholderText="Sifra"/>
             <Button Content="Prijavite se kao gost" HorizontalAlignment="Stretch" Height="50" VerticalAlignment="Top" Margin="193,402,-436.2,-419.2" Background="White" BorderBrush="Green" Foreground="Green" FontSize="24" FontWeight="Bold" RenderTransformOrigin="0.554,-0.526"/>

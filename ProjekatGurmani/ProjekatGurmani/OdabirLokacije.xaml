@@ -13,16 +13,19 @@
         <Grid.Background>
             <ImageBrush Stretch="Fill" ImageSource="Slike/PomfritSaHotdogom.jpg"/>
         </Grid.Background>
-        <TextBlock HorizontalAlignment="Left" Height="206" Margin="250,580,0,-66" Text="Ukoliko zelite naruciti hranu unesite sljedece podatke kako bismo vam olaksali ptretragu za objektima koje se nalaze u blizini i izvrsavaju dostavu u tu oblast grada..." TextWrapping="Wrap" VerticalAlignment="Top" Width="1020" FontSize="36" FontWeight="Bold" FontFamily="Cooper Black" Foreground="White" SelectionChanged="TextBlock_SelectionChanged" LineHeight="12" TextAlignment="Center" />
-        <ComboBox HorizontalAlignment="Left" Height="60" Margin="65,310,0,0" VerticalAlignment="Top" Width="445"/>
-        <ComboBox HorizontalAlignment="Left" Height="60" Margin="700,310,0,0" VerticalAlignment="Top" Width="445" />
-        <TextBlock HorizontalAlignment="Left" Height="50" Margin="70,250,0,0" Text="Grad:" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" FontSize="36" Foreground="White" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Left" Height="50" Margin="709,245,0,0" Text="Dio grada:" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" FontSize="36" Foreground="White" FontWeight="Bold"/>
-        <Button Content="Pretrazi" HorizontalAlignment="Left" Height="70" Margin="305,415,0,0" VerticalAlignment="Top" Width="660" Background="Green" FontSize="36" Foreground="#FFFBFBFB" FontWeight="Bold"/>
-        <Ellipse HorizontalAlignment="Left" Height="95" Margin="-110,110,0,0" VerticalAlignment="Top" Width="605" Fill="White" Stroke="#FF0DAA15"  />
-        <Ellipse HorizontalAlignment="Left" Height="110" Margin="10,105,0,0" VerticalAlignment="Top" Width="135" Fill="#FF0F9115" />
-        <Button Content="Nazad" HorizontalAlignment="Left" Height="35" Margin="20,145,0,0" VerticalAlignment="Top" Width="105" FontSize="16" Background="White"/>
-        <TextBlock HorizontalAlignment="Left" Height="43" Margin="160,135,0,0" Text="Izaberite lokaciju" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize="36" FontWeight="Bold"  Foreground="#FF0F9115"/>
-        <HyperlinkButton Content="Preskoci" HorizontalAlignment="Left" Height="70" Margin="490,490,0,0" VerticalAlignment="Top" Width="275" FontSize="36" Foreground="#FFF3F3F3"/>
+
+        <RelativePanel HorizontalAlignment="Left" Height="540" Margin="55,80,0,0" VerticalAlignment="Top" Width="1170" Opacity="0.8" Background="#FF17A023"/>
+
+        <TextBlock HorizontalAlignment="Left" Height="206" Margin="159,170,0,0" Text="Ukoliko zelite naruciti hranu unesite sljedece podatke kako bismo vam olaksali ptretragu za objektima koje se nalaze u blizini i izvrsavaju dostavu u tu oblast grada..." TextWrapping="Wrap" VerticalAlignment="Top" Width="1020" FontSize="36" FontWeight="Bold" FontFamily="Cooper Black" Foreground="White" SelectionChanged="TextBlock_SelectionChanged" LineHeight="12" TextAlignment="Center" RenderTransformOrigin="0.506,0.898" />
+        <ComboBox HorizontalAlignment="Left" Height="60" Margin="110,375,0,0" VerticalAlignment="Top" Width="445" Opacity="0.78"/>
+        <ComboBox HorizontalAlignment="Left" Height="60" Margin="715,370,0,0" VerticalAlignment="Top" Width="445" />
+        <TextBlock HorizontalAlignment="Left" Height="50" Margin="130,315,0,0" Text="Grad:" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" FontSize="36" Foreground="White" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="50" Margin="709,320,0,0" Text="Dio grada:" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" FontSize="36" Foreground="White" FontWeight="Bold"/>
+        <Button Content="Pretrazi" HorizontalAlignment="Left" Height="70" Margin="305,480,0,0" VerticalAlignment="Top" Width="660" Background="Green" FontSize="36" Foreground="#FFFBFBFB" FontWeight="Bold"/>
+        <Ellipse HorizontalAlignment="Left" Height="95" Margin="-110,65,0,0" VerticalAlignment="Top" Width="605" Fill="White" Stroke="#FF0DAA15"  />
+        <Ellipse HorizontalAlignment="Left" Height="110" Margin="5,65,0,0" VerticalAlignment="Top" Width="135" Fill="#FF0F9115" />
+        <Button Content="Nazad" HorizontalAlignment="Left" Height="35" Margin="15,110,0,0" VerticalAlignment="Top" Width="105" FontSize="16" Background="White"/>
+        <TextBlock HorizontalAlignment="Left" Height="58" Margin="150,87,0,0" Text="Izaberite lokaciju" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize="36" FontWeight="Bold"  Foreground="#FF0F9115"/>
+        <HyperlinkButton Content="Preskoci" HorizontalAlignment="Left" Height="70" Margin="515,545,0,0" VerticalAlignment="Top" Width="275" FontSize="36" Foreground="#FFF3F3F3"/>
     </Grid>
 </Page>

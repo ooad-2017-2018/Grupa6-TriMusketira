@@ -11,7 +11,7 @@
         <Grid.Background>
             <ImageBrush Stretch="Fill" ImageSource="Slike/PizzaIHamburger.jpg"/>
         </Grid.Background>
-        <RelativePanel HorizontalAlignment="Left" Height="660" Margin="50,25,0,0" VerticalAlignment="Top" Width="1140" BorderBrush="White" Background="#FF0B6E14">
+        <RelativePanel HorizontalAlignment="Left" Height="660" Margin="50,25,0,0" VerticalAlignment="Top" Width="1140" BorderBrush="White" Background="#FF0B6E14" Opacity="0.8">
 
             <Button Content="Dodaj sliku..." HorizontalAlignment="Left" Height="50" Margin="85,440,-340,-458" VerticalAlignment="Top" Width="320" FontSize="24" Foreground="White" Background="#33639527" BorderBrush="White"  BorderThickness="4"/>
             <TextBox HorizontalAlignment="Left" Height="45" Margin="695,100,-695,-100" Text="" VerticalAlignment="Top" Width="395"/>
@@ -35,7 +35,7 @@
             <TextBlock HorizontalAlignment="Left" Height="40" Margin="535,598,-708,-618" Text="Ponovi sifru:" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" FontSize="24" Foreground="White"/>
             <Button Content="Deaktivacija" HorizontalAlignment="Left" Height="50" Margin="85,590,-340,-608" VerticalAlignment="Top" Width="320" FontSize="24" Foreground="White" Background="#33639527" BorderBrush="White"  BorderThickness="4"/>
             <Button Content="Sacuvaj" HorizontalAlignment="Left" Height="50" Margin="85,520,-340,-538" VerticalAlignment="Top" Width="320" FontSize="24" Foreground="White" Background="#33639527" BorderBrush="White"  BorderThickness="4"/>
-            <Image HorizontalAlignment="Left" Height="255" Margin="70,155,-405,-410" VerticalAlignment="Top" Width="335" Source="Slike/UrediProfilKupca.png"/>
+            <PersonPicture HorizontalAlignment="Left" Height="285" Margin="95,140,-375,-325" VerticalAlignment="Top" Width="380"/>
         </RelativePanel>
         <Ellipse HorizontalAlignment="Left" Height="95" Margin="-120,50,0,0" VerticalAlignment="Top" Width="555" Fill="White" Stroke="#FF0DAA15"  />
         <TextBox HorizontalAlignment="Left" Height="45" Margin="740,60,0,0" Text="" VerticalAlignment="Top" Width="395"/>

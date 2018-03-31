@@ -11,7 +11,7 @@
         <Grid.Background>
             <ImageBrush Stretch="Fill" ImageSource="Slike/PizzaIHamburger.jpg"/>
         </Grid.Background>
-        <RelativePanel HorizontalAlignment="Left" Height="655" Margin="50,35,0,0" VerticalAlignment="Top" Width="1195" Background="#FF197E09">
+        <RelativePanel HorizontalAlignment="Left" Height="655" Margin="50,35,0,0" VerticalAlignment="Top" Width="1195" Background="#FF197E09" Opacity="0.8">
             <TextBox HorizontalAlignment="Left" Height="50" Margin="410,150,-685,-168" Text="" VerticalAlignment="Top" Width="345"/>
             <TextBox HorizontalAlignment="Left" Height="40" Margin="410,295,-685,-303" Text="" VerticalAlignment="Top" Width="345"/>
             <TextBox HorizontalAlignment="Left" Height="40" Margin="410,205,-685,-213" Text="" VerticalAlignment="Top" Width="345"/>
@@ -32,6 +32,7 @@
             <TextBlock HorizontalAlignment="Left" Height="45" Margin="275,443,-356,-468" Text="Stara sifra:" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" FontSize="20" Foreground="#FFF5F3F3"/>
             <TextBlock HorizontalAlignment="Left" Height="45" Margin="270,483,-351,-508" Text="Nova sifra:" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" FontSize="20" Foreground="#FFF5F3F3"/>
             <TextBlock HorizontalAlignment="Left" Height="45" Margin="270,535,-351,-560" Text="Ponovi sifru:" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" FontSize="20" Foreground="#FFF5F3F3"/>
+            <PersonPicture HorizontalAlignment="Left" Height="190" Margin="50,140,-200,-230" VerticalAlignment="Top" Width="250"/>
         </RelativePanel>
 
 
@@ -39,8 +40,7 @@
         <Ellipse HorizontalAlignment="Left" Height="110" Margin="-5,45,0,0" VerticalAlignment="Top" Width="135" Fill="#FF0F9115" />
         <Button Content="Nazad" HorizontalAlignment="Left" Height="35" Margin="10,80,0,0" VerticalAlignment="Top" Width="105" FontSize="16" Background="White"/>
         <TextBlock HorizontalAlignment="Left" Height="50" Margin="151,75,0,0" Text="Uredi profil" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" FontSize="36" FontWeight="Bold"  Foreground="#FF0F9115"/>
-        <Image HorizontalAlignment="Left" Height="145" Margin="85,185,0,0" VerticalAlignment="Top" Width="215" Source="Slike/Burgers.jpg"/>
-        <Button Content="Dodaj sliku..." HorizontalAlignment="Left" Height="50" Margin="70,350,0,0" VerticalAlignment="Top" Width="245" FontSize="24" Foreground="White" Background="#33639527" BorderBrush="White"  BorderThickness="4"/>
+        <Button Content="Dodaj sliku..." HorizontalAlignment="Left" Height="50" Margin="75,400,0,0" VerticalAlignment="Top" Width="245" FontSize="24" Foreground="White" Background="#33639527" BorderBrush="White"  BorderThickness="4"/>
         <Button Content="Deaktivacija" HorizontalAlignment="Left" Height="50" Margin="690,625,0,0" VerticalAlignment="Top" Width="245" FontSize="24" Foreground="White" Background="#33639527" BorderBrush="White"  BorderThickness="4"/>
         <Button Content="Sacuvaj" HorizontalAlignment="Left" Height="50" Margin="975,625,0,0" VerticalAlignment="Top" Width="245" FontSize="24" Foreground="White" Background="#33639527" BorderBrush="White"  BorderThickness="4"/>
         <RelativePanel HorizontalAlignment="Left" Height="540" Margin="840,55,0,0" VerticalAlignment="Top" Width="375" Background="#FFF7F5F5">

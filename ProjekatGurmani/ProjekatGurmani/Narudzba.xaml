@@ -31,7 +31,6 @@
             <RelativePanel HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="171" Margin="0,0,-171,-171"/>
             <RelativePanel HorizontalAlignment="Left" Height="172" VerticalAlignment="Top" Width="180" BorderBrush="White" BorderThickness="5" Background="Green" Margin="489,130,-669,-302"/>
             <TextBox Height="48" Text="UKUPNO: " InputScope="CurrencyAmount" FontSize="20" FontStretch="ExtraExpanded" VerticalAlignment="Center" Margin="835,28,-1101,-43" RenderTransformOrigin="0.493,0.838" />
-            <PersonPicture HorizontalAlignment="Left" VerticalAlignment="Top" Margin="360,16,-360,-5" Height="75"/>
             <TextBox HorizontalAlignment="Left" FontSize="15" Height="48" VerticalAlignment="Top" Width="343" Margin="455,26,-728,-44" PlaceholderText="Korisnicko ime"/>
             <RelativePanel HorizontalAlignment="Left" IsTapEnabled="False" Height="347" VerticalAlignment="Bottom" Width="335" Margin="744,0,-1079,-459" BorderBrush="White" BorderThickness="5" Background="Green">
                 <Image HorizontalAlignment="Left" Height="66" VerticalAlignment="Top" Width="99" Source="Slike/Visa.png" Margin="10.2,77.2,-109.2,-141.6"/>
@@ -43,6 +42,7 @@
                 <TextBlock HorizontalAlignment="Left" Height="27" Text="Datum isteka:" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Margin="10.2,206.2,-96.8,-213.2"/>
                 <TextBox HorizontalAlignment="Left" Height="40" Margin="14.2,277.2,-14.8,-254.8" Text="" VerticalAlignment="Top" Width="291" PlaceholderText="PIN" InputScope="NumericPin"/>
             </RelativePanel>
+          
 
         </RelativePanel>
 
