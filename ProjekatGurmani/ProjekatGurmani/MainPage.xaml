@@ -7,7 +7,29 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid >
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Slike/Pozadina1.jpg"/>
+        </Grid.Background>
+
+
+
+        <RelativePanel HorizontalAlignment="Left" Height="565" Margin="589,110,0,0" VerticalAlignment="Top" Width="636" BorderBrush="Green" BorderThickness="20" Background="White">
+            <TextBox HorizontalAlignment="Left" Height="35" Margin="116,148,-60,0" Text="" VerticalAlignment="Top" Width="380" PlaceholderText="Korisnicko ime ili e-mail"/>
+            <PasswordBox HorizontalAlignment="Left" Height="35" Margin="116,208,-60,0" VerticalAlignment="Top" Width="380" PlaceholderText="Sifra"/>
+            <Button Content="Prijavite se kao gost" HorizontalAlignment="Stretch" Height="50" VerticalAlignment="Top" Margin="193,402,-436.2,-419.2" Background="White" BorderBrush="Green" Foreground="Green" FontSize="24" FontWeight="Bold" RenderTransformOrigin="0.554,-0.526"/>
+            <TextBlock HorizontalAlignment="Left" Height="27" Margin="123,462,-452.6,-469" Text="Prijavom kao gost ne ostvarujete pravo na ikakve popuste" TextWrapping="Wrap" VerticalAlignment="Top" Width="392" Foreground="Green"/>
+            <HyperlinkButton Content="Zaboravili ste sifru?" HorizontalAlignment="Left" Height="35" Margin="336,346,-398,-349" VerticalAlignment="Top" Width="170" Foreground="Green" FontFamily="Segoe UI"/>
+            <Button Content="Prijava" HorizontalAlignment="Stretch" Height="50" VerticalAlignment="Top" Margin="116,282,-492.2,-299.2" Background="Green" Foreground="White" FontSize="24" FontWeight="Bold"/>
+            <HyperlinkButton Content="Registrujte se" HorizontalAlignment="Left" Height="35" Margin="116,346,-123.2,-349" VerticalAlignment="Top" Width="100" Foreground="Green" FontFamily="Segoe UI" RenderTransformOrigin="-0.705,0.506"/>
+        </RelativePanel>
+
+        <RelativePanel HorizontalAlignment="Left" Height="195" Margin="678,34,0,0" VerticalAlignment="Top" Width="455">
+            <RelativePanel.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Slike/GurmaniLogo.png"/>
+            </RelativePanel.Background>
+            <RelativePanel HorizontalAlignment="Left" Height="0" VerticalAlignment="Top" Width="0"/>
+        </RelativePanel>
 
     </Grid>
 </Page>
