@@ -1,18 +1,15 @@
 ﻿<Page
-    x:Class="App5.MainPage"
+    x:Class="ProjekatGurmani.Views.RegistracijaKupca"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:App5"
+    xmlns:local="using:ProjekatGurmani.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    <Page.Resources>
-        <ImageSource x:Key="ImageSource1">Assets/1.jpg</ImageSource>
-    </Page.Resources>
 
     <Grid >
         <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="Assets/NewFolder1/29751084_1942480566062170_640125772_n.jpg"/>
+            <ImageBrush Stretch="Fill" ImageSource="Slike/Pozadina1.jpg"/>
         </Grid.Background>
 
 
@@ -37,7 +34,7 @@
 
         <RelativePanel HorizontalAlignment="Left" Height="195" Margin="420,40,0,0" VerticalAlignment="Top" Width="455">
             <RelativePanel.Background>
-                <ImageBrush Stretch="Fill" ImageSource="Assets/NewFolder1/29852606_1942481246062102_1876803708_n.png"/>
+                <ImageBrush Stretch="Fill" ImageSource="Slike/GurmaniLogo.png"/>
             </RelativePanel.Background>
             <RelativePanel HorizontalAlignment="Left" Height="0" VerticalAlignment="Top" Width="0"/>
         </RelativePanel>
