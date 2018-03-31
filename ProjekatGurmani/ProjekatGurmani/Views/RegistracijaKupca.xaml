@@ -37,6 +37,7 @@
                 <ImageBrush Stretch="Fill" ImageSource="Slike/GurmaniLogo.png"/>
             </RelativePanel.Background>
             <RelativePanel HorizontalAlignment="Left" Height="0" VerticalAlignment="Top" Width="0"/>
+            <FlipView HorizontalAlignment="Left" Height="195.2" VerticalAlignment="Top" Width="0"/>
         </RelativePanel>
 
     </Grid>
