@@ -15,21 +15,16 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace ProjekatGurmani.Views
+namespace ProjekatGurmani
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Narudzba : Page
+    public sealed partial class RegistracijaKupca : Page
     {
-        public Narudzba()
+        public RegistracijaKupca()
         {
             this.InitializeComponent();
-        }
-
-        private void RadioButton_Checked(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

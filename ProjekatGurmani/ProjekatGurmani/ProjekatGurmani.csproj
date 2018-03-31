@@ -98,12 +98,21 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\Narudzba.xaml.cs">
+    <Compile Include="Narudzba.xaml.cs">
       <DependentUpon>Narudzba.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\RegistracijaKupca.xaml.cs">
+    <Compile Include="OdabirLokacije.xaml.cs">
+      <DependentUpon>OdabirLokacije.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistracijaKupca.xaml.cs">
       <DependentUpon>RegistracijaKupca.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UrediProfilKupca.xaml.cs">
+      <DependentUpon>UrediProfilKupca.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UrediProfilObjekta.xaml.cs">
+      <DependentUpon>UrediProfilObjekta.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -122,11 +131,17 @@
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="Slike\BackIcon.png" />
+    <Content Include="Slike\Burgers.jpg" />
+    <Content Include="Slike\Cikac.png" />
     <Content Include="Slike\GurmaniLogo.png" />
+    <Content Include="Slike\informacije.png" />
     <Content Include="Slike\Maestro.png" />
     <Content Include="Slike\MasterCard.png" />
+    <Content Include="Slike\PizzaIHamburger.jpg" />
+    <Content Include="Slike\PomfritSaHotdogom.jpg" />
     <Content Include="Slike\Pozadina1.jpg" />
     <Content Include="Slike\Pozadina2.jpg" />
+    <Content Include="Slike\UrediProfilKupca.png" />
     <Content Include="Slike\Visa.png" />
   </ItemGroup>
   <ItemGroup>
@@ -138,11 +153,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\Narudzba.xaml">
+    <Page Include="Narudzba.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\RegistracijaKupca.xaml">
+    <Page Include="OdabirLokacije.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RegistracijaKupca.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UrediProfilKupca.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UrediProfilObjekta.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
