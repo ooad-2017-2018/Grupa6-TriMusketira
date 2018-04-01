@@ -23,7 +23,7 @@
             <PasswordBox HorizontalAlignment="Left" Height="40" Margin="410,485,-691,-493" VerticalAlignment="Top" Width="345"/>
             <PasswordBox HorizontalAlignment="Left" Height="40" Margin="410,530,-691,-538" VerticalAlignment="Top" Width="345"/>
             <TextBlock HorizontalAlignment="Left" Height="45" Margin="280,103,-361,-128" Text="Naziv objekta:" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" FontSize="20" Foreground="#FFF5F3F3"/>
-            <TextBlock HorizontalAlignment="Left" Height="45" Margin="280,153,-361,-178" Text="Tio objekta:" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" FontSize="20" Foreground="#FFF5F3F3"/>
+            <TextBlock HorizontalAlignment="Left" Height="45" Margin="280,153,-361,-178" Text="Tip objekta:" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" FontSize="20" Foreground="#FFF5F3F3"/>
             <TextBlock HorizontalAlignment="Left" Height="45" Margin="285,205,-366,-230" Text="Adresa:" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" FontSize="20" Foreground="#FFF5F3F3"/>
             <TextBlock HorizontalAlignment="Left" Height="45" Margin="283,250,-364,-275" Text="Grad:" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" FontSize="20" Foreground="#FFF5F3F3"/>
             <TextBlock HorizontalAlignment="Left" Height="45" Margin="280,300,-361,-325" Text="Postanski broj:" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" FontSize="20" Foreground="#FFF5F3F3"/>
@@ -37,8 +37,11 @@
 
 
         <Ellipse HorizontalAlignment="Left" Height="95" Margin="-120,50,0,0" VerticalAlignment="Top" Width="555" Fill="White" Stroke="#FF0DAA15"  />
-        <Ellipse HorizontalAlignment="Left" Height="110" Margin="-5,45,0,0" VerticalAlignment="Top" Width="135" Fill="#FF0F9115" />
-        <Button Content="Nazad" HorizontalAlignment="Left" Height="35" Margin="10,80,0,0" VerticalAlignment="Top" Width="105" FontSize="16" Background="White"/>
+        <RelativePanel HorizontalAlignment="Left" Height="74" Margin="23,58,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="1.12,0.52">
+            <RelativePanel.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Slike/BackIcon.png"/>
+            </RelativePanel.Background>
+        </RelativePanel>
         <TextBlock HorizontalAlignment="Left" Height="50" Margin="151,75,0,0" Text="Uredi profil" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" FontSize="36" FontWeight="Bold"  Foreground="#FF0F9115"/>
         <Button Content="Dodaj sliku..." HorizontalAlignment="Left" Height="50" Margin="75,400,0,0" VerticalAlignment="Top" Width="245" FontSize="24" Foreground="White" Background="#33639527" BorderBrush="White"  BorderThickness="4"/>
         <Button Content="Deaktivacija" HorizontalAlignment="Left" Height="50" Margin="690,625,0,0" VerticalAlignment="Top" Width="245" FontSize="24" Foreground="White" Background="#33639527" BorderBrush="White"  BorderThickness="4"/>

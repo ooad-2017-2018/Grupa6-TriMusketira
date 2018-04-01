@@ -23,9 +23,12 @@
         <TextBlock HorizontalAlignment="Left" Height="50" Margin="709,320,0,0" Text="Dio grada:" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" FontSize="36" Foreground="White" FontWeight="Bold"/>
         <Button Content="Pretrazi" HorizontalAlignment="Left" Height="70" Margin="305,480,0,0" VerticalAlignment="Top" Width="660" Background="Green" FontSize="36" Foreground="#FFFBFBFB" FontWeight="Bold"/>
         <Ellipse HorizontalAlignment="Left" Height="95" Margin="-110,65,0,0" VerticalAlignment="Top" Width="605" Fill="White" Stroke="#FF0DAA15"  />
-        <Ellipse HorizontalAlignment="Left" Height="110" Margin="5,65,0,0" VerticalAlignment="Top" Width="135" Fill="#FF0F9115" />
-        <Button Content="Nazad" HorizontalAlignment="Left" Height="35" Margin="15,110,0,0" VerticalAlignment="Top" Width="105" FontSize="16" Background="White"/>
         <TextBlock HorizontalAlignment="Left" Height="58" Margin="150,87,0,0" Text="Izaberite lokaciju" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize="36" FontWeight="Bold"  Foreground="#FF0F9115"/>
+        <RelativePanel HorizontalAlignment="Left" Height="74" Margin="21,76,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="1.12,0.52">
+            <RelativePanel.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Slike/BackIcon.png"/>
+            </RelativePanel.Background>
+        </RelativePanel>
         <HyperlinkButton Content="Preskoci" HorizontalAlignment="Left" Height="70" Margin="515,545,0,0" VerticalAlignment="Top" Width="275" FontSize="36" Foreground="#FFF3F3F3"/>
     </Grid>
 </Page>

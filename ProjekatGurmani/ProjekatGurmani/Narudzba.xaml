@@ -16,10 +16,12 @@
             <TextBox HorizontalAlignment="Left" Height="40" Margin="40,280,-17.6,0" Text="" VerticalAlignment="Top" Width="388" PlaceholderText="Adresa "/>
             <TextBox HorizontalAlignment="Left" Height="40" Margin="40,334,-30,0" Text="" VerticalAlignment="Top" Width="390" PlaceholderText="Broj telefona/mobitela" InputScope="TelephoneNumber"/>
             <Button Content="Naruci" HorizontalAlignment="Stretch" Height="50" VerticalAlignment="Top" Margin="760,486,-1058,-503.2" Background="White" Foreground="#FF21680C" FontSize="24" FontWeight="Bold"/>
-            <Button Content="Pretrazi" HorizontalAlignment="Left" Height="70" Margin="305,415,0,0" VerticalAlignment="Top" Width="660" Background="Green" FontSize="36" Foreground="#FFFBFBFB" FontWeight="Bold"/>
             <Ellipse HorizontalAlignment="Left" Height="95" Margin="-290,26,-135,0" VerticalAlignment="Top" Width="650" Fill="White" Stroke="#FF0DAA15"  />
-            <Ellipse HorizontalAlignment="Left" Height="110" Margin="-60,16,0,0" VerticalAlignment="Top" Width="135" Fill="#FF0F9115" />
-            <Button Content="Nazad" HorizontalAlignment="Left" Height="35" Margin="-45,56,0,0" VerticalAlignment="Top" Width="105" FontSize="16" Background="White"/>
+            <RelativePanel HorizontalAlignment="Left" Height="74" Margin="3,38,0,-45.6" VerticalAlignment="Top" Width="99" RenderTransformOrigin="1.12,0.52">
+                <RelativePanel.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="Slike/BackIcon.png"/>
+                </RelativePanel.Background>
+            </RelativePanel>
             <TextBlock HorizontalAlignment="Left" Height="43" Margin="115,53,-55,-5" Text="Narudzba" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize="36" FontWeight="Bold"  Foreground="#FF0F9115"/>
             <RadioButton Content="Kartica" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="120" Margin="285,418,-285,-418"/>
             <RadioButton Content="Gotovina" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="120" Margin="63,420,-63,-420" Checked="RadioButton_Checked"/>
@@ -28,7 +30,6 @@
                 <TextBlock Text="Placanje se vrsi pri preuzimanju vase narudzbe. Svako nepostivanje pravila, dogovora, i sl. kaznjava se prvo opomenom, a zatim zabranjivnjem pristupa aplikaciji." HorizontalAlignment="Left" TextWrapping="Wrap" Width="371" Margin="20.6,14.6,-358.8,-42.6"/>
             </RelativePanel>
             <RichEditBox HorizontalAlignment="Left" Height="123" VerticalAlignment="Top" Width="382" Margin="43,130,-361,-221"/>
-            <RelativePanel HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="171" Margin="0,0,-171,-171"/>
             <RelativePanel HorizontalAlignment="Left" Height="172" VerticalAlignment="Top" Width="180" BorderBrush="White" BorderThickness="5" Background="Green" Margin="489,130,-669,-302"/>
             <TextBox Height="48" Text="UKUPNO: " InputScope="CurrencyAmount" FontSize="20" FontStretch="ExtraExpanded" VerticalAlignment="Center" Margin="835,28,-1101,-43" RenderTransformOrigin="0.493,0.838" />
             <TextBox HorizontalAlignment="Left" FontSize="15" Height="48" VerticalAlignment="Top" Width="343" Margin="455,26,-728,-44" PlaceholderText="Korisnicko ime"/>
@@ -42,7 +43,7 @@
                 <TextBlock HorizontalAlignment="Left" Height="27" Text="Datum isteka:" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Margin="10.2,206.2,-96.8,-213.2"/>
                 <TextBox HorizontalAlignment="Left" Height="40" Margin="14.2,277.2,-14.8,-254.8" Text="" VerticalAlignment="Top" Width="291" PlaceholderText="PIN" InputScope="NumericPin"/>
             </RelativePanel>
-          
+
 
         </RelativePanel>
 
