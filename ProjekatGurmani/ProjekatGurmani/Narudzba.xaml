@@ -24,7 +24,7 @@
             </RelativePanel>
             <TextBlock HorizontalAlignment="Left" Height="43" Margin="115,53,-55,-5" Text="Narudzba" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize="36" FontWeight="Bold"  Foreground="#FF0F9115"/>
             <RadioButton Content="Kartica" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="120" Margin="285,418,-285,-418"/>
-            <RadioButton Content="Gotovina" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="120" Margin="63,420,-63,-420" Checked="RadioButton_Checked"/>
+            <RadioButton Content="Gotovina" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="120" Margin="63,420,-63,-420"/>
             <TextBlock Text="Nacin placanja:" HorizontalAlignment="Left" TextWrapping="Wrap" Width="187" Margin="44,389,-168.6,-404.2"/>
             <RelativePanel HorizontalAlignment="Left" Height="96" Margin="33,460,-2.6,-17.6" VerticalAlignment="Top" Width="412" BorderBrush="White" BorderThickness="2" Background="Green">
                 <TextBlock Text="Placanje se vrsi pri preuzimanju vase narudzbe. Svako nepostivanje pravila, dogovora, i sl. kaznjava se prvo opomenom, a zatim zabranjivnjem pristupa aplikaciji." HorizontalAlignment="Left" TextWrapping="Wrap" Width="371" Margin="20.6,14.6,-358.8,-42.6"/>

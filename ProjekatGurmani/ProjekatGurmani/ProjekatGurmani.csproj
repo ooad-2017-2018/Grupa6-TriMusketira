@@ -95,6 +95,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="JelovnikObjekta.xaml.cs">
+      <DependentUpon>JelovnikObjekta.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -135,12 +138,19 @@
     <Content Include="Slike\Cikac.png" />
     <Content Include="Slike\GurmaniLogo.png" />
     <Content Include="Slike\informacije.png" />
+    <Content Include="Slike\Jelovnik1.jpg" />
+    <Content Include="Slike\Jelovnik2.jpg" />
+    <Content Include="Slike\Jelovnik3.jpg" />
+    <Content Include="Slike\Jelovnik4.jpg" />
+    <Content Include="Slike\Jelovnik5.jpg" />
+    <Content Include="Slike\Korpa.png" />
     <Content Include="Slike\Maestro.png" />
     <Content Include="Slike\MasterCard.png" />
     <Content Include="Slike\PizzaIHamburger.jpg" />
     <Content Include="Slike\PomfritSaHotdogom.jpg" />
     <Content Include="Slike\Pozadina1.jpg" />
     <Content Include="Slike\Pozadina2.jpg" />
+    <Content Include="Slike\Pozadina3.jpg" />
     <Content Include="Slike\UrediProfilKupca.png" />
     <Content Include="Slike\Visa.png" />
   </ItemGroup>
@@ -149,6 +159,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="JelovnikObjekta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
