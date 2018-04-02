@@ -95,6 +95,12 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GlavnaKupac.xaml.cs">
+      <DependentUpon>GlavnaKupac.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GlavnaObjekat.xaml.cs">
+      <DependentUpon>GlavnaObjekat.xaml</DependentUpon>
+    </Compile>
     <Compile Include="JelovnikObjekta.xaml.cs">
       <DependentUpon>JelovnikObjekta.xaml</DependentUpon>
     </Compile>
@@ -110,9 +116,15 @@
     <Compile Include="OdabirLokacije.xaml.cs">
       <DependentUpon>OdabirLokacije.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Proba.xaml.cs">
+      <DependentUpon>Proba.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegistracijaKupca.xaml.cs">
       <DependentUpon>RegistracijaKupca.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SnizenjaObjekat.xaml.cs">
+      <DependentUpon>SnizenjaObjekat.xaml</DependentUpon>
     </Compile>
     <Compile Include="UrediProfilKupca.xaml.cs">
       <DependentUpon>UrediProfilKupca.xaml</DependentUpon>
@@ -139,6 +151,7 @@
     <Content Include="Slike\BackIcon.png" />
     <Content Include="Slike\Burgers.jpg" />
     <Content Include="Slike\Cikac.png" />
+    <Content Include="Slike\glavnaobjekat.png" />
     <Content Include="Slike\GurmaniLogo.png" />
     <Content Include="Slike\informacije.png" />
     <Content Include="Slike\Jelovnik1.jpg" />
@@ -162,6 +175,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="GlavnaKupac.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GlavnaObjekat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="JelovnikObjekta.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -182,7 +203,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Proba.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="RegistracijaKupca.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SnizenjaObjekat.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
