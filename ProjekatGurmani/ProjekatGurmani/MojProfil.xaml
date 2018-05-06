@@ -11,18 +11,18 @@
         <Grid.Background>
             <ImageBrush Stretch="Fill" ImageSource="Slike/PizzaIHamburger.jpg"/>
         </Grid.Background>
-        <RelativePanel HorizontalAlignment="Left" Height="660" Margin="50,25,0,0" VerticalAlignment="Top" Width="1140" BorderBrush="White" Background="#FF0B6E14" Opacity="0.8">
+        <RelativePanel HorizontalAlignment="Left" Height="910" Margin="50,25,0,0" VerticalAlignment="Top" Width="1380" BorderBrush="White" Background="#FF006633" Opacity="0.8">
             <TextBlock HorizontalAlignment="Left" Height="40" Margin="483,185,-655.6,-215" Text="Korisnicko ime:" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" FontSize="24" Foreground="White"/>
             <TextBlock HorizontalAlignment="Left" Height="40" Margin="483,141,-654.6,-171" Text="Ime i prezime:" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" FontSize="24" Foreground="White"/>
             <TextBlock HorizontalAlignment="Left" Height="40" Margin="483,227,-655.6,-257" Text="Adresa:" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" FontSize="24" Foreground="White"/>
             <TextBlock HorizontalAlignment="Left" Height="40" Margin="483,312,-657.6,-342" Text="Broj telefona:" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" FontSize="24" Foreground="White"/>
             <TextBlock HorizontalAlignment="Left" Height="40" Margin="483,268,-653.6,-297.6" Text="E-mail:" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" FontSize="24" Foreground="White"/>
             <TextBlock HorizontalAlignment="Left" Height="40" Margin="483,352,-657.6,-342" Text="Vase narudzbe:" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" FontSize="24" Foreground="White"/>
-            <PersonPicture HorizontalAlignment="Left" Height="231" Margin="95,140,-375.2,-271" VerticalAlignment="Top" Width="380"/>
-            <ListView HorizontalAlignment="Left" Height="198" VerticalAlignment="Top" Width="570" Margin="482,392,-1048.8,-590" Background="LightGray"/>
-            <Button Content="Uredi" HorizontalAlignment="Left" Height="47" VerticalAlignment="Top" Width="152" Margin="570,602,-656.4,-616.2" FontSize="24" Foreground="White" Background="#33639527" BorderBrush="White"  BorderThickness="4"/>
-            <Button Content="Uredu" HorizontalAlignment="Left" Height="47" VerticalAlignment="Top" Width="134" Margin="830,604,-898.4,-618.2" FontSize="24" Foreground="White" Background="#33639527" BorderBrush="White"  BorderThickness="4"/>
-            <RelativePanel HorizontalAlignment="Left" Height="218" Margin="107,409,-204,-539" VerticalAlignment="Top" Width="213" RenderTransformOrigin="1.12,0.52">
+            <PersonPicture HorizontalAlignment="Left" Height="231" Margin="119,139,-350,-270" VerticalAlignment="Top" Width="305"/>
+            <ListView HorizontalAlignment="Left" Height="223" VerticalAlignment="Top" Width="798" Margin="482,392,-1277,-615" Background="LightGray"/>
+            <Button Content="Uredi" HorizontalAlignment="Left" Height="72" VerticalAlignment="Top" Width="277" Margin="538,713,-749,-752" FontSize="24" Foreground="White" Background="#33639527" BorderBrush="White"  BorderThickness="4"/>
+            <Button Content="Uredu" HorizontalAlignment="Left" Height="72" VerticalAlignment="Top" Width="280" Margin="980,713,-1194,-752" FontSize="24" Foreground="White" Background="#33639527" BorderBrush="White"  BorderThickness="4"/>
+            <RelativePanel HorizontalAlignment="Left" Height="291" Margin="107,409,-274,-612" VerticalAlignment="Top" Width="283" RenderTransformOrigin="1.12,0.52">
                 <RelativePanel.Background>
                     <ImageBrush Stretch="Fill" ImageSource="Slike/GurmaniLogo.png"/>
                 </RelativePanel.Background>

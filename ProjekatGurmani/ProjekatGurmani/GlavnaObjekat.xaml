@@ -40,7 +40,7 @@
                 <ImageBrush Stretch="Fill" ImageSource="Slike/GurmaniLogo.png"/>
             </RelativePanel.Background>
         </RelativePanel>
-        <Rectangle HorizontalAlignment="Left" Height="173" Margin="276,11,0,0" VerticalAlignment="Top" Width="1217" Fill="#FF004221" Opacity="0.8"/>
+        <Rectangle HorizontalAlignment="Left" Height="173" Margin="276,11,0,0" VerticalAlignment="Top" Width="1217" Fill="#FF006633" Opacity="0.8"/>
         <Button Content="" HorizontalAlignment="Left" Margin="187,260,0,0" VerticalAlignment="Top" Height="79" Width="65" Opacity="0"/>
         <Button Content="" HorizontalAlignment="Left" Margin="187,260,0,0" VerticalAlignment="Top" Height="79" Width="65" Opacity="0"/>
         <Button Content="" HorizontalAlignment="Left" Margin="187,260,0,0" VerticalAlignment="Top" Height="79" Width="65" Opacity="0"/>
@@ -49,7 +49,7 @@
         <Button Content="" HorizontalAlignment="Left" Margin="183,460,0,0" VerticalAlignment="Top" Width="75" Height="75" Opacity="0"/>
         <Button Content="0" HorizontalAlignment="Left" Margin="183,677,0,0" VerticalAlignment="Top" Height="75" Width="72" Opacity="0"/>
         <ListView HorizontalAlignment="Left" Height="687" Margin="286,210,0,0" VerticalAlignment="Top" Width="1188" Background="Black" Opacity="0.6"/>
-        <Button Content="Pretrazi" HorizontalAlignment="Left" Height="77" VerticalAlignment="Top" Width="1188" Margin="280,912,0,0"  FontSize="48" Foreground="White" Background="#FF004221" BorderBrush="White"  BorderThickness="4"/>
+        <Button Content="Pretrazi" HorizontalAlignment="Left" Height="77" VerticalAlignment="Top" Width="1188" Margin="280,912,0,0"  FontSize="48" Foreground="White" Background="#FF006633" BorderBrush="White"  BorderThickness="4"/>
 
     </Grid>
 </Page>

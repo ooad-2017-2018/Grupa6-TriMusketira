@@ -22,7 +22,7 @@
             </Image.FocusVisualPrimaryBrush>
         </Image>
         <ListView HorizontalAlignment="Left" Height="727" Margin="53,213,0,0" VerticalAlignment="Top" Width="675" Background="#B2FFFFFF"/>
-        <TextBox HorizontalAlignment="Left" Margin="53,148,0,0" Text="Zahtjevi za registraciju:" VerticalAlignment="Top" Width="675" IsReadOnly="True" FocusVisualPrimaryBrush="White" Background="White"/>
+        <TextBox HorizontalAlignment="Left" Margin="53,148,0,0" Text="Zahtjevi za registraciju:" VerticalAlignment="Top" Width="675" IsReadOnly="True" FocusVisualPrimaryBrush="White" Background="White" Height="42"/>
         <Button Content="Prijavljeni kupci" HorizontalAlignment="Left" Margin="859,46,0,0" VerticalAlignment="Top" Height="77" Width="488" Background="White" FontSize="36"/>
         <Button Content="Prijavljeni objekti" HorizontalAlignment="Left" Margin="863,156,0,0" VerticalAlignment="Top" Height="77" Width="483" Background="White" FontSize="36"/>
         <Button Content="Pregled kupaca" HorizontalAlignment="Left" Margin="865,268,0,0" VerticalAlignment="Top" Height="77" Width="475" Background="White" FontSize="36"/>

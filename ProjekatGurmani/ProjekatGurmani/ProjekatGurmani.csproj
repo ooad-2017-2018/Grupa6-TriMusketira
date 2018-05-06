@@ -92,8 +92,14 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Admin-pocetna.xaml.cs">
-      <DependentUpon>Admin-pocetna.xaml</DependentUpon>
+    <Compile Include="AdminPocetna.xaml.cs">
+      <DependentUpon>AdminPocetna.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminObrisiKupca.xaml.cs">
+      <DependentUpon>AdminObrisiKupca.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminObrisiObjekat.xaml.cs">
+      <DependentUpon>AdminObrisiObjekat.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -178,7 +184,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Admin-pocetna.xaml">
+    <Page Include="AdminPocetna.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminObrisiKupca.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminObrisiObjekat.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
