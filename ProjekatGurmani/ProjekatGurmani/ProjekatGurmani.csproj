@@ -101,9 +101,6 @@
     <Compile Include="AdminObrisiObjekat.xaml.cs">
       <DependentUpon>AdminObrisiObjekat.xaml</DependentUpon>
     </Compile>
-    <Compile Include="App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-    </Compile>
     <Compile Include="GlavnaKupac.xaml.cs">
       <DependentUpon>GlavnaKupac.xaml</DependentUpon>
     </Compile>
@@ -113,6 +110,12 @@
     <Compile Include="JelovnikObjekta.xaml.cs">
       <DependentUpon>JelovnikObjekta.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Klase\Jelo.cs" />
+    <Compile Include="Klase\Jelovnik.cs" />
+    <Compile Include="Klase\Korisnik.cs" />
+    <Compile Include="Klase\Kupac.cs" />
+    <Compile Include="Klase\Narudzba.cs" />
+    <Compile Include="Klase\Objekat.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -180,10 +183,6 @@
     <Content Include="Slike\Visa.png" />
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="App.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </ApplicationDefinition>
     <Page Include="AdminPocetna.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
