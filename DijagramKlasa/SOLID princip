@@ -1,0 +1,34 @@
+1.Princip pojedinačne odgovornosti
+Princip pojedinačne odgovornosti  glasi : „Klasa bi trebala imati samo jedan razlog za promjenu.“ 
+U našem dijagramu klasa ovaj princip nije do kraja ispoštovan. Naime, u klasama kao što su Objekat, Kupac, Jelo, Jelovniki Narudzba,
+imamo interakciju sa bazom podataka pomoću metoda dodajObjekatUBazu():void; dodajJeloUBazu():void, dodajKupcaUBazu():void,
+dodajJelovnikUBazu:void i dodajNarudzbuUBazu():void. 
+Ovo se moglo riješiti tako da napravimo nove klase KupacBazaPodataka, JeloBazaPodataka, JelovnikBazaPodataka,NarudzbaBazaPodataka i 
+ObjekatBazaPodataka koje bi imale interakciju sa bazom podataka te bi na taj način izbjegli potrebu za izmjenama u klasama koje su 
+navedene na početku.
+
+2.Otvoreno zatvoren princip
+Otvoreno zatvoren princip glasi: „Entiteti softvera (klase,moduli,funkcije) trebali bi biti otvoreni za nadogradnju,
+ali zatvoreni za modifikacije“. Ovaj princip u našem dijagramu klasa je uglavnom ispoštovan.(Npr.Jedina stvar koja 
+bi se mogla dodati bile bi klase koje bi omogućile testiranje interakcije sa bazom, ali smatramo da to nije neophodno
+za naš sistem, pa ih zbog toga i nemamo)
+
+3.Liskov princip zamjene
+Liskov princip zamjene glasi: „Podtipovi moraju biti zamjenjeni  njihovim osnovnim tipovima.“ U našem primjeru se 
+vidi da je dobro ispoštovan ovaj princip, jer klase Kupac i Uposlenik koje su izvedene iz klase Korisnik,koriste sve
+metode koje su definisane u klasi Korisnik.
+
+4.Princip inverzije ovisnosti
+Princip inverzije ovisnosti glasi:
+A. «Moduli visokog nivoa ne bi trebali ovisiti od modula niskog nivoa. Oba bi trebalo da zavise od apstrakcija.»
+B. «Moduli ne bi trebali ovisiti od detalja. Detalji bi trebali biti ovisni od apstrakcija.»
+U našem dijagramu klasa ovaj princip je zaista i ispoštovan jer klase kao što su Kupac i Uposlenik ovise o apstraktnoj,
+a ne o klasi koja nije apstraktna.
+
+5. Princip izoliranja interfejsa
+Princip izoliranja interfejsa glasi : „Klijenti ne treba da ovise o metodama koje neće upotrebljavati.“ 
+Iako se na prvi pogled može učiniti da naše klase u dijagramu klasa imaju veliki broj metoda, sve te metode su zaista i
+neophodne da bi se ostvario željeni cilj(većina tih metoda su geteri,seteri, te metode koje vrše interakciju sa bazom 
+podataka i slično). Pored navedenih metoda koristimo i one koje omogućavaju nesmetan rad aplikacije bez ikakvih komplikacija
+za korisnika, ili onih metoda koje bi ga zbunile pri radu.Iz ovoga slijedi da da je ovaj princip ispoštovan, jer nema 
+nepotrebnih pomoćnih funkcija unutar naših klasa. 
