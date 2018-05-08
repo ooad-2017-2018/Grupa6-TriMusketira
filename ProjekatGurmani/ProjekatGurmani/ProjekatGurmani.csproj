@@ -101,6 +101,12 @@
     <Compile Include="AdminObrisiObjekat.xaml.cs">
       <DependentUpon>AdminObrisiObjekat.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AdminPregledKupaca.xaml.cs">
+      <DependentUpon>AdminPregledKupaca.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPregledObjekta.xaml.cs">
+      <DependentUpon>AdminPregledObjekta.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GlavnaKupac.xaml.cs">
       <DependentUpon>GlavnaKupac.xaml</DependentUpon>
     </Compile>
@@ -192,6 +198,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AdminObrisiObjekat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminPregledKupaca.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminPregledObjekta.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
