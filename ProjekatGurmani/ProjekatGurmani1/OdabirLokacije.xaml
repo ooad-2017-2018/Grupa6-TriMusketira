@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="ProjekatGurmani1.odabirLokacijexaml"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ProjekatGurmani1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Margin="0,0,12,12" >
+
+
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Slike/PomfritSaHotdogom.jpg"/>
+        </Grid.Background>
+
+        <RelativePanel HorizontalAlignment="Left" Height="860" Margin="55,80,0,0" VerticalAlignment="Top" Width="1355" Opacity="0.8" Background="#FF006633" FocusVisualPrimaryBrush="#FF006633"/>
+
+        <TextBlock HorizontalAlignment="Left" Height="206" Margin="169,225,0,0" Text="Ukoliko zelite naruciti hranu unesite sljedece podatke kako bismo vam olaksali ptretragu za objektima koje se nalaze u blizini i izvrsavaju dostavu u tu oblast grada..." TextWrapping="Wrap" VerticalAlignment="Top" Width="1020" FontSize="36" FontWeight="Bold" FontFamily="Cooper Black" Foreground="White" LineHeight="12" TextAlignment="Center" RenderTransformOrigin="0.506,0.898" />
+        <ComboBox HorizontalAlignment="Left" Height="60" Margin="180,490,0,0" VerticalAlignment="Top" Width="445" Opacity="0.78"/>
+        <ComboBox HorizontalAlignment="Left" Height="60" Margin="870,485,0,0" VerticalAlignment="Top" Width="445" />
+        <TextBlock HorizontalAlignment="Left" Height="50" Margin="185,420,0,0" Text="Grad:" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" FontSize="36" Foreground="White" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="50" Margin="879,402,0,0" Text="Dio grada:" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" FontSize="36" Foreground="White" FontWeight="Bold"/>
+        <Button Content="Pretrazi" HorizontalAlignment="Left" Height="70" Margin="385,665,0,0" VerticalAlignment="Top" Width="660" Background="#FF0A8146" FontSize="36" Foreground="#FFFBFBFB" FontWeight="Bold"/>
+        <Ellipse HorizontalAlignment="Left" Height="95" Margin="-110,65,0,0" VerticalAlignment="Top" Width="605" Fill="White" Stroke="#FF0DAA15"  />
+        <TextBlock HorizontalAlignment="Left" Height="58" Margin="150,87,0,0" Text="Izaberite lokaciju" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize="36" FontWeight="Bold"  Foreground="#FF0F9115"/>
+        <RelativePanel HorizontalAlignment="Left" Height="74" Margin="21,76,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="1.12,0.52">
+            <RelativePanel.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Slike/BackIcon.png"/>
+            </RelativePanel.Background>
+        </RelativePanel>
+        <HyperlinkButton Content="Preskoci" HorizontalAlignment="Left" Height="70" Margin="570,735,0,0" VerticalAlignment="Top" Width="275" FontSize="36" Foreground="#FFF3F3F3"/>
+    </Grid>
+</Page>
