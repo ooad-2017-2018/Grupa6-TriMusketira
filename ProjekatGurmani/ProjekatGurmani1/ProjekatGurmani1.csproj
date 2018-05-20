@@ -110,6 +110,13 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DB\DBAdministrator.cs" />
+    <Compile Include="DB\DBConnectionString.cs" />
+    <Compile Include="DB\DBJelo.cs" />
+    <Compile Include="DB\DBKupac.cs" />
+    <Compile Include="DB\DBNarudzba.cs" />
+    <Compile Include="DB\DBObjekat.cs" />
+    <Compile Include="DB\DBStavkeNarudzbe.cs" />
     <Compile Include="GlavnaKupac.xaml.cs">
       <DependentUpon>GlavnaKupac.xaml</DependentUpon>
     </Compile>
@@ -119,17 +126,16 @@
     <Compile Include="JelovnikObjekta.xaml.cs">
       <DependentUpon>JelovnikObjekta.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Klasa\Admin.cs" />
-    <Compile Include="Klasa\Jelo.cs" />
-    <Compile Include="Klasa\Jelovnik.cs" />
-    <Compile Include="Klasa\Kontejnerska.cs" />
-    <Compile Include="Klasa\Korisnik.cs" />
-    <Compile Include="Klasa\Kupac.cs" />
-    <Compile Include="Klasa\Narudzba.cs" />
-    <Compile Include="Klasa\Objekat.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Modeli\Administrator.cs" />
+    <Compile Include="Modeli\Jelo.cs" />
+    <Compile Include="Modeli\Korisnik.cs" />
+    <Compile Include="Modeli\Kupac.cs" />
+    <Compile Include="Modeli\NarudzbaHrane.cs" />
+    <Compile Include="Modeli\Objekat.cs" />
+    <Compile Include="Modeli\StavkeNarudzbe.cs" />
     <Compile Include="MojProfil.xaml.cs">
       <DependentUpon>MojProfil.xaml</DependentUpon>
     </Compile>
@@ -260,10 +266,14 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.Mobile.Client">
+      <Version>4.0.2</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.0.6</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

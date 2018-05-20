@@ -4,22 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjekatGurmani1.Klase
+namespace ProjekatGurmani1.Modeli
 {
-    public class Objekat:Korisnik
+    public class Objekat : Korisnik
     {
         public int id { get; set; }
-        public Jelovnik jela { get; set; }
+        public List<int> jela { get; set; }
 
-        public Objekat(string ime, string prezime, string adresa, string telefon, string username, string email, string grad, string password, int id, Jelovnik jela)
+        public Objekat(int id, string ime, string prezime, string adresa, string telefon, string username, string password, string email, string grad)
                : base(ime, prezime, adresa, telefon, username, password, email, grad)
         {
             this.id = id;
-            this.jela = jela;
+            this.jela = new List<int>();
 
         }
         public Objekat() { }
 
-    
+
     }
 }

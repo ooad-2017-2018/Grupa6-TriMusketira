@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjekatGurmani1.Klase
+namespace ProjekatGurmani1.Modeli
 {
     public class Jelo
     {
