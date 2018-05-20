@@ -12,13 +12,15 @@ namespace ProjekatGurmani1.Modeli
         public int idJela { get; set; }
         public string vrsta { get; set; }
         public int cijena { get; set; }
+        public int idObjekta { get; set; }
 
-        public Jelo(int id, string nazivJela, string vrsta, int cijena)
+        public Jelo(int id, string nazivJela, string vrsta, int cijena, int idObjekta)
         {
             this.idJela = id;
             this.nazivJela = nazivJela;
             this.vrsta = vrsta;
             this.cijena = cijena;
+            this.idObjekta = idObjekta;
         }
 
         public Jelo() { }

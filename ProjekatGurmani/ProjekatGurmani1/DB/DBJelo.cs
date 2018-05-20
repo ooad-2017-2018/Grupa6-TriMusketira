@@ -12,6 +12,7 @@ namespace ProjekatGurmani1.DB
     class DBJelo
     {
         public List<Jelo> Jela { get; set; }
+        public List<int> jelaObjekta { get; set; }
         public DBJelo()
         {
             Jela = new List<Jelo>();
@@ -33,7 +34,7 @@ namespace ProjekatGurmani1.DB
                         SqlDataReader reader = cmd.ExecuteReader();
                         while (reader.Read())
                         {
-                            Jelo a = new Jelo(Convert.ToInt32(reader.GetString(0)), reader.GetString(1), reader.GetString(2), reader.GetInt32(3));
+                            Jelo a = new Jelo(Convert.ToInt32(reader.GetString(0)), reader.GetString(1), reader.GetString(2), reader.GetInt32(3), reader.GetInt32(4));
                             Jela.Add(a);
                         }
                     }
@@ -45,6 +46,40 @@ namespace ProjekatGurmani1.DB
                 Debug.WriteLine("Exception: " + e.Message);
             }
         }
+
+        public void ucitajJelaObjekta(int idObjektaa)
+        {
+            try
+            {
+                jelaObjekta = new List<int>();
+                String query = "SELECT * FROM Jelo WHERE idObjekta = @idObj;";
+                DBConnectionString s = new DBConnectionString();
+                using (SqlConnection con = new SqlConnection(s.GetString()))
+                {
+                    con.Open();
+                    if (con.State == System.Data.ConnectionState.Open)
+                    {
+                        SqlCommand cmd = con.CreateCommand();
+                        cmd.CommandText = query;
+                        SqlParameter id = new SqlParameter();
+                        id.Value = idObjektaa;
+                        id.ParameterName = "idObj";
+                        cmd.Parameters.Add(id);
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            jelaObjekta.Add(Convert.ToInt32(reader.GetString(0)));
+                        }
+                    }
+                    con.Close();
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine("Exception: " + e.Message);
+            }
+        }
+
         public int brisiJelo(Jelo a)
         {
             try
@@ -56,7 +91,7 @@ namespace ProjekatGurmani1.DB
                     SqlCommand cmd = con.CreateCommand();
                     cmd.CommandText = query;
                     SqlParameter id = new SqlParameter();
-                    id.Value = a.idJela;
+                    id.Value = Convert.ToString(a.idJela);
                     id.ParameterName = "id";
                     cmd.Parameters.Add(id);
                     con.Open();
@@ -78,7 +113,7 @@ namespace ProjekatGurmani1.DB
             try
             {
                 String query = "insert into Jelo " +
-                    "values (@id,@nazivJela,@vrsta,@cijena)";
+                    "values (@id,@nazivJela,@vrsta,@cijena,@idObjekta)";
                 DBConnectionString s = new DBConnectionString();
                 using (SqlConnection con = new SqlConnection(s.GetString()))
                 {
@@ -86,7 +121,7 @@ namespace ProjekatGurmani1.DB
                     cmd.CommandText = query;
 
                     SqlParameter id = new SqlParameter();
-                    id.Value = a.idJela;
+                    id.Value = Convert.ToString(a.idJela);
                     id.ParameterName = "id";
 
                     SqlParameter nazivJela = new SqlParameter();
@@ -101,10 +136,15 @@ namespace ProjekatGurmani1.DB
                     cijena.Value = a.cijena;
                     cijena.ParameterName = "cijena";
 
+                    SqlParameter idObjekta = new SqlParameter();
+                    idObjekta.Value = a.cijena;
+                    idObjekta.ParameterName = "idObjekta";
+
                     cmd.Parameters.Add(id);
                     cmd.Parameters.Add(nazivJela);
                     cmd.Parameters.Add(vrsta);
                     cmd.Parameters.Add(cijena);
+                    cmd.Parameters.Add(idObjekta);
 
                     int k = cmd.ExecuteNonQuery();
                     cmd.Dispose();

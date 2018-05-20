@@ -10,14 +10,12 @@ namespace ProjekatGurmani1.Modeli
     {
         public int idNarudzbe { get; set; }
         public int idKupca { get; set; }
-        public int idObjekta { get; set; }
         public List<int> jela { get; set; }
 
-        public NarudzbaHrane(int id, int idKupca, int idObjekta)
+        public NarudzbaHrane(int id, int idKupca)
         {
             this.idNarudzbe = id;
             this.idKupca = idKupca;
-            this.idObjekta = idObjekta;
             this.jela = new List<int>();
         }
 

@@ -9,10 +9,11 @@ using System.Threading.Tasks;
 
 namespace ProjekatGurmani1.DB
 {
-    class DBNarudzbaHrane
+    class DBNarudzba
     {
         public List<NarudzbaHrane> Narudzbe { get; set; }
-        public DBNarudzbaHrane()
+        public List<int> narudzbeKupca { get; set; }
+        public DBNarudzba()
         {
             Narudzbe = new List<NarudzbaHrane>();
         }
@@ -33,7 +34,7 @@ namespace ProjekatGurmani1.DB
                         SqlDataReader reader = cmd.ExecuteReader();
                         while (reader.Read())
                         {
-                            NarudzbaHrane a = new NarudzbaHrane(Convert.ToInt32(reader.GetString(0)), reader.GetInt32(1), reader.GetInt32(2));
+                            NarudzbaHrane a = new NarudzbaHrane(Convert.ToInt32(reader.GetString(0)), reader.GetInt32(1));
                             Narudzbe.Add(a);
                         }
                     }
@@ -45,6 +46,39 @@ namespace ProjekatGurmani1.DB
                 Debug.WriteLine("Exception: " + e.Message);
             }
         }
+        public void ucitajNarudzbeKupca(int idKupca)
+        {
+            try
+            {
+                narudzbeKupca = new List<int>();
+                String query = "SELECT * FROM Narudzba WHERE idKupca = @idObj;";
+                DBConnectionString s = new DBConnectionString();
+                using (SqlConnection con = new SqlConnection(s.GetString()))
+                {
+                    con.Open();
+                    if (con.State == System.Data.ConnectionState.Open)
+                    {
+                        SqlCommand cmd = con.CreateCommand();
+                        cmd.CommandText = query;
+                        SqlParameter id = new SqlParameter();
+                        id.Value = idKupca;
+                        id.ParameterName = "idObj";
+                        cmd.Parameters.Add(id);
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            narudzbeKupca.Add(Convert.ToInt32(reader.GetString(0)));
+                        }
+                    }
+                    con.Close();
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine("Exception: " + e.Message);
+            }
+        }
+
         public int brisiNarudzbu(NarudzbaHrane a)
         {
             try
@@ -56,7 +90,7 @@ namespace ProjekatGurmani1.DB
                     SqlCommand cmd = con.CreateCommand();
                     cmd.CommandText = query;
                     SqlParameter id = new SqlParameter();
-                    id.Value = a.idNarudzbe;
+                    id.Value = Convert.ToString(a.idNarudzbe);
                     id.ParameterName = "id";
                     cmd.Parameters.Add(id);
                     con.Open();
@@ -78,7 +112,7 @@ namespace ProjekatGurmani1.DB
             try
             {
                 String query = "insert into NarudzbaHrane " +
-                    "values (@id,@idKupca,@idObjekta)";
+                    "values (@id,@idKupca)";
                 DBConnectionString s = new DBConnectionString();
                 using (SqlConnection con = new SqlConnection(s.GetString()))
                 {
@@ -86,20 +120,16 @@ namespace ProjekatGurmani1.DB
                     cmd.CommandText = query;
 
                     SqlParameter id = new SqlParameter();
-                    id.Value = a.idNarudzbe;
+                    id.Value = Convert.ToString(a.idNarudzbe);
                     id.ParameterName = "id";
 
                     SqlParameter idKupca = new SqlParameter();
                     idKupca.Value = a.idKupca;
                     idKupca.ParameterName = "idKupca";
-
-                    SqlParameter idObjekta = new SqlParameter();
-                    idObjekta.Value = a.idObjekta;
-                    idObjekta.ParameterName = "idObjekta";
+                    
 
                     cmd.Parameters.Add(id);
                     cmd.Parameters.Add(idKupca);
-                    cmd.Parameters.Add(idObjekta);
 
                     int k = cmd.ExecuteNonQuery();
                     cmd.Dispose();

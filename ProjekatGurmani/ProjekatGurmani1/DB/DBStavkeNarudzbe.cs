@@ -56,7 +56,7 @@ namespace ProjekatGurmani1.DB
                     SqlCommand cmd = con.CreateCommand();
                     cmd.CommandText = query;
                     SqlParameter id = new SqlParameter();
-                    id.Value = a.idNarudzbe;
+                    id.Value = Convert.ToString(a.idNarudzbe);
                     id.ParameterName = "id";
                     cmd.Parameters.Add(id);
                     con.Open();
@@ -86,7 +86,7 @@ namespace ProjekatGurmani1.DB
                     cmd.CommandText = query;
 
                     SqlParameter id = new SqlParameter();
-                    id.Value = a.idNarudzbe;
+                    id.Value = Convert.ToString(a.idNarudzbe);
                     id.ParameterName = "id";
 
                     SqlParameter idKupca = new SqlParameter();

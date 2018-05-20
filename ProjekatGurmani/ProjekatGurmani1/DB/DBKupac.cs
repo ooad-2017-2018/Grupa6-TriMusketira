@@ -16,7 +16,7 @@ namespace ProjekatGurmani1.DB
         {
             Kupci = new List<Kupac>();
         }
-        public void ucitajKupace()
+        public void ucitajKupce()
         {
             try
             {
@@ -34,6 +34,9 @@ namespace ProjekatGurmani1.DB
                         while (reader.Read())
                         {
                             Kupac a = new Kupac(Convert.ToInt32(reader.GetString(0)), reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetString(4), reader.GetString(5), reader.GetString(6), reader.GetString(7), reader.GetString(8));
+                            DBNarudzba n = new DBNarudzba();
+                            n.ucitajNarudzbeKupca(Convert.ToInt32(reader.GetString(0)));
+                            a.narudzbe = n.narudzbeKupca;
                             Kupci.Add(a);
                         }
                     }
@@ -45,7 +48,7 @@ namespace ProjekatGurmani1.DB
                 Debug.WriteLine("Exception: " + e.Message);
             }
         }
-        public int brisiKupaca(Kupac a)
+        public int brisiKupca(Kupac a)
         {
             try
             {
@@ -56,7 +59,7 @@ namespace ProjekatGurmani1.DB
                     SqlCommand cmd = con.CreateCommand();
                     cmd.CommandText = query;
                     SqlParameter id = new SqlParameter();
-                    id.Value = a.id;
+                    id.Value = Convert.ToString(a.id);
                     id.ParameterName = "id";
                     cmd.Parameters.Add(id);
                     con.Open();
@@ -73,7 +76,7 @@ namespace ProjekatGurmani1.DB
                 return 0;
             }
         }
-        public int unesiKupaca(Kupac a)
+        public int unesiKupca(Kupac a)
         {
             try
             {
@@ -86,7 +89,7 @@ namespace ProjekatGurmani1.DB
                     cmd.CommandText = query;
 
                     SqlParameter id = new SqlParameter();
-                    id.Value = a.id;
+                    id.Value = Convert.ToString(a.id);
                     id.ParameterName = "id";
 
                     SqlParameter Ime = new SqlParameter();
