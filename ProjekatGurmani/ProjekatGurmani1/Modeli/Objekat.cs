@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ProjekatGurmani1.Modeli;
+
 
 namespace ProjekatGurmani1.Modeli
 {

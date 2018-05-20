@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ProjekatGurmani1.DB
 {
-    class DBJelo
+    public class DBJelo
     {
         public List<Jelo> Jela { get; set; }
         public List<int> jelaObjekta { get; set; }

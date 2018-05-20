@@ -15,13 +15,13 @@
 
 
         <RelativePanel HorizontalAlignment="Left" Height="891" Margin="599,29,0,0" VerticalAlignment="Top" Width="796" BorderBrush="Green" BorderThickness="20" Background="White">
-            <TextBox HorizontalAlignment="Left" Height="70" Margin="211,256,-155,-143" Text="" VerticalAlignment="Top" Width="380" PlaceholderText="Korisnicko ime ili e-mail" InputScope="EmailNameOrAddress"/>
-            <PasswordBox HorizontalAlignment="Left" Height="73" Margin="216,356,-160,-186" VerticalAlignment="Top" Width="380" PlaceholderText="Sifra"/>
+            <TextBox x:Name="tekstic" HorizontalAlignment="Left" Height="70" Margin="211,256,-155,-143" Text="" VerticalAlignment="Top" Width="380" PlaceholderText="Korisnicko ime ili e-mail" InputScope="EmailNameOrAddress" TextChanged="TextBox_TextChanged"/>
+            <PasswordBox x:Name="sifricaa" HorizontalAlignment="Left" Height="73" Margin="216,356,-160,-186" VerticalAlignment="Top" Width="380" PlaceholderText="Sifra"/>
             <Button Content="Prijavite se kao gost" HorizontalAlignment="Stretch" Height="50" VerticalAlignment="Top" Margin="286,641,-529,-658" Background="White" BorderBrush="Green" Foreground="Green" FontSize="24" FontWeight="Bold" RenderTransformOrigin="0.554,-0.526" Click="Button_Click"/>
             <TextBlock HorizontalAlignment="Left" Height="27" Margin="176,721,-506,-728" Text="Prijavom kao gost ne ostvarujete pravo na ikakve popuste" TextWrapping="Wrap" VerticalAlignment="Top" Width="392" Foreground="Green"/>
             <HyperlinkButton Content="Zaboravili ste sifru?" HorizontalAlignment="Left" Height="35" Margin="496,556,-558,-559" VerticalAlignment="Top" Width="170" Foreground="Green" FontFamily="Segoe UI"/>
-            <Button Content="Prijava" HorizontalAlignment="Stretch" Height="50" VerticalAlignment="Top" Margin="210,471,-586,-488" Background="Green" Foreground="White" FontSize="24" FontWeight="Bold"/>
-            <HyperlinkButton Content="Registrujte se" HorizontalAlignment="Left" Height="70" Margin="216,546,-223,-584" VerticalAlignment="Top" Width="100" Foreground="Green" FontFamily="Segoe UI" RenderTransformOrigin="-0.705,0.506"/>
+            <Button Content="Prijava" HorizontalAlignment="Stretch" Height="50" VerticalAlignment="Top" Margin="210,471,-586,-488" Background="Green" Foreground="White" FontSize="24" FontWeight="Bold" Click="Button_Click_1"/>
+            <HyperlinkButton Content="Registrujte se" HorizontalAlignment="Left" Height="70" Margin="216,546,-223,-584" VerticalAlignment="Top" Width="100" Foreground="Green" FontFamily="Segoe UI" RenderTransformOrigin="-0.705,0.506" Click="HyperlinkButton_Click"/>
         </RelativePanel>
 
         <RelativePanel HorizontalAlignment="Left" Height="195" Margin="698,10,0,0" VerticalAlignment="Top" Width="567">

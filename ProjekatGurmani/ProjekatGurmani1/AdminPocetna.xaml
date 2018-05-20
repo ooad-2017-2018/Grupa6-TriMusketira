@@ -25,11 +25,11 @@
         <TextBox HorizontalAlignment="Left" Margin="53,148,0,0" Text="Zahtjevi za registraciju:" VerticalAlignment="Top" Width="675" IsReadOnly="True" FocusVisualPrimaryBrush="White" Background="White" Height="42"/>
         <Button Content="Prijavljeni kupci" HorizontalAlignment="Left" Margin="859,46,0,0" VerticalAlignment="Top" Height="77" Width="488" Background="White" FontSize="36"/>
         <Button Content="Prijavljeni objekti" HorizontalAlignment="Left" Margin="863,156,0,0" VerticalAlignment="Top" Height="77" Width="483" Background="White" FontSize="36"/>
-        <Button Content="Pregled kupaca" HorizontalAlignment="Left" Margin="865,268,0,0" VerticalAlignment="Top" Height="77" Width="475" Background="White" FontSize="36"/>
-        <Button Content="Pregled objekata" HorizontalAlignment="Left" Margin="865,389,0,0" VerticalAlignment="Top" Height="76" Width="475" Background="White" FontSize="36"/>
-        <Button Content="Obriši kupca" HorizontalAlignment="Left" Margin="865,509,0,0" VerticalAlignment="Top" Height="76" Width="475" Background="White" FontSize="36"/>
-        <Button Content="Obriši objekat" HorizontalAlignment="Left" Margin="865,617,0,0" VerticalAlignment="Top" Height="76" Width="475" Background="White" FontSize="36"/>
-        <Button Content="Odjavi se" HorizontalAlignment="Left" Margin="863,868,0,0" VerticalAlignment="Top" Width="473" Height="70" Background="White" FontSize="36"/>
+        <Button Content="Pregled kupaca" HorizontalAlignment="Left" Margin="865,268,0,0" VerticalAlignment="Top" Height="77" Width="475" Background="White" FontSize="36" Click="Button_Click"/>
+        <Button Content="Pregled objekata" HorizontalAlignment="Left" Margin="865,389,0,0" VerticalAlignment="Top" Height="76" Width="475" Background="White" FontSize="36" Click="Button_Click_1"/>
+        <Button Content="Obriši kupca" HorizontalAlignment="Left" Margin="865,509,0,0" VerticalAlignment="Top" Height="76" Width="475" Background="White" FontSize="36" Click="Button_Click_2"/>
+        <Button Content="Obriši objekat" HorizontalAlignment="Left" Margin="865,617,0,0" VerticalAlignment="Top" Height="76" Width="475" Background="White" FontSize="36" Click="Button_Click_4"/>
+        <Button Content="Odjavi se" HorizontalAlignment="Left" Margin="863,868,0,0" VerticalAlignment="Top" Width="473" Height="70" Background="White" FontSize="36" Click="Button_Click_3"/>
 
     </Grid>
 </Page>

@@ -18,17 +18,17 @@
 
 
         </RelativePanel>
-        <TextBox HorizontalAlignment="Left" Height="40" Margin="110,420,0,0" Text="" VerticalAlignment="Top" Width="370" PlaceholderText="Unesite prezime"/>
-        <TextBox HorizontalAlignment="Left" Height="40" Margin="115,325,0,0" Text="" VerticalAlignment="Top" Width="365" PlaceholderText="Unesite ime"/>
-        <TextBox HorizontalAlignment="Left" Height="40" Margin="110,495,0,0" Text="" VerticalAlignment="Top" Width="370" PlaceholderText="Adresa stanovanja"/>
-        <TextBox HorizontalAlignment="Left" Height="40" Margin="115,580,0,0" Text="" VerticalAlignment="Top" Width="370" PlaceholderText="Broj telefona/mobitela" InputScope="TelephoneNumber"/>
-        <TextBox HorizontalAlignment="Left" Height="40" Margin="840,325,0,0" Text="" VerticalAlignment="Top" Width="375" PlaceholderText="Korisnicko ime" RenderTransformOrigin="0.66,0.645"/>
-        <TextBox HorizontalAlignment="Left" Height="40" Margin="845,415,0,0" Text="" VerticalAlignment="Top" Width="375" PlaceholderText="Email"/>
-        <PasswordBox HorizontalAlignment="Left" Height="45" Margin="845,490,0,0" VerticalAlignment="Top" Width="370" PlaceholderText="Sifra"/>
-        <Button BorderBrush="White" BorderThickness="4" Content="Registrujte se" HorizontalAlignment="Stretch" Height="50" VerticalAlignment="Top" Margin="410,750,440,0" Background="Green" Foreground="#FFF8F9F7" FontSize="24" FontWeight="Bold"/>
+        <TextBox x:Name="prezime" HorizontalAlignment="Left" Height="40" Margin="110,420,0,0" Text="" VerticalAlignment="Top" Width="370" PlaceholderText="Unesite prezime"/>
+        <TextBox x:Name="ime" HorizontalAlignment="Left" Height="40" Margin="115,325,0,0" Text="" VerticalAlignment="Top" Width="365" PlaceholderText="Unesite ime"/>
+        <TextBox x:Name="adresa" HorizontalAlignment="Left" Height="40" Margin="110,495,0,0" Text="" VerticalAlignment="Top" Width="370" PlaceholderText="Adresa stanovanja"/>
+        <TextBox x:Name="tel" HorizontalAlignment="Left" Height="40" Margin="115,580,0,0" Text="" VerticalAlignment="Top" Width="370" PlaceholderText="Broj telefona/mobitela" InputScope="TelephoneNumber"/>
+        <TextBox x:Name="username" HorizontalAlignment="Left" Height="40" Margin="840,325,0,0" Text="" VerticalAlignment="Top" Width="375" PlaceholderText="Korisnicko ime" RenderTransformOrigin="0.66,0.645"/>
+        <TextBox x:Name="mail" HorizontalAlignment="Left" Height="40" Margin="845,415,0,0" Text="" VerticalAlignment="Top" Width="375" PlaceholderText="Email"/>
+        <PasswordBox x:Name="sifra1" HorizontalAlignment="Left" Height="45" Margin="845,490,0,0" VerticalAlignment="Top" Width="370" PlaceholderText="Sifra"/>
+        <Button BorderBrush="White" BorderThickness="4" Content="Registrujte se" HorizontalAlignment="Stretch" Height="50" VerticalAlignment="Top" Margin="385,200,465,0" Background="Green" Foreground="#FFF8F9F7" FontSize="24" FontWeight="Bold" Click="Button_Click"/>
         <TextBlock HorizontalAlignment="Left" Height="45" Margin="485,695,0,0" Text="Registrovanjem prihvatite" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Foreground="#FFF0E4E4"/>
         <HyperlinkButton Content="uslove i pravila koristenja" HorizontalAlignment="Left" Height="35" Margin="660,685,0,0" VerticalAlignment="Top" Width="170" Foreground="#FFFF3414" FontFamily="Segoe UI" RenderTransformOrigin="0.582,4.143"/>
-        <PasswordBox HorizontalAlignment="Left" Height="45" Margin="843,575,0,0" VerticalAlignment="Top" Width="372" PlaceholderText="Sifra"/>
+        <PasswordBox x:Name="sifra2" HorizontalAlignment="Left" Height="45" Margin="843,575,0,0" VerticalAlignment="Top" Width="372" PlaceholderText="Sifra"/>
 
         <RelativePanel HorizontalAlignment="Left" Height="230" Margin="505,35,0,0" VerticalAlignment="Top" Width="535">
             <RelativePanel.Background>

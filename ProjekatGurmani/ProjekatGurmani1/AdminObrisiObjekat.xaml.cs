@@ -12,6 +12,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using ProjekatGurmani1.DB;
+using ProjekatGurmani1.Modeli;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -39,7 +41,13 @@ namespace ProjekatGurmani1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            DBObjekat objekatBaza = new DBObjekat();
 
+            objekatBaza.ucitajObjekte();
+            foreach (Objekat k in objekatBaza.Objekti)
+            {
+                if (ime.Text == k.ime + " " + k.prezime) objekatBaza.brisiObjekat(k);
+            }
         }
     }
 }

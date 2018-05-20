@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using ProjekatGurmani1.Modeli;
 using System.Threading.Tasks;
 
 namespace ProjekatGurmani1.Modeli

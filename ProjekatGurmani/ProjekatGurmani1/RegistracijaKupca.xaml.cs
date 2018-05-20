@@ -12,6 +12,9 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using ProjekatGurmani1.DB;
+using ProjekatGurmani1.Modeli;
+using Windows.UI.Popups;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -25,6 +28,30 @@ namespace ProjekatGurmani1
         public RegistracijaKupca()
         {
             this.InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            DBKupac kupacBaza = new DBKupac();
+            Kupac k = new Kupac();
+
+            k.ime = ime.Text;
+            k.prezime = prezime.Text;
+            k.telefon = tel.Text;
+            k.adresa = adresa.Text;
+            k.email = mail.Text;
+            if(sifra1.TextReadingOrder.ToString().Equals(sifra2.TextReadingOrder.ToString()))
+            k.password = sifra1.TextReadingOrder.ToString();
+            else
+            {
+                var messageDialog = new MessageDialog("Nije ista sifra!");
+                messageDialog.ShowAsync();
+            }
+
+            var messageDialog1 = new MessageDialog("Uspjesna registracija!");
+            messageDialog1.ShowAsync();
+
+            kupacBaza.unesiKupca(k);
         }
     }
 }

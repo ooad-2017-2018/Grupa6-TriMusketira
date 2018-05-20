@@ -21,7 +21,7 @@
             </Image.FocusVisualPrimaryBrush>
         </Image>
         <ListView HorizontalAlignment="Left" Height="660" Margin="53,280,0,0" VerticalAlignment="Top" Width="762" Background="#B2FFFFFF"/>
-        <TextBox HorizontalAlignment="Left" Margin="55,200,0,0" VerticalAlignment="Top" Width="760" IsReadOnly="True" FocusVisualPrimaryBrush="White" Background="White" Height="67"/>
+        <TextBox x:Name="imeKupca" HorizontalAlignment="Left" Margin="55,200,0,0" VerticalAlignment="Top" Width="760" IsReadOnly="True" FocusVisualPrimaryBrush="White" Background="White" Height="67"/>
         <Button Content="Obrisi" HorizontalAlignment="Left" Margin="927,865,0,0" VerticalAlignment="Top" Width="473" Height="70" Background="White" FontSize="36" Click="Button_Click"/>
         <TextBlock HorizontalAlignment="Left" Height="46" Margin="70,148,0,0" Text="Upisati ime korisnika za brisanje:" TextWrapping="Wrap" VerticalAlignment="Top" Width="617" FontSize="36" FocusVisualSecondaryBrush="#99F1DEDE" Foreground="White"/>
 

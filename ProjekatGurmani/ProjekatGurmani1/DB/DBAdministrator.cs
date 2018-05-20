@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ProjekatGurmani1.DB
 {
-    class DBAdministrator
+    public class DBAdministrator
     {
         public List<Administrator> Administratori { get; set; }
         public DBAdministrator()
