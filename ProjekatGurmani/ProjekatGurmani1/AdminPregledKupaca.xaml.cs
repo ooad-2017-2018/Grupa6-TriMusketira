@@ -45,5 +45,14 @@ namespace ProjekatGurmani1
             
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RelativePanel_PointerPressed(object sender, PointerRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Admin_pocetna));
+        }
     }
 }

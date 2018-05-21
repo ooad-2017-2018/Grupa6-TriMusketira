@@ -62,5 +62,10 @@ namespace ProjekatGurmani1
         {
             this.Frame.Navigate(typeof(AdminObrisiObjekat));
         }
+
+        private void RelativePanel_PointerPressed(object sender, PointerRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage));
+        }
     }
 }

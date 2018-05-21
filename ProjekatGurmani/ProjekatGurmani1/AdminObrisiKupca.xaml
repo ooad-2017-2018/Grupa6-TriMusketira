@@ -9,27 +9,27 @@
 
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="Slike/Pozadina2.jpg" Opacity="1"/>
+            <ImageBrush ImageSource="Slika/Pozadina1.jpg" Opacity="1"/>
         </Grid.Background>
-        <Rectangle HorizontalAlignment="Left" Height="960" Margin="18,21,0,0" VerticalAlignment="Top" Width="1463" Fill="#CC004221"/>
+        <Rectangle HorizontalAlignment="Left" Height="655" Margin="25,15,0,0" VerticalAlignment="Top" Width="1175" Fill="#CC004221"/>
         <Image HorizontalAlignment="Left" Height="72" Margin="50,48,0,0" VerticalAlignment="Top" Width="110" RenderTransformOrigin="0.5,0.45" Source="Slike/Jelovnik1.jpg">
             <Image.FocusVisualSecondaryBrush>
-                <ImageBrush ImageSource="Slike/Jelovnik1.jpg"/>
+                <ImageBrush ImageSource="Slika/Jelovnik1.jpg"/>
             </Image.FocusVisualSecondaryBrush>
             <Image.FocusVisualPrimaryBrush>
                 <ImageBrush ImageSource="Slike/Jelovnik1.jpg"/>
             </Image.FocusVisualPrimaryBrush>
         </Image>
-        <ListView HorizontalAlignment="Left" Height="660" Margin="53,280,0,0" VerticalAlignment="Top" Width="762" Background="#B2FFFFFF"/>
+        <ListView HorizontalAlignment="Left" Height="295" Margin="53,295,0,0" VerticalAlignment="Top" Width="762" Background="#B2FFFFFF"/>
         <TextBox x:Name="imeKupca" HorizontalAlignment="Left" Margin="55,200,0,0" VerticalAlignment="Top" Width="760" IsReadOnly="True" FocusVisualPrimaryBrush="White" Background="White" Height="67"/>
-        <Button Content="Obrisi" HorizontalAlignment="Left" Margin="927,865,0,0" VerticalAlignment="Top" Width="473" Height="70" Background="White" FontSize="36" Click="Button_Click"/>
+        <Button Content="Obrisi" HorizontalAlignment="Left" Margin="865,530,0,0" VerticalAlignment="Top" Width="295" Height="70" Background="White" FontSize="36" Click="Button_Click"/>
         <TextBlock HorizontalAlignment="Left" Height="46" Margin="70,148,0,0" Text="Upisati ime korisnika za brisanje:" TextWrapping="Wrap" VerticalAlignment="Top" Width="617" FontSize="36" FocusVisualSecondaryBrush="#99F1DEDE" Foreground="White"/>
 
         <Ellipse HorizontalAlignment="Left" Height="109" Margin="-200,21,0,0" VerticalAlignment="Top" Width="885" Fill="White" Stroke="#FF0DAA15"  />
         <Ellipse HorizontalAlignment="Left" Height="109" Margin="-290,26,0,0" VerticalAlignment="Top" Width="885" Fill="White" Stroke="#FF0DAA15"  />
         <RelativePanel HorizontalAlignment="Left" Height="74" Margin="26,40,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="1.12,0.52">
             <RelativePanel.Background>
-                <ImageBrush Stretch="Fill" ImageSource="Slike/BackIcon.png"/>
+                <ImageBrush Stretch="Fill" ImageSource="Slika/BackIcon.png"/>
             </RelativePanel.Background>
         </RelativePanel>
         <TextBlock HorizontalAlignment="Left" Height="73" Margin="163,51,0,0" Text="Obrisi kupca" TextWrapping="Wrap" VerticalAlignment="Top" Width="411" FontSize="48" FocusVisualSecondaryBrush="#99F1DEDE" Foreground="#FF669E37" SelectionHighlightColor="#FFBBDE43" FontWeight="Bold" SelectionChanged="TextBlock_SelectionChanged"/>

@@ -9,9 +9,12 @@
 
     <Grid>
         <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="Slike/PizzaIHamburger.jpg"/>
+            <ImageBrush Stretch="Fill" ImageSource="Slika/PizzaIHamburger.jpg"/>
         </Grid.Background>
-        <RelativePanel HorizontalAlignment="Left" Height="905" Margin="50,35,0,0" VerticalAlignment="Top" Width="1430" Background="#FF006633" Opacity="0.8">
+        <RelativePanel HorizontalAlignment="Left" Height="645" Margin="49,35,0,0" VerticalAlignment="Top" Width="1160" Background="#FF006633" Opacity="0.8" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <RelativePanel.RenderTransform>
+                <CompositeTransform SkewX="0.251" TranslateX="1.98"/>
+            </RelativePanel.RenderTransform>
             <TextBox HorizontalAlignment="Left" Height="50" Margin="410,150,-685,-168" Text="" VerticalAlignment="Top" Width="345"/>
             <TextBox HorizontalAlignment="Left" Height="40" Margin="410,295,-685,-303" Text="" VerticalAlignment="Top" Width="345"/>
             <TextBox HorizontalAlignment="Left" Height="40" Margin="410,205,-685,-213" Text="" VerticalAlignment="Top" Width="345"/>
@@ -43,10 +46,10 @@
             </RelativePanel.Background>
         </RelativePanel>
         <TextBlock HorizontalAlignment="Left" Height="50" Margin="151,75,0,0" Text="Uredi profil" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" FontSize="36" FontWeight="Bold"  Foreground="#FF0F9115"/>
-        <Button Content="Dodaj sliku..." HorizontalAlignment="Left" Height="50" Margin="75,400,0,0" VerticalAlignment="Top" Width="245" FontSize="24" Foreground="White" Background="#33639527" BorderBrush="White"  BorderThickness="4"/>
+        <Button Content="Dodaj sliku..." HorizontalAlignment="Left" Height="50" Margin="75,400,0,0" VerticalAlignment="Top" Width="200" FontSize="24" Foreground="White" Background="#33639527" BorderBrush="White"  BorderThickness="4"/>
         <Button Content="Deaktivacija" HorizontalAlignment="Left" Height="50" Margin="500,840,0,0" VerticalAlignment="Top" Width="400" FontSize="24" Foreground="White" Background="#33639527" BorderBrush="White"  BorderThickness="4"/>
         <Button Content="Sacuvaj" HorizontalAlignment="Left" Height="50" Margin="1025,840,0,0" VerticalAlignment="Top" Width="365" FontSize="24" Foreground="White" Background="#33639527" BorderBrush="White"  BorderThickness="4"/>
-        <RelativePanel HorizontalAlignment="Left" Height="540" Margin="1005,80,0,0" VerticalAlignment="Top" Width="405" Background="#FFF7F5F5">
+        <RelativePanel HorizontalAlignment="Left" Height="540" Margin="820,80,0,0" VerticalAlignment="Top" Width="370" Background="#FFF7F5F5">
             <TextBlock HorizontalAlignment="Left" Height="65" Margin="97,5,-340,-50" Text="Informacije o vasem lokalu (koje ste vi unijeli):" TextWrapping="Wrap" VerticalAlignment="Top" Width="305" Foreground="#FF0A7A0F" FontSize="20" FontWeight="Bold"/>
             <Image HorizontalAlignment="Left" Height="70" Margin="0,0,-75,-70" VerticalAlignment="Top" Width="75" Source="Slike/informacije.png"/>
         </RelativePanel>

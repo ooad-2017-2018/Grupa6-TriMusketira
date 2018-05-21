@@ -9,41 +9,41 @@
 
     <Grid >
         <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="Slike/Pozadina1.jpg"/>
+            <ImageBrush Stretch="Fill" ImageSource="Slika/Pozadina1.jpg"/>
         </Grid.Background>
 
 
 
-        <RelativePanel HorizontalAlignment="Left" Height="760" Margin="25,100,0,0" VerticalAlignment="Top" Width="1420" BorderBrush="White" BorderThickness="20" Background="Green" Opacity="0.78">
+        <RelativePanel HorizontalAlignment="Left" Height="635" Margin="60,20,0,0" VerticalAlignment="Top" Width="1145" BorderBrush="White" BorderThickness="20" Background="Green" Opacity="0.78">
 
 
         </RelativePanel>
-        <TextBox x:Name="prezime" HorizontalAlignment="Left" Height="40" Margin="110,420,0,0" Text="" VerticalAlignment="Top" Width="370" PlaceholderText="Unesite prezime"/>
-        <TextBox x:Name="ime" HorizontalAlignment="Left" Height="40" Margin="115,325,0,0" Text="" VerticalAlignment="Top" Width="365" PlaceholderText="Unesite ime"/>
-        <TextBox x:Name="adresa" HorizontalAlignment="Left" Height="40" Margin="110,495,0,0" Text="" VerticalAlignment="Top" Width="370" PlaceholderText="Adresa stanovanja"/>
-        <TextBox x:Name="tel" HorizontalAlignment="Left" Height="40" Margin="115,580,0,0" Text="" VerticalAlignment="Top" Width="370" PlaceholderText="Broj telefona/mobitela" InputScope="TelephoneNumber"/>
-        <TextBox x:Name="username" HorizontalAlignment="Left" Height="40" Margin="840,325,0,0" Text="" VerticalAlignment="Top" Width="375" PlaceholderText="Korisnicko ime" RenderTransformOrigin="0.66,0.645"/>
-        <TextBox x:Name="mail" HorizontalAlignment="Left" Height="40" Margin="845,415,0,0" Text="" VerticalAlignment="Top" Width="375" PlaceholderText="Email"/>
-        <PasswordBox x:Name="sifra1" HorizontalAlignment="Left" Height="45" Margin="845,490,0,0" VerticalAlignment="Top" Width="370" PlaceholderText="Sifra"/>
-        <Button BorderBrush="White" BorderThickness="4" Content="Registrujte se" HorizontalAlignment="Stretch" Height="50" VerticalAlignment="Top" Margin="385,200,465,0" Background="Green" Foreground="#FFF8F9F7" FontSize="24" FontWeight="Bold" Click="Button_Click"/>
-        <TextBlock HorizontalAlignment="Left" Height="45" Margin="485,695,0,0" Text="Registrovanjem prihvatite" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Foreground="#FFF0E4E4"/>
-        <HyperlinkButton Content="uslove i pravila koristenja" HorizontalAlignment="Left" Height="35" Margin="660,685,0,0" VerticalAlignment="Top" Width="170" Foreground="#FFFF3414" FontFamily="Segoe UI" RenderTransformOrigin="0.582,4.143"/>
-        <PasswordBox x:Name="sifra2" HorizontalAlignment="Left" Height="45" Margin="843,575,0,0" VerticalAlignment="Top" Width="372" PlaceholderText="Sifra"/>
+        <TextBox x:Name="prezime" HorizontalAlignment="Left" Height="40" Margin="195,300,0,0" Text="" VerticalAlignment="Top" Width="370" PlaceholderText="Unesite prezime" RenderTransformOrigin="0.527,0.5"/>
+        <TextBox x:Name="ime" HorizontalAlignment="Left" Height="40" Margin="205,235,0,0" Text="" VerticalAlignment="Top" Width="365" PlaceholderText="Unesite ime"/>
+        <TextBox x:Name="adresa" HorizontalAlignment="Left" Height="40" Margin="200,360,0,0" Text="" VerticalAlignment="Top" Width="370" PlaceholderText="Adresa stanovanja"/>
+        <TextBox x:Name="tel" HorizontalAlignment="Left" Height="40" Margin="205,425,0,0" Text="" VerticalAlignment="Top" Width="370" PlaceholderText="Broj telefona/mobitela" InputScope="TelephoneNumber"/>
+        <TextBox x:Name="username" HorizontalAlignment="Left" Height="40" Margin="715,240,0,0" Text="" VerticalAlignment="Top" Width="375" PlaceholderText="Korisnicko ime" RenderTransformOrigin="0.66,0.645"/>
+        <TextBox x:Name="mail" HorizontalAlignment="Left" Height="40" Margin="715,295,0,0" Text="" VerticalAlignment="Top" Width="375" PlaceholderText="Email" RenderTransformOrigin="0.067,-0.375"/>
+        <PasswordBox x:Name="sifra1" HorizontalAlignment="Left" Height="45" Margin="715,345,0,0" VerticalAlignment="Top" Width="370" PlaceholderText="Sifra"/>
+        <Button BorderBrush="White" BorderThickness="4" Content="Registrujte se" HorizontalAlignment="Stretch" Height="50" VerticalAlignment="Top" Margin="380,545,415,0" Background="Green" Foreground="#FFF8F9F7" FontSize="24" FontWeight="Bold" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="45" Margin="465,495,0,0" Text="Registrovanjem prihvatite" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Foreground="#FFF0E4E4"/>
+        <HyperlinkButton Content="uslove i pravila koristenja" HorizontalAlignment="Left" Height="35" Margin="645,490,0,0" VerticalAlignment="Top" Width="170" Foreground="#FFFF3414" FontFamily="Segoe UI" RenderTransformOrigin="0.582,4.143"/>
+        <PasswordBox x:Name="sifra2" HorizontalAlignment="Left" Height="45" Margin="715,410,0,0" VerticalAlignment="Top" Width="372" PlaceholderText="Sifra"/>
 
-        <RelativePanel HorizontalAlignment="Left" Height="230" Margin="505,35,0,0" VerticalAlignment="Top" Width="535">
+        <RelativePanel HorizontalAlignment="Left" Height="230" Margin="370,-40,0,0" VerticalAlignment="Top" Width="535">
             <RelativePanel.Background>
                 <ImageBrush Stretch="Fill" ImageSource="Slike/GurmaniLogo.png"/>
             </RelativePanel.Background>
             <RelativePanel HorizontalAlignment="Left" Height="0" VerticalAlignment="Top" Width="0"/>
         </RelativePanel>
         <FlipView HorizontalAlignment="Left" Height="195.2" VerticalAlignment="Top" Width="0"/>
-        <Ellipse HorizontalAlignment="Left" Height="95" Margin="-256,123,0,0" VerticalAlignment="Top" Width="605" Fill="White" Stroke="#FF0DAA15"  />
-        <RelativePanel HorizontalAlignment="Left" Height="74" Margin="5,132,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="1.12,0.52">
+        <Ellipse HorizontalAlignment="Left" Height="95" Margin="-255,75,0,0" VerticalAlignment="Top" Width="605" Fill="White" Stroke="#FF0DAA15"  />
+        <RelativePanel HorizontalAlignment="Left" Height="74" Margin="10,81,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="1.12,0.52">
             <RelativePanel.Background>
-                <ImageBrush Stretch="Fill" ImageSource="Slike/BackIcon.png"/>
+                <ImageBrush Stretch="Fill" ImageSource="Slika/BackIcon.png"/>
             </RelativePanel.Background>
         </RelativePanel>
-        <TextBlock HorizontalAlignment="Left" Height="60" Margin="118,145,0,0" Text="Registracija" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize="36" FontWeight="Bold"  Foreground="#FF0F9115"/>
+        <TextBlock HorizontalAlignment="Left" Height="60" Margin="105,97,0,0" Text="Registracija" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize="36" FontWeight="Bold"  Foreground="#FF0F9115"/>
 
 
     </Grid>

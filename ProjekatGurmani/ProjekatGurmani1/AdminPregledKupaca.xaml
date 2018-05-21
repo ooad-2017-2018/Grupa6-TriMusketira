@@ -9,10 +9,10 @@
 
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="Slike/Pozadina2.jpg"/>
+            <ImageBrush ImageSource="Slika/Pozadina2.jpg"/>
         </Grid.Background>
-        <Rectangle HorizontalAlignment="Left" Height="960" Margin="18,21,0,0" VerticalAlignment="Top" Width="1457" Fill="#CC004221"/>
-        <Rectangle HorizontalAlignment="Left" Height="87" Margin="37,38,0,0" VerticalAlignment="Top" Width="814" Fill="White"/>
+        <Rectangle HorizontalAlignment="Left" Height="630" Margin="20,30,0,0" VerticalAlignment="Top" Width="1185" Fill="#CC004221"/>
+        <Rectangle HorizontalAlignment="Left" Height="70" Margin="105,55,0,0" VerticalAlignment="Top" Width="600" Fill="White"/>
         <Image HorizontalAlignment="Left" Height="72" Margin="45,48,0,0" VerticalAlignment="Top" Width="93" RenderTransformOrigin="0.5,0.45" Source="Slike/Jelovnik1.jpg">
             <Image.FocusVisualSecondaryBrush>
                 <ImageBrush ImageSource="Slike/Jelovnik1.jpg"/>
@@ -21,15 +21,15 @@
                 <ImageBrush ImageSource="Slike/Jelovnik1.jpg"/>
             </Image.FocusVisualPrimaryBrush>
         </Image>
-        <ListView HorizontalAlignment="Left" Height="727" Margin="48,213,0,0" VerticalAlignment="Top" Width="890" Background="#B2FFFFFF"/>
-        <TextBox HorizontalAlignment="Left" Margin="48,148,0,0" Text="Narudzbe:" VerticalAlignment="Top" Width="896" IsReadOnly="True" FocusVisualPrimaryBrush="White" Background="White" Height="42" FontSize="24"/>
-        <TextBlock HorizontalAlignment="Left" Margin="169,47,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="53" Width="470" FontSize="36"/>
-        <Rectangle HorizontalAlignment="Left" Height="83" Margin="872,39,0,0" VerticalAlignment="Top" Width="61" FocusVisualPrimaryBrush="#FFEBEBF0" Fill="#FFF3F0F0"/>
-        <ListView HorizontalAlignment="Left" Height="206" Margin="981,120,0,0" VerticalAlignment="Top" Width="464" Background="#99F5EEEE"/>
-        <TextBlock HorizontalAlignment="Left" Margin="984,50,0,0" Text="Prijave:" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="464" FocusVisualPrimaryBrush="#FFF3F2F2" FontSize="36"/>
-        <Button Content="Deaktiviraj" HorizontalAlignment="Left" Margin="978,722,0,0" VerticalAlignment="Top" Height="90" Width="457" Background="#FFEEE9E9" FontSize="36"/>
-        <Button Content="Nazad" HorizontalAlignment="Left" Margin="980,838,0,0" VerticalAlignment="Top" Height="91" Width="457" Background="#FFEEE9E9" FontSize="36"/>
-        <Image HorizontalAlignment="Left" Height="330" Margin="986,356,0,0" VerticalAlignment="Top" Width="453" FocusVisualPrimaryBrush="#FF5D5555"/>
+        <ListView HorizontalAlignment="Left" Height="402" Margin="108,213,0,0" VerticalAlignment="Top" Width="607" Background="#B2FFFFFF"/>
+        <TextBox HorizontalAlignment="Left" Margin="100,148,0,0" Text="" VerticalAlignment="Top" Width="610" IsReadOnly="True" FocusVisualPrimaryBrush="White" Background="White" Height="52" FontSize="24" PlaceholderText="Narudzbe"/>
+        <TextBlock HorizontalAlignment="Left" Margin="169,60,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="470" FontSize="36"/>
+        <Rectangle HorizontalAlignment="Left" Height="83" Margin="735,57,0,0" VerticalAlignment="Top" Width="61" FocusVisualPrimaryBrush="#FFEBEBF0" Fill="#FFF3F0F0"/>
+        <ListView HorizontalAlignment="Left" Height="170" Margin="811,160,0,0" VerticalAlignment="Top" Width="314" Background="#99F5EEEE"/>
+        <TextBlock HorizontalAlignment="Left" Margin="820,87,-4,0" Text="Prijave:" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="464" FocusVisualPrimaryBrush="#FFF3F2F2" FontSize="36"/>
+        <Button Content="Deaktiviraj" HorizontalAlignment="Left" Margin="805,380,0,0" VerticalAlignment="Top" Height="70" Width="297" Background="#FFEEE9E9" FontSize="24"/>
+        <Button Content="Nazad" HorizontalAlignment="Left" Margin="805,480,0,0" VerticalAlignment="Top" Height="71" Width="295" Background="#FFEEE9E9" FontSize="24" RenderTransformOrigin="0.47,-1.132"/>
+        <Image HorizontalAlignment="Left" Height="60" Margin="105,55,0,0" VerticalAlignment="Top" Width="120" Source="Slika/BackIcon.png"/>
 
     </Grid>
 </Page>

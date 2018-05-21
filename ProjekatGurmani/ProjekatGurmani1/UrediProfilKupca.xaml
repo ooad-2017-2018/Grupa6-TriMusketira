@@ -9,9 +9,9 @@
 
     <Grid >
         <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="Slike/PizzaIHamburger.jpg"/>
+            <ImageBrush Stretch="Fill" ImageSource="Slika/PizzaIHamburger.jpg"/>
         </Grid.Background>
-        <RelativePanel HorizontalAlignment="Left" Height="915" Margin="50,25,0,0" VerticalAlignment="Top" Width="1405" BorderBrush="White" Background="#FF006633" Opacity="0.8">
+        <RelativePanel HorizontalAlignment="Left" Height="675" Margin="50,25,0,0" VerticalAlignment="Top" Width="1175" BorderBrush="White" Background="#FF006633" Opacity="0.8">
             <Button Content="Dodaj sliku..." HorizontalAlignment="Left" Height="50" Margin="85,440,-340,-458" VerticalAlignment="Top" Width="320" FontSize="24" Foreground="White" Background="#33639527" BorderBrush="White"  BorderThickness="4"/>
             <TextBox HorizontalAlignment="Left" Height="45" Margin="695,100,-695,-100" Text="" VerticalAlignment="Top" Width="395"/>
             <TextBox HorizontalAlignment="Left" Height="45" Margin="695,165,-695,-165" Text="" VerticalAlignment="Top" Width="395"/>

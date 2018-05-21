@@ -53,5 +53,11 @@ namespace ProjekatGurmani1
 
             kupacBaza.unesiKupca(k);
         }
+
+
+        private void RelativePanel_PointerPressed(object sender, PointerRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Admin_pocetna));
+        }
     }
 }

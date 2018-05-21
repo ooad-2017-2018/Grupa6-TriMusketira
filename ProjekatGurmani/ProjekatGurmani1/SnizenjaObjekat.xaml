@@ -8,19 +8,23 @@
     mc:Ignorable="d">
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="107*"/>
+        </Grid.RowDefinitions>
         <Grid.Background>
-            <ImageBrush ImageSource="Slike/Pozadina3.jpg"/>
+            <ImageBrush ImageSource="Slika/Pozadina3.jpg"/>
         </Grid.Background>
-        <RelativePanel HorizontalAlignment="Left" Height="820" Margin="59,150,0,0" VerticalAlignment="Top" Width="1350" Opacity="0.8" Background="#FF006633">
-            <ListView HorizontalAlignment="Left" Height="463" VerticalAlignment="Top" Width="1133" Margin="93,150,-1226,-613" FocusVisualPrimaryBrush="#FF2C2626" Background="Gray"/>
-            <Button BorderBrush="White" BorderThickness="4" Content="Dodaj" HorizontalAlignment="Stretch" Height="84" VerticalAlignment="Top" Margin="90,627,-1220,-661" Background="#FF006633" Foreground="#FFF8F9F7" FontSize="24" FontWeight="Bold"/>
-            <Button BorderBrush="White" BorderThickness="4" Content="Sacuvaj" HorizontalAlignment="Stretch" Height="70" VerticalAlignment="Top" Margin="843,730,-1223,-750" Background="#FF006633" Foreground="#FFF8F9F7" FontSize="24" FontWeight="Bold"/>
+        <RelativePanel HorizontalAlignment="Left" Height="665" Margin="95,20,0,-685" VerticalAlignment="Top" Width="1051" Opacity="0.8" Background="#FF006633" Grid.RowSpan="2">
+            <ListView HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="878" Margin="93,150,-971,-450" FocusVisualPrimaryBrush="#FF2C2626" Background="Gray"/>
+            <Button BorderBrush="White" BorderThickness="4" Content="Dodaj" HorizontalAlignment="Stretch" Height="59" VerticalAlignment="Top" Margin="35,491,-1010,-500" Background="#FF006633" Foreground="#FFF8F9F7" FontSize="24" FontWeight="Bold"/>
+            <Button BorderBrush="White" BorderThickness="4" Content="Sacuvaj" HorizontalAlignment="Stretch" Height="55" VerticalAlignment="Top" Margin="680,585,-1060,-590" Background="#FF006633" Foreground="#FFF8F9F7" FontSize="24" FontWeight="Bold"/>
         </RelativePanel>
-        <Ellipse HorizontalAlignment="Left" Height="95" Margin="-106,135,0,0" VerticalAlignment="Top" Width="605" Fill="White" Stroke="#FF0DAA15"  />
-        <TextBlock HorizontalAlignment="Left" Height="58" Margin="154,157,0,0" Text="Sniženja" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize="36" FontWeight="Bold"  Foreground="#FF0F9115"/>
-        <RelativePanel HorizontalAlignment="Left" Height="74" Margin="25,146,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="1.12,0.52">
+        <Ellipse HorizontalAlignment="Left" Height="95" Margin="-160,30,0,-125" VerticalAlignment="Top" Width="605" Fill="White" Stroke="#FF0DAA15" Grid.RowSpan="2"  />
+        <TextBlock HorizontalAlignment="Left" Height="58" Margin="175,57,0,-115" Text="Sniženja" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize="36" FontWeight="Bold"  Foreground="#FF0F9115" Grid.RowSpan="2" RenderTransformOrigin="0.446,-0.897"/>
+        <RelativePanel HorizontalAlignment="Left" Height="74" Margin="20,36,0,-110" VerticalAlignment="Top" Width="99" RenderTransformOrigin="1.12,0.52" Grid.RowSpan="2">
             <RelativePanel.Background>
-                <ImageBrush Stretch="Fill" ImageSource="Slike/BackIcon.png"/>
+                <ImageBrush Stretch="Fill" ImageSource="Slika/BackIcon.png"/>
             </RelativePanel.Background>
         </RelativePanel>
 

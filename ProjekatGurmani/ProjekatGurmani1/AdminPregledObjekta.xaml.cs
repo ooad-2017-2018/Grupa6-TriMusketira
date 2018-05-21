@@ -31,5 +31,10 @@ namespace ProjekatGurmani1
 		{
 
 		}
-	}
+
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+    }
 }
