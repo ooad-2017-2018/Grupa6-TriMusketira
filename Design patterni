@@ -1,0 +1,28 @@
+Azra:
+
+1. Singleton patern (kreacijski patern)
+Singleton paterna osigurava da se klasa može instancirati samo jednom i da osigura 
+globalni pristup kreiranoj instanci klase. Primjeri takvih klasa su thread
+pools (skupina niti), objekti koji upravljaju setovanjem registara, objekti koji se koriste za
+logiranje, objekti koji se koriste kao drajveri za razne uređaje kao što su printeri i grafičke
+kartice. Ukolikoje potrebno za postojeću klasu napraviti Singleton klasu, to se može postici na
+nekoliko načina; da se doda privatni konstruktor static, i postavljanje privatne vidljivosti istih,
+dodavanje privatnog static read-only objekta koji se interno instancira korištenjem
+privatnog konstruktora, dodavanje javno vidljive osobine ili metode koja pristupa
+privatnom objektu i instancira ga ako objekat već ne postoji.
+
+2. Prototype patern (kreacijski patern)
+Uloga ovog paterna je da udupla postojeću klasu, ukoliko je ta klasa velika, te njeno kreiranje
+zahtjeva velike resurse. Postoje dva načina implementacije Prototypes paterna: shallow (površinsko)
+i deep(duboko) kopiranje.
+U našem projektu se to moglo uraditiako bismo analizirali prodaje na skupu podataka iz baze. 
+Potrebno bi bilo kopirati podatke iz baze podataka, enkapsulirati ih u objekat i nad njima raditi analizu.
+Nije dobra ideja ponovo pristupati bazi podataka, čitati podatke i kreirati objekat za njihovo smještanje.
+Tada se objekat, koji se koristi za analizu prodaje, klonira i koristi za drugu analizu.
+
+3. Strategy patern (patern ponašanja)
+Uloga ovog paterna je da sve algoritme izdvoji iz glavne klase i stavi ih u posebne klase.
+Najčesće se koristi ako postoji više algoritama za rješavanje nekog problema. On omogućava izbor
+klijentu da izabere neki od algoritama, te su oni neovisni o klijentima koji ih koriste.
+Mi bismo imali klasu UrediProfil, te interfejs IPonasanje, koji implementira konkretne algoritme
+za UrediProfilKupca i UrediProfilObjekta.
