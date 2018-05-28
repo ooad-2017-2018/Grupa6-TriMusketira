@@ -15,7 +15,7 @@ privatnom objektu i instancira ga ako objekat već ne postoji.
 Uloga ovog paterna je da udupla postojeću klasu, ukoliko je ta klasa velika, te njeno kreiranje
 zahtjeva velike resurse. Postoje dva načina implementacije Prototypes paterna: shallow (površinsko)
 i deep(duboko) kopiranje.
-U našem projektu se to moglo uraditiako bismo analizirali prodaje na skupu podataka iz baze. 
+U našem projektu se to moglo uraditi ako bismo analizirali prodaje na skupu podataka iz baze. 
 Potrebno bi bilo kopirati podatke iz baze podataka, enkapsulirati ih u objekat i nad njima raditi analizu.
 Nije dobra ideja ponovo pristupati bazi podataka, čitati podatke i kreirati objekat za njihovo smještanje.
 Tada se objekat, koji se koristi za analizu prodaje, klonira i koristi za drugu analizu.
@@ -26,3 +26,25 @@ Najčesće se koristi ako postoji više algoritama za rješavanje nekog problema
 klijentu da izabere neki od algoritama, te su oni neovisni o klijentima koji ih koriste.
 Mi bismo imali klasu UrediProfil, te interfejs IPonasanje, koji implementira konkretne algoritme
 za UrediProfilKupca i UrediProfilObjekta.
+
+Faris:
+
+1. Factory Method (kreacijski patern)
+Uloga Factory Method paterna je da omogući kreiranje objekata na način da podklase odluče
+koju klasu instancirati. Različite podklase mogu na različite načine implementirati interfejs.
+Factory Method instancira odgovarajuću podklasu(izvedenu klasu) preko posebne metode na
+osnovu informacije od strane klijenta ili na osnovu tekućeg stanja.
+U našem projektu se to moglo uraditi prilikom pripreme i naručivanja hrane(npr. pice). 
+Budući da lanac picerija nudi mogućnost prodaje raznih vrsta pica potrebno je omogućiti kreiranje 
+različitih vrsta pica npr. margarita, capricoza, funghi, ali i instanciranje različitih picerija u 
+lancu. Operacija naručivanje pice je dio klase Objekat.
+
+2. Observer patern (patern ponašanja)
+Uloga Observer paterna je da uspostavi relaciju između objekata tako kada jedan objekat promijeni 
+stanje, drugi zainteresirani objekti se obavještavaju.
+U našem objektu se to moglo uraditi tako da se, kada kupac ostavi odredjeni komentar na narudžbu,
+promijeni atribut komentar u klasi Narudžba i odmah se obavijesti odredjeni Objekat da je njihova narudžba
+komentarisana u svrhu poboljšanja usluge objekata.
+
+3. 
+ 
