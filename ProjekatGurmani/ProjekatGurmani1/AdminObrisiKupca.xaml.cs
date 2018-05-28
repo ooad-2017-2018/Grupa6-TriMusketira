@@ -52,6 +52,11 @@ namespace ProjekatGurmani1
                 if (imeKupca.Text == k.ime + " " + k.prezime) kupacBaza.brisiKupca(k);
             }
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Admin_pocetna));
+        }
     }
 
 }

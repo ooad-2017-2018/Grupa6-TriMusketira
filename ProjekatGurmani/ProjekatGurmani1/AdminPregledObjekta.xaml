@@ -7,7 +7,10 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Slika/Pozadina1.jpg"/>
+        </Grid.Background>
         <Rectangle HorizontalAlignment="Left" Height="670" Margin="25,10,0,0" VerticalAlignment="Top" Width="1180" Fill="#CC004221"/>
         <Rectangle HorizontalAlignment="Left" Height="87" Margin="37,38,0,0" VerticalAlignment="Top" Width="648" Fill="White"/>
         <Image HorizontalAlignment="Left" Height="72" Margin="45,48,0,0" VerticalAlignment="Top" Width="93" RenderTransformOrigin="0.5,0.45" Source="Slike/Jelovnik1.jpg">
@@ -19,16 +22,18 @@
             </Image.FocusVisualPrimaryBrush>
         </Image>
         <ListView HorizontalAlignment="Left" Height="133" Margin="48,232,0,0" VerticalAlignment="Top" Width="542" Background="#B2FFFFFF" SelectionChanged="ListView_SelectionChanged"/>
-        <TextBox HorizontalAlignment="Left" Margin="35,143,0,0" Text="" VerticalAlignment="Top" Width="565" IsReadOnly="True" FocusVisualPrimaryBrush="White" Background="White" Height="67" FontSize="36" PlaceholderText="Narudzbe"/>
+        <TextBox HorizontalAlignment="Left" Margin="35,143,0,0" Text="" VerticalAlignment="Top" Width="565"  FocusVisualPrimaryBrush="White" Background="White" Height="67" FontSize="36" PlaceholderText="Narudzbe"/>
         <TextBlock HorizontalAlignment="Left" Margin="169,47,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="53" Width="470" FontSize="36"/>
         <ListView HorizontalAlignment="Left" Height="327" Margin="726,138,0,0" VerticalAlignment="Top" Width="349" Background="#99F5EEEE"/>
         <TextBlock HorizontalAlignment="Left" Margin="855,55,0,0" Text="Komentari:" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="464" FocusVisualPrimaryBrush="#FFF3F2F2" FontSize="36" SelectionChanged="TextBlock_SelectionChanged"/>
         <Button Content="Deaktiviraj" HorizontalAlignment="Left" Margin="737,540,0,0" VerticalAlignment="Top" Height="75" Width="293" Background="#FFEEE9E9" FontSize="24"/>
         <Button Content="Nazad" HorizontalAlignment="Left" Margin="977,852,0,0" VerticalAlignment="Top" Height="91" Width="463" Background="#FFEEE9E9" FontSize="36"/>
         <TextBox HorizontalAlignment="Left" Margin="725,40,0,0" Text="" VerticalAlignment="Top" Height="82" Width="89" Background="#FFF7F6F6" FontSize="36" IsReadOnly="True"/>
-        <TextBox HorizontalAlignment="Left" Margin="45,380,0,0" Text="" VerticalAlignment="Top" Height="60" Width="545" Background="#FFF7F6F6" FontSize="36" IsReadOnly="True" PlaceholderText="Jela"/>
+        <TextBox HorizontalAlignment="Left" Margin="45,380,0,0" Text="" VerticalAlignment="Top" Height="60" Width="545" Background="#FFF7F6F6" FontSize="36" PlaceholderText="Jela"/>
         <ListView HorizontalAlignment="Left" Height="155" Margin="45,480,0,0" VerticalAlignment="Top" Width="555" Background="#B2FFFFFF"/>
         <Image HorizontalAlignment="Left" Height="70" Margin="50,50,0,0" VerticalAlignment="Top" Width="140" Source="Slika/BackIcon.png"/>
+
+        <Button Content="Button" HorizontalAlignment="Left" Height="95" Margin="20,30,0,0" VerticalAlignment="Top" Width="130" Background="#33008D53" BorderBrush="#FF006100" FocusVisualSecondaryBrush="#9906400D" Opacity="0" Click="Button_Click_1" RenderTransformOrigin="0.731,0.632"/>
 
     </Grid>
 </Page>

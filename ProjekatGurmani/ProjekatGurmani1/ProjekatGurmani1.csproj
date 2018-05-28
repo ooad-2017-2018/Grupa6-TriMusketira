@@ -151,8 +151,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegistracijaKupca.xaml.cs" />
     <Compile Include="SnizenjaObjekat.xaml.cs" />
-    <Compile Include="UrediProfilKupca.xaml.cs" />
-    <Compile Include="UrediProfilObjekta.xaml.cs" />
+    <Compile Include="UrediProfilKupca.xaml.cs">
+      <DependentUpon>UrediProfilKupca.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -257,12 +258,8 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="UrediProfilKupca.xaml">
-      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </Page>
-    <Page Include="UrediProfilObjekta.xaml">
       <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>

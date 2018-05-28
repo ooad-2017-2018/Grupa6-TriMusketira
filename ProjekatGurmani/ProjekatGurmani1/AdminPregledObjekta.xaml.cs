@@ -36,5 +36,10 @@ namespace ProjekatGurmani1
         {
 
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Admin_pocetna));
+        }
     }
 }
