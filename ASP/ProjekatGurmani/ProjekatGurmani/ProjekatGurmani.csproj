@@ -196,14 +196,14 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdministratorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\JeloController.cs" />
+    <Compile Include="Controllers\KupacController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="DB\DBAdministrator.cs" />
-    <Compile Include="DB\DBJelo.cs" />
-    <Compile Include="DB\DBKupac.cs" />
-    <Compile Include="DB\DBNarudzba.cs" />
-    <Compile Include="DB\DBObjekat.cs" />
-    <Compile Include="DB\DBStavkeNarudzbe.cs" />
+    <Compile Include="Controllers\NarudzbaController.cs" />
+    <Compile Include="Controllers\ObjekatController.cs" />
+    <Compile Include="Controllers\StavkeNarudzbeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -288,6 +288,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Jelo\" />
+    <Folder Include="Views\Kupac\" />
+    <Folder Include="Views\Narudzba\" />
+    <Folder Include="Views\Objekat\" />
+    <Folder Include="Views\StavkeNarudzbe\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

@@ -16,7 +16,7 @@ namespace ProjekatGurmani.Models
         public DbSet<Administrator> Administratori { get; set; }
         public DbSet<Kupac> Kupci { get; set; }
         public DbSet<Narudzba> Narudzbe { get; set; }
-        public DbSet<StavkeNarudzbe> stavkeNarudzba { get; set; }
+        public DbSet<StavkeNarudzbe> StavkeNarudzba { get; set; }
         public DbSet<Objekat> Objekti { get; set; }
         public DbSet<Jelo> Jela { get; set; }
         //Ova funkcija se koristi da bi se ukinulo automatsko dodavanje množine u nazive
