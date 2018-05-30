@@ -235,7 +235,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Narudzba.cs" />
     <Compile Include="Models\Objekat.cs" />
-    <Compile Include="Models\StavkaNarudzbe.cs" />
+    <Compile Include="Models\StavkeNarudzbe.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>

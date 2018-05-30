@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -7,13 +8,21 @@ namespace ProjekatGurmani.Models
 {
     public class Korisnik
     {
+        [Display(Name = "Ime")]
         public string ime { get; set; }
+        [Display(Name = "Prezime")]
         public string prezime { get; set; }
+        [Display(Name = "Adresa")]
         public string adresa { get; set; }
+        [Display(Name = "Br. telefona")]
         public string telefon { get; set; }
+        [Display(Name = "Username")]
         public string username { get; set; }
+        [Display(Name = "Password")]
         public string password { get; set; }
+        [Display(Name = "Email")]
         public string email { get; set; }
+        [Display(Name = "Grad")]
         public string grad { get; set; }
 
 

@@ -17,6 +17,7 @@ namespace ProjekatGurmani.Controllers
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
+        private GurmaniContext db = new GurmaniContext();
 
         public AccountController()
         {
@@ -147,29 +148,31 @@ namespace ProjekatGurmani.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Register(RegisterViewModel model)
+        public async Task<ActionResult> Register(RegisterViewModel kupac)
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
-                var result = await UserManager.CreateAsync(user, model.Password);
+                var user = new ApplicationUser { UserName = kupac.Email, Email = kupac.Email };
+                var result = await UserManager.CreateAsync(user, kupac.Password);
                 if (result.Succeeded)
                 {
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
                     
-                    // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
-                    // Send an email with this link
-                    // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
-                    // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
-                    // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
-
+                     string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
+                     var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
+                     await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
+                    if(kupac.Tip == "Kupac")
+                        db.Kupci.Add(new Kupac(0, kupac.Ime, kupac.Prezime, kupac.Adresa, kupac.Telefon, kupac.Username, kupac.Password, kupac.Email, kupac.Grad));
+                    else
+                        db.Objekti.Add(new Objekat(0, kupac.Ime, kupac.Prezime, kupac.Adresa, kupac.Telefon, kupac.Username, kupac.Password, kupac.Email, kupac.Grad, kupac.NazivObjekta));
+                    db.SaveChanges();
                     return RedirectToAction("Index", "Home");
                 }
                 AddErrors(result);
             }
 
             // If we got this far, something failed, redisplay form
-            return View(model);
+            return View(kupac);
         }
 
         //
