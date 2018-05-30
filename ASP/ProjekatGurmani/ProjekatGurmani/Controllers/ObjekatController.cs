@@ -1,11 +1,12 @@
-﻿using ProjekatGurmani.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using ProjekatGurmani.Models;
 
 namespace ProjekatGurmani.Controllers
 {
@@ -20,18 +21,18 @@ namespace ProjekatGurmani.Controllers
         }
 
         // GET: Objekat/Details/5
-        public ActionResult Details(string id)
+        public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Objekat Objekat = db.Objekti.Find(id);
-            if (Objekat == null)
+            Objekat objekat = db.Objekti.Find(id);
+            if (objekat == null)
             {
                 return HttpNotFound();
             }
-            return View(Objekat);
+            return View(objekat);
         }
 
         // GET: Objekat/Create
@@ -45,30 +46,31 @@ namespace ProjekatGurmani.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id,ime,prezime,adresa,telefon,username,password,email,grad")] Objekat Objekat)
+        public ActionResult Create([Bind(Include = "id,ime,prezime,adresa,telefon,username,password,email,grad")] Objekat objekat)
         {
             if (ModelState.IsValid)
             {
-                db.Objekti.Add(Objekat);
+                db.Objekti.Add(objekat);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(Objekat);
+
+            return View(objekat);
         }
 
         // GET: Objekat/Edit/5
-        public ActionResult Edit(string id)
+        public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Objekat Objekat = db.Objekti.Find(id);
-            if (Objekat == null)
+            Objekat objekat = db.Objekti.Find(id);
+            if (objekat == null)
             {
                 return HttpNotFound();
             }
-            return View(Objekat);
+            return View(objekat);
         }
 
         // POST: Objekat/Edit/5
@@ -76,39 +78,39 @@ namespace ProjekatGurmani.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id,ime,prezime,adresa,telefon,username,password,email,grad")] Objekat Objekat)
+        public ActionResult Edit([Bind(Include = "id,ime,prezime,adresa,telefon,username,password,email,grad")] Objekat objekat)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(Objekat).State = EntityState.Modified;
+                db.Entry(objekat).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(Objekat);
+            return View(objekat);
         }
 
         // GET: Objekat/Delete/5
-        public ActionResult Delete(string id)
+        public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Objekat Objekat = db.Objekti.Find(id);
-            if (Objekat == null)
+            Objekat objekat = db.Objekti.Find(id);
+            if (objekat == null)
             {
                 return HttpNotFound();
             }
-            return View(Objekat);
+            return View(objekat);
         }
 
         // POST: Objekat/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(string id)
+        public ActionResult DeleteConfirmed(int id)
         {
-            Objekat Objekat = db.Objekti.Find(id);
-            db.Objekti.Remove(Objekat);
+            Objekat objekat = db.Objekti.Find(id);
+            db.Objekti.Remove(objekat);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

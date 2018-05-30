@@ -1,11 +1,12 @@
-﻿using ProjekatGurmani.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using ProjekatGurmani.Models;
 
 namespace ProjekatGurmani.Controllers
 {
@@ -13,102 +14,103 @@ namespace ProjekatGurmani.Controllers
     {
         private GurmaniContext db = new GurmaniContext();
 
-        // GET: Narudzba
+        // GET: Narudzbas
         public ActionResult Index()
         {
             return View(db.Narudzbe.ToList());
         }
 
-        // GET: Narudzba/Details/5
-        public ActionResult Details(string id)
+        // GET: Narudzbas/Details/5
+        public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Narudzba Narudzba = db.Narudzbe.Find(id);
-            if (Narudzba == null)
+            Narudzba narudzba = db.Narudzbe.Find(id);
+            if (narudzba == null)
             {
                 return HttpNotFound();
             }
-            return View(Narudzba);
+            return View(narudzba);
         }
 
-        // GET: Narudzba/Create
+        // GET: Narudzbas/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Narudzba/Create
+        // POST: Narudzbas/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id,idKupca")] Narudzba Narudzba)
+        public ActionResult Create([Bind(Include = "id,idKupca")] Narudzba narudzba)
         {
             if (ModelState.IsValid)
             {
-                db.Narudzbe.Add(Narudzba);
+                db.Narudzbe.Add(narudzba);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(Narudzba);
+
+            return View(narudzba);
         }
 
-        // GET: Narudzba/Edit/5
-        public ActionResult Edit(string id)
+        // GET: Narudzbas/Edit/5
+        public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Narudzba Narudzba = db.Narudzbe.Find(id);
-            if (Narudzba == null)
+            Narudzba narudzba = db.Narudzbe.Find(id);
+            if (narudzba == null)
             {
                 return HttpNotFound();
             }
-            return View(Narudzba);
+            return View(narudzba);
         }
 
-        // POST: Narudzba/Edit/5
+        // POST: Narudzbas/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id,idKupca")] Narudzba Narudzba)
+        public ActionResult Edit([Bind(Include = "id,idKupca")] Narudzba narudzba)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(Narudzba).State = EntityState.Modified;
+                db.Entry(narudzba).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(Narudzba);
+            return View(narudzba);
         }
 
-        // GET: Narudzba/Delete/5
-        public ActionResult Delete(string id)
+        // GET: Narudzbas/Delete/5
+        public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Narudzba Narudzba = db.Narudzbe.Find(id);
-            if (Narudzba == null)
+            Narudzba narudzba = db.Narudzbe.Find(id);
+            if (narudzba == null)
             {
                 return HttpNotFound();
             }
-            return View(Narudzba);
+            return View(narudzba);
         }
 
-        // POST: Narudzba/Delete/5
+        // POST: Narudzbas/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(string id)
+        public ActionResult DeleteConfirmed(int id)
         {
-            Narudzba Narudzba = db.Narudzbe.Find(id);
-            db.Narudzbe.Remove(Narudzba);
+            Narudzba narudzba = db.Narudzbe.Find(id);
+            db.Narudzbe.Remove(narudzba);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

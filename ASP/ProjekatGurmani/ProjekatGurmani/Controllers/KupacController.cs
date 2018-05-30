@@ -1,11 +1,12 @@
-﻿using ProjekatGurmani.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using ProjekatGurmani.Models;
 
 namespace ProjekatGurmani.Controllers
 {
@@ -20,18 +21,18 @@ namespace ProjekatGurmani.Controllers
         }
 
         // GET: Kupac/Details/5
-        public ActionResult Details(string id)
+        public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Kupac Kupac = db.Kupci.Find(id);
-            if (Kupac == null)
+            Kupac kupac = db.Kupci.Find(id);
+            if (kupac == null)
             {
                 return HttpNotFound();
             }
-            return View(Kupac);
+            return View(kupac);
         }
 
         // GET: Kupac/Create
@@ -45,30 +46,31 @@ namespace ProjekatGurmani.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id,ime,prezime,adresa,telefon,username,password,email,grad")] Kupac Kupac)
+        public ActionResult Create([Bind(Include = "id,ime,prezime,adresa,telefon,username,password,email,grad")] Kupac kupac)
         {
             if (ModelState.IsValid)
             {
-                db.Kupci.Add(Kupac);
+                db.Kupci.Add(kupac);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(Kupac);
+
+            return View(kupac);
         }
 
         // GET: Kupac/Edit/5
-        public ActionResult Edit(string id)
+        public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Kupac Kupac = db.Kupci.Find(id);
-            if (Kupac == null)
+            Kupac kupac = db.Kupci.Find(id);
+            if (kupac == null)
             {
                 return HttpNotFound();
             }
-            return View(Kupac);
+            return View(kupac);
         }
 
         // POST: Kupac/Edit/5
@@ -76,39 +78,39 @@ namespace ProjekatGurmani.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id,ime,prezime,adresa,telefon,username,password,email,grad")] Kupac Kupac)
+        public ActionResult Edit([Bind(Include = "id,ime,prezime,adresa,telefon,username,password,email,grad")] Kupac kupac)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(Kupac).State = EntityState.Modified;
+                db.Entry(kupac).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(Kupac);
+            return View(kupac);
         }
 
         // GET: Kupac/Delete/5
-        public ActionResult Delete(string id)
+        public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Kupac Kupac = db.Kupci.Find(id);
-            if (Kupac == null)
+            Kupac kupac = db.Kupci.Find(id);
+            if (kupac == null)
             {
                 return HttpNotFound();
             }
-            return View(Kupac);
+            return View(kupac);
         }
 
         // POST: Kupac/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(string id)
+        public ActionResult DeleteConfirmed(int id)
         {
-            Kupac Kupac = db.Kupci.Find(id);
-            db.Kupci.Remove(Kupac);
+            Kupac kupac = db.Kupci.Find(id);
+            db.Kupci.Remove(kupac);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

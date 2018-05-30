@@ -298,14 +298,40 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Kupac\Create.cshtml" />
+    <Content Include="Views\Kupac\Delete.cshtml" />
+    <Content Include="Views\Kupac\Details.cshtml" />
+    <Content Include="Views\Kupac\Edit.cshtml" />
+    <Content Include="Views\Kupac\Index.cshtml" />
+    <Content Include="Views\Objekat\Create.cshtml" />
+    <Content Include="Views\Objekat\Delete.cshtml" />
+    <Content Include="Views\Objekat\Details.cshtml" />
+    <Content Include="Views\Objekat\Edit.cshtml" />
+    <Content Include="Views\Objekat\Index.cshtml" />
+    <Content Include="Views\Jelo\Create.cshtml" />
+    <Content Include="Views\Jelo\Delete.cshtml" />
+    <Content Include="Views\Jelo\Details.cshtml" />
+    <Content Include="Views\Jelo\Edit.cshtml" />
+    <Content Include="Views\Jelo\Index.cshtml" />
+    <Content Include="Views\Narudzbas\Create.cshtml" />
+    <Content Include="Views\Narudzbas\Delete.cshtml" />
+    <Content Include="Views\Narudzbas\Details.cshtml" />
+    <Content Include="Views\Narudzbas\Edit.cshtml" />
+    <Content Include="Views\Narudzbas\Index.cshtml" />
+    <Content Include="Views\StavkeNarudzbe\Create.cshtml" />
+    <Content Include="Views\StavkeNarudzbe\Delete.cshtml" />
+    <Content Include="Views\StavkeNarudzbe\Details.cshtml" />
+    <Content Include="Views\StavkeNarudzbe\Edit.cshtml" />
+    <Content Include="Views\StavkeNarudzbe\Index.cshtml" />
+    <Content Include="Views\Administrator\Create.cshtml" />
+    <Content Include="Views\Administrator\Delete.cshtml" />
+    <Content Include="Views\Administrator\Details.cshtml" />
+    <Content Include="Views\Administrator\Edit.cshtml" />
+    <Content Include="Views\Administrator\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Jelo\" />
-    <Folder Include="Views\Kupac\" />
     <Folder Include="Views\Narudzba\" />
-    <Folder Include="Views\Objekat\" />
-    <Folder Include="Views\StavkeNarudzbe\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

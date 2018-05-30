@@ -1,11 +1,12 @@
-﻿using ProjekatGurmani.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using ProjekatGurmani.Models;
 
 namespace ProjekatGurmani.Controllers
 {
@@ -20,18 +21,18 @@ namespace ProjekatGurmani.Controllers
         }
 
         // GET: Jelo/Details/5
-        public ActionResult Details(string id)
+        public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Jelo Jelo = db.Jela.Find(id);
-            if (Jelo == null)
+            Jelo jelo = db.Jela.Find(id);
+            if (jelo == null)
             {
                 return HttpNotFound();
             }
-            return View(Jelo);
+            return View(jelo);
         }
 
         // GET: Jelo/Create
@@ -45,30 +46,31 @@ namespace ProjekatGurmani.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id,nazivJela,vrsta,cijena,idObjekta")] Jelo Jelo)
+        public ActionResult Create([Bind(Include = "id,nazivJela,vrsta,cijena,idObjekta")] Jelo jelo)
         {
             if (ModelState.IsValid)
             {
-                db.Jela.Add(Jelo);
+                db.Jela.Add(jelo);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(Jelo);
+
+            return View(jelo);
         }
 
         // GET: Jelo/Edit/5
-        public ActionResult Edit(string id)
+        public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Jelo Jelo = db.Jela.Find(id);
-            if (Jelo == null)
+            Jelo jelo = db.Jela.Find(id);
+            if (jelo == null)
             {
                 return HttpNotFound();
             }
-            return View(Jelo);
+            return View(jelo);
         }
 
         // POST: Jelo/Edit/5
@@ -76,39 +78,39 @@ namespace ProjekatGurmani.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id,nazivJela,vrsta,cijena,idObjekta")] Jelo Jelo)
+        public ActionResult Edit([Bind(Include = "id,nazivJela,vrsta,cijena,idObjekta")] Jelo jelo)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(Jelo).State = EntityState.Modified;
+                db.Entry(jelo).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(Jelo);
+            return View(jelo);
         }
 
         // GET: Jelo/Delete/5
-        public ActionResult Delete(string id)
+        public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Jelo Jelo = db.Jela.Find(id);
-            if (Jelo == null)
+            Jelo jelo = db.Jela.Find(id);
+            if (jelo == null)
             {
                 return HttpNotFound();
             }
-            return View(Jelo);
+            return View(jelo);
         }
 
         // POST: Jelo/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(string id)
+        public ActionResult DeleteConfirmed(int id)
         {
-            Jelo Jelo = db.Jela.Find(id);
-            db.Jela.Remove(Jelo);
+            Jelo jelo = db.Jela.Find(id);
+            db.Jela.Remove(jelo);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

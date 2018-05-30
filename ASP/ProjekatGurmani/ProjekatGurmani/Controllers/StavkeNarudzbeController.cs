@@ -1,114 +1,116 @@
-﻿using ProjekatGurmani.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using ProjekatGurmani.Models;
 
 namespace ProjekatGurmani.Controllers
 {
-    public class StavkeNarudzbaController : Controller
+    public class StavkeNarudzbeController : Controller
     {
         private GurmaniContext db = new GurmaniContext();
 
-        // GET: StavkeNarudzba
+        // GET: StavkeNarudzbe
         public ActionResult Index()
         {
             return View(db.StavkeNarudzba.ToList());
         }
 
-        // GET: StavkeNarudzba/Details/5
-        public ActionResult Details(string id)
+        // GET: StavkeNarudzbe/Details/5
+        public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            StavkeNarudzbe StavkeNarudzbe = db.StavkeNarudzba.Find(id);
-            if (StavkeNarudzbe == null)
+            StavkeNarudzbe stavkeNarudzbe = db.StavkeNarudzba.Find(id);
+            if (stavkeNarudzbe == null)
             {
                 return HttpNotFound();
             }
-            return View(StavkeNarudzbe);
+            return View(stavkeNarudzbe);
         }
 
-        // GET: StavkeNarudzba/Create
+        // GET: StavkeNarudzbe/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: StavkeNarudzba/Create
+        // POST: StavkeNarudzbe/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id,idNarudzbe, idJela")] StavkeNarudzbe StavkeNarudzba)
+        public ActionResult Create([Bind(Include = "id,idNarudzbe,idJela")] StavkeNarudzbe stavkeNarudzbe)
         {
             if (ModelState.IsValid)
             {
-                db.StavkeNarudzba.Add(StavkeNarudzba);
+                db.StavkeNarudzba.Add(stavkeNarudzbe);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(StavkeNarudzba);
+
+            return View(stavkeNarudzbe);
         }
 
-        // GET: StavkeNarudzba/Edit/5
-        public ActionResult Edit(string id)
+        // GET: StavkeNarudzbe/Edit/5
+        public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            StavkeNarudzbe StavkeNarudzbe = db.StavkeNarudzba.Find(id);
-            if (StavkeNarudzbe == null)
+            StavkeNarudzbe stavkeNarudzbe = db.StavkeNarudzba.Find(id);
+            if (stavkeNarudzbe == null)
             {
                 return HttpNotFound();
             }
-            return View(StavkeNarudzbe);
+            return View(stavkeNarudzbe);
         }
 
-        // POST: StavkeNarudzba/Edit/5
+        // POST: StavkeNarudzbe/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id,idNarudzbe, idJela")] StavkeNarudzbe StavkeNarudzba)
+        public ActionResult Edit([Bind(Include = "id,idNarudzbe,idJela")] StavkeNarudzbe stavkeNarudzbe)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(StavkeNarudzba).State = EntityState.Modified;
+                db.Entry(stavkeNarudzbe).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(StavkeNarudzba);
+            return View(stavkeNarudzbe);
         }
 
-        // GET: StavkeNarudzba/Delete/5
-        public ActionResult Delete(string id)
+        // GET: StavkeNarudzbe/Delete/5
+        public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            StavkeNarudzbe StavkeNarudzbe = db.StavkeNarudzba.Find(id);
-            if (StavkeNarudzbe == null)
+            StavkeNarudzbe stavkeNarudzbe = db.StavkeNarudzba.Find(id);
+            if (stavkeNarudzbe == null)
             {
                 return HttpNotFound();
             }
-            return View(StavkeNarudzbe);
+            return View(stavkeNarudzbe);
         }
 
-        // POST: StavkeNarudzba/Delete/5
+        // POST: StavkeNarudzbe/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(string id)
+        public ActionResult DeleteConfirmed(int id)
         {
-            StavkeNarudzbe StavkeNarudzbe = db.StavkeNarudzba.Find(id);
-            db.StavkeNarudzba.Remove(StavkeNarudzbe);
+            StavkeNarudzbe stavkeNarudzbe = db.StavkeNarudzba.Find(id);
+            db.StavkeNarudzba.Remove(stavkeNarudzbe);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

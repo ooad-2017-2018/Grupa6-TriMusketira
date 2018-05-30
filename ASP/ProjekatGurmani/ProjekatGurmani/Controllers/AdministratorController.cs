@@ -1,11 +1,12 @@
-﻿using ProjekatGurmani.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using ProjekatGurmani.Models;
 
 namespace ProjekatGurmani.Controllers
 {
@@ -13,103 +14,103 @@ namespace ProjekatGurmani.Controllers
     {
         private GurmaniContext db = new GurmaniContext();
 
-        // GET: Admin
+        // GET: Administrator
         public ActionResult Index()
         {
             return View(db.Administratori.ToList());
         }
 
-        // GET: Admin/Details/5
-        public ActionResult Details(string id)
+        // GET: Administrator/Details/5
+        public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Administrator admin = db.Administratori.Find(id);
-            if (admin == null)
+            Administrator administrator = db.Administratori.Find(id);
+            if (administrator == null)
             {
                 return HttpNotFound();
             }
-            return View(admin);
+            return View(administrator);
         }
 
-        // GET: Admin/Create
+        // GET: Administrator/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Admin/Create
+        // POST: Administrator/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Ime,Prezime,Username,Password")] Administrator admin)
+        public ActionResult Create([Bind(Include = "ID,Ime,Prezime,Username,Password")] Administrator administrator)
         {
             if (ModelState.IsValid)
             {
-                db.Administratori.Add(admin);
+                db.Administratori.Add(administrator);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(admin);
+            return View(administrator);
         }
 
-        // GET: Admin/Edit/5
-        public ActionResult Edit(string id)
+        // GET: Administrator/Edit/5
+        public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Administrator admin = db.Administratori.Find(id);
-            if (admin == null)
+            Administrator administrator = db.Administratori.Find(id);
+            if (administrator == null)
             {
                 return HttpNotFound();
             }
-            return View(admin);
+            return View(administrator);
         }
 
-        // POST: Admin/Edit/5
+        // POST: Administrator/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Ime,Prezime,Username,Password")] Administrator admin)
+        public ActionResult Edit([Bind(Include = "ID,Ime,Prezime,Username,Password")] Administrator administrator)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(admin).State = EntityState.Modified;
+                db.Entry(administrator).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(admin);
+            return View(administrator);
         }
 
-        // GET: Admin/Delete/5
-        public ActionResult Delete(string id)
+        // GET: Administrator/Delete/5
+        public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Administrator admin = db.Administratori.Find(id);
-            if (admin == null)
+            Administrator administrator = db.Administratori.Find(id);
+            if (administrator == null)
             {
                 return HttpNotFound();
             }
-            return View(admin);
+            return View(administrator);
         }
 
-        // POST: Admin/Delete/5
+        // POST: Administrator/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(string id)
+        public ActionResult DeleteConfirmed(int id)
         {
-            Administrator admin = db.Administratori.Find(id);
-            db.Administratori.Remove(admin);
+            Administrator administrator = db.Administratori.Find(id);
+            db.Administratori.Remove(administrator);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
