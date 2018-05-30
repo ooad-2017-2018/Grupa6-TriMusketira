@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Diagnostics;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -11,6 +12,10 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using ProjekatGurmani.Models;
+using Twilio;
+using Twilio.Clients;
+using Twilio.Converters;
+using Twilio.Rest.Api.V2010.Account;
 
 namespace ProjekatGurmani
 {
@@ -27,7 +32,14 @@ namespace ProjekatGurmani
     {
         public Task SendAsync(IdentityMessage message)
         {
-            // Plug in your SMS service here to send a text message.
+            TwilioClient.Init(System.Configuration.ConfigurationManager.AppSettings["SMSAccountIdentification"], System.Configuration.ConfigurationManager.AppSettings["SMSAccountPassword"]);
+
+            var m = MessageResource.Create(
+                body: message.Body,
+                from: new Twilio.Types.PhoneNumber(System.Configuration.ConfigurationManager.AppSettings["SMSAccountFrom"]),
+                to: new Twilio.Types.PhoneNumber(message.Destination)
+            );
+            Trace.TraceInformation(m.Status.ToString());
             return Task.FromResult(0);
         }
     }
