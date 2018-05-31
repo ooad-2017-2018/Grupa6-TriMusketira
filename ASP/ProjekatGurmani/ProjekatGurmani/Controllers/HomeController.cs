@@ -10,6 +10,7 @@ namespace ProjekatGurmani.Controllers
     {
         public ActionResult Index()
         {
+
             return View();
         }
 

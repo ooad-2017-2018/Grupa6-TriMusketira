@@ -290,11 +290,9 @@
     <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
     <Content Include="Views\Account\SendCode.cshtml" />
     <Content Include="Views\Account\VerifyCode.cshtml" />
-    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
     <Content Include="Views\Manage\ChangePassword.cshtml" />
-    <Content Include="Views\Manage\Index.cshtml" />
+    <Content Include="Views\Manage\EditKupac.cshtml" />
     <Content Include="Views\Manage\ManageLogins.cshtml" />
-    <Content Include="Views\Manage\SetPassword.cshtml" />
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
@@ -313,11 +311,6 @@
     <Content Include="Views\Jelo\Details.cshtml" />
     <Content Include="Views\Jelo\Edit.cshtml" />
     <Content Include="Views\Jelo\Index.cshtml" />
-    <Content Include="Views\Narudzbas\Create.cshtml" />
-    <Content Include="Views\Narudzbas\Delete.cshtml" />
-    <Content Include="Views\Narudzbas\Details.cshtml" />
-    <Content Include="Views\Narudzbas\Edit.cshtml" />
-    <Content Include="Views\Narudzbas\Index.cshtml" />
     <Content Include="Views\StavkeNarudzbe\Create.cshtml" />
     <Content Include="Views\StavkeNarudzbe\Delete.cshtml" />
     <Content Include="Views\StavkeNarudzbe\Details.cshtml" />
@@ -328,10 +321,15 @@
     <Content Include="Views\Administrator\Details.cshtml" />
     <Content Include="Views\Administrator\Edit.cshtml" />
     <Content Include="Views\Administrator\Index.cshtml" />
+    <Content Include="Views\Narudzba\Create.cshtml" />
+    <Content Include="Views\Narudzba\Delete.cshtml" />
+    <Content Include="Views\Narudzba\Details.cshtml" />
+    <Content Include="Views\Narudzba\Edit.cshtml" />
+    <Content Include="Views\Narudzba\Index.cshtml" />
+    <Content Include="Views\Manage\EditObjekat.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Narudzba\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

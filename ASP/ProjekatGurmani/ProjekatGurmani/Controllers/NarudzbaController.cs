@@ -14,13 +14,13 @@ namespace ProjekatGurmani.Controllers
     {
         private GurmaniContext db = new GurmaniContext();
 
-        // GET: Narudzbas
+        // GET: Narudzba
         public ActionResult Index()
         {
             return View(db.Narudzbe.ToList());
         }
 
-        // GET: Narudzbas/Details/5
+        // GET: Narudzba/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -35,13 +35,13 @@ namespace ProjekatGurmani.Controllers
             return View(narudzba);
         }
 
-        // GET: Narudzbas/Create
+        // GET: Narudzba/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Narudzbas/Create
+        // POST: Narudzba/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -58,7 +58,7 @@ namespace ProjekatGurmani.Controllers
             return View(narudzba);
         }
 
-        // GET: Narudzbas/Edit/5
+        // GET: Narudzba/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -73,7 +73,7 @@ namespace ProjekatGurmani.Controllers
             return View(narudzba);
         }
 
-        // POST: Narudzbas/Edit/5
+        // POST: Narudzba/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -89,7 +89,7 @@ namespace ProjekatGurmani.Controllers
             return View(narudzba);
         }
 
-        // GET: Narudzbas/Delete/5
+        // GET: Narudzba/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -104,7 +104,7 @@ namespace ProjekatGurmani.Controllers
             return View(narudzba);
         }
 
-        // POST: Narudzbas/Delete/5
+        // POST: Narudzba/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)

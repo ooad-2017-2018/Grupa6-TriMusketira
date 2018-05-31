@@ -46,7 +46,7 @@ namespace ProjekatGurmani.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id,ime,prezime,adresa,telefon,naziv, email,password,grad")] Objekat objekat)
+        public ActionResult Create([Bind(Include = "id,ime,prezime,adresa,telefon,email,password,grad,naziv")] Objekat objekat)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace ProjekatGurmani.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id,ime,prezime,adresa,telefon,naziv, email,password,grad")] Objekat objekat)
+        public ActionResult Edit([Bind(Include = "id,ime,prezime,adresa,telefon,email,password,grad,naziv")] Objekat objekat)
         {
             if (ModelState.IsValid)
             {

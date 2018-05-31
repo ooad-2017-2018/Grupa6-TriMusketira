@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using ProjekatGurmani.Models;
@@ -150,29 +151,58 @@ namespace ProjekatGurmani.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Register(RegisterViewModel kupac)
         {
-            if (ModelState.IsValid)
+            using (var context = new ApplicationDbContext())
             {
-                var user = new ApplicationUser { UserName = kupac.Email, Email = kupac.Email };
-                var result = await UserManager.CreateAsync(user, kupac.Password);
-                if (result.Succeeded)
+                if (ModelState.IsValid)
                 {
-                    await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
-                    
-                     string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
-                     var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
-                     await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
-                    if(kupac.Tip == "Kupac")
-                        db.Kupci.Add(new Kupac(0, kupac.Ime, kupac.Prezime, kupac.Adresa, kupac.Telefon, kupac.Username, kupac.Password, kupac.Email, kupac.Grad));
-                    else
-                        db.Objekti.Add(new Objekat(0, kupac.Ime, kupac.Prezime, kupac.Adresa, kupac.Telefon, kupac.Username, kupac.Password, kupac.Email, kupac.Grad, kupac.NazivObjekta));
-                    db.SaveChanges();
-                    return RedirectToAction("Index", "Home");
-                }
-                AddErrors(result);
-            }
+                    var user = new ApplicationUser { UserName = kupac.Email, Email = kupac.Email };
+                    var result = await UserManager.CreateAsync(user, kupac.Password);
+                    if (result.Succeeded)
+                    {
+                        var roleStore = new RoleStore<IdentityRole>(context);
+                        var roleManager = new RoleManager<IdentityRole>(roleStore);
 
-            // If we got this far, something failed, redisplay form
-            return View(kupac);
+                        var userStore = new UserStore<ApplicationUser>(context);
+                        var userManager = new UserManager<ApplicationUser>(userStore);
+
+                        if (kupac.Tip == "Kupac")
+                        {
+                            await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
+
+                            string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
+                            var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
+                            await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
+                            if (kupac.Ime != "admin")
+                            {
+                                userManager.AddToRole(user.Id, "Kupac");
+                                db.Kupci.Add(new Kupac(0, kupac.Ime, kupac.Prezime, kupac.Adresa, kupac.Telefon, kupac.Username, kupac.Password, kupac.Email, kupac.Grad));
+                            }
+                            else
+                            {
+                                userManager.AddToRole(user.Id, "Administrator");
+                                db.Administratori.Add(new Administrator(0, kupac.Ime, kupac.Prezime, kupac.Username, kupac.Password));
+                            }
+                        }
+                        else
+                        {
+                            await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
+
+                            string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
+                            var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
+                            await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
+                            userManager.AddToRole(user.Id, "Objekat");
+                            db.Objekti.Add(new Objekat(0, kupac.Ime, kupac.Prezime, kupac.Adresa, kupac.Telefon, kupac.Username, kupac.Password, kupac.Email, kupac.Grad, kupac.NazivObjekta));
+                        }
+                        await UserManager.SetTwoFactorEnabledAsync(user.Id, true);
+                        db.SaveChanges();
+                        return RedirectToAction("Index", "Home");
+                    }
+                    AddErrors(result);
+                }
+
+                // If we got this far, something failed, redisplay form
+                return View(kupac);
+            }
         }
 
         //
