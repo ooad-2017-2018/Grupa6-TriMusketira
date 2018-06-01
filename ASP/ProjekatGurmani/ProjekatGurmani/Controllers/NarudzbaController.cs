@@ -15,6 +15,7 @@ namespace ProjekatGurmani.Controllers
         private GurmaniContext db = new GurmaniContext();
 
         // GET: Narudzba
+        [Authorize]
         public ActionResult Index()
         {
             return View(db.Narudzbe.ToList());

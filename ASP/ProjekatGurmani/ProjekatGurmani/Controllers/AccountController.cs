@@ -155,7 +155,7 @@ namespace ProjekatGurmani.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    var user = new ApplicationUser { UserName = kupac.Email, Email = kupac.Email };
+                    var user = new ApplicationUser { UserName = kupac.Email, Email = kupac.Email, PhoneNumber = kupac.Telefon, PhoneNumberConfirmed=true, TwoFactorEnabled = true };
                     var result = await UserManager.CreateAsync(user, kupac.Password);
                     if (result.Succeeded)
                     {

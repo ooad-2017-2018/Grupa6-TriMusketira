@@ -77,13 +77,13 @@ namespace ProjekatGurmani.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult EditKupac([Bind(Include = "id,ime,prezime,adresa,telefon,username,password,email,grad")] Kupac kupac)
+        public ActionResult EditKupac([Bind(Include = "id,ime,prezime,adresa,telefon,username,email,grad")] Kupac kupac)
         {
             if (ModelState.IsValid)
             {
                 db.Entry(kupac).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index","Home");
             }
             return View(kupac);
         }
@@ -105,6 +105,19 @@ namespace ProjekatGurmani.Controllers
             if (o == null)
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             return View(o);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit([Bind(Include = "id,ime,prezime,adresa,telefon,email,grad,naziv")] Objekat objekat)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Entry(objekat).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("Index", "Home");
+            }
+            return View(objekat);
         }
 
         //
@@ -216,7 +229,7 @@ namespace ProjekatGurmani.Controllers
             if (result.Succeeded)
             {
                 
-var user = await UserManager.FindByIdAsync(User.Identity.GetUserId());
+                var user = await UserManager.FindByIdAsync(User.Identity.GetUserId());
                 if (user != null)
                 {
                     Kupac k = getKupac(db.Kupci, User.Identity.GetUserName());
