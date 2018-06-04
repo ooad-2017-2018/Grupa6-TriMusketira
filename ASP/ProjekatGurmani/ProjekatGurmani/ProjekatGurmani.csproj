@@ -327,6 +327,7 @@
     <Content Include="Views\Narudzba\Edit.cshtml" />
     <Content Include="Views\Narudzba\Index.cshtml" />
     <Content Include="Views\Manage\EditObjekat.cshtml" />
+    <Content Include="Views\Home\Mapa.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

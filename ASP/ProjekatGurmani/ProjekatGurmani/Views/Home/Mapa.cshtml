@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>Mapa</h2>
+<h3>Vasa lokacija</h3>
+<input type="button" id="btnShowLocations" value="Prikazi" />
+
+<div id="myMap" style="position:relative; width:600px; height:600px;"></div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+    var map = null;
+
+    function LoadMap() {
+        map = new Microsoft.Maps.Map('#myMap', {
+            credentials: "An9whJ6H6fHT70YgjNYsv5sQwMXQQh3pL4E8EW-pMPoSA2ugKBJsRoSHeWH0UxAl"
+        });
+    }
+
+    $('#btnShowLocations').click(function () {
+        var url = "/Home/GetLocations";
+        $.getJSON(url, null, function (data) {
+            var pins = [];
+
+            $.each(data, function (index, LocationData) {
+                var loc = new Microsoft.Maps.Location(
+                    LocationData.latitude,
+                    LocationData.longitude);
+                var pushpin = new Microsoft.Maps.Pushpin(loc, { title: LocationData.naziv });
+
+
+                pins.push(pushpin);
+            });
+
+            map.entities.push(pins);
+
+            map.setView({
+                zoom: 12
+            });
+        });
+    });
+</script>
+<script type="text/javascript" src="https://www.bing.com/api/maps/mapcontrol?callback=LoadMap" async defer></script>
+

@@ -1,6 +1,10 @@
-﻿using System;
+﻿using BeFitApp.Controllers;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
@@ -28,5 +32,70 @@ namespace ProjekatGurmani.Controllers
         {
             return View();
         }
+
+
+        public ActionResult Mapa()
+        {
+            ViewBag.Message = "Vaza lokacija";
+
+            return View();
+        }
+
+        public ActionResult GetLocations()
+        {
+            var task = Task.Run(async () => await AsyncGetLocations());
+            task.Wait();
+            var asyncFunctionResult = task.Result;
+            return asyncFunctionResult;
+        }
+        public async Task<ActionResult> AsyncGetLocations()
+        {
+
+            var client = new HttpClient();
+            var address = new Uri("https://api.foursquare.com/v2/venues/search?ll=43.85,18.23&categoryId=4bf58dd8d48988d175941735&client_id=KHAWRYD4PJ0LKVSZQF4CEXTX5GK3BDPTWS3XLCTVAYQPK515&client_secret=BSTBTSNVENYHWGGNYGGQ00X33NJNNFTPZVIPOB3LGC1UVXBI&v=20160202");
+            HttpResponseMessage response = await client.GetAsync(address);
+            String stream = await response.Content.ReadAsStringAsync();
+            dynamic dyn = JsonConvert.DeserializeObject(stream);
+            var sp = stream.Split('"');
+            double lat = 0;
+            var locations = new List<Locations>();
+            string loc = "n";
+            for (int i = 0; i < sp.Length; i++)
+            {
+                if (sp[i] == "lat")
+                    lat = Convert.ToDouble(sp[i + 1].Substring(1, sp[i + 1].Length - 2));
+                if (sp[i] == "lng")
+                {
+                    for (int j = i; j >= 0; j--)
+                        if (sp[j] == "name")
+                        {
+                            loc = sp[j + 2];
+                            break;
+                        }
+                    locations.Add(new Locations(lat, Convert.ToDouble(sp[i + 1].Substring(1, sp[i + 1].Length - 4)), loc));
+                }
+            }
+
+            return Json(locations, JsonRequestBehavior.AllowGet);
+        }
+
+
+
     }
+
+}
+namespace BeFitApp.Controllers
+{
+    class Locations
+    {
+        public double latitude { get; set; }
+        public double longitude { get; set; }
+        public string naziv { get; set; }
+        public Locations(double latitude, double longitude, string naziv)
+        {
+            this.latitude = latitude;
+            this.longitude = longitude;
+            this.naziv = naziv;
+        }
+    };
 }

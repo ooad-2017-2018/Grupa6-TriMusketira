@@ -23,6 +23,7 @@ namespace ProjekatGurmaniWebAPI.Models
         public virtual DbSet<Narudzba> Narudzba { get; set; }
         public virtual DbSet<Objekat> Objekat { get; set; }
         public virtual DbSet<StavkeNarudzbe> StavkeNarudzbe { get; set; }
+        public DbSet<Kupac> Kupci { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
