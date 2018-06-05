@@ -271,18 +271,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Kupac\Create.cshtml" />
-    <Content Include="Views\Kupac\Delete.cshtml" />
-    <Content Include="Views\Kupac\Details.cshtml" />
-    <Content Include="Views\Kupac\Edit.cshtml" />
-    <Content Include="Views\Kupac\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Administrator\" />
-    <Folder Include="Views\Narudzba\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
