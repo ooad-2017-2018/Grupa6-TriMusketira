@@ -49,10 +49,5 @@ namespace ProjekatGurmani1
                 if (ime.Text == k.ime + " " + k.prezime) objekatBaza.brisiObjekat(k);
             }
         }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Admin_pocetna));
-        }
     }
 }

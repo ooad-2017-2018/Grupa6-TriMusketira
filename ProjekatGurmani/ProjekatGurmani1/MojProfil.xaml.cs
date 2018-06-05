@@ -5,7 +5,6 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
-using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -26,22 +25,6 @@ namespace ProjekatGurmani1
         public MojProfil()
         {
             this.InitializeComponent();
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(MojProfil));
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(UrediProfilKupca));
-        }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            var messageDialog = new MessageDialog("Uredjen profil");
-            messageDialog.ShowAsync();
         }
     }
 }

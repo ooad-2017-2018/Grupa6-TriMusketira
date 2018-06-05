@@ -45,7 +45,7 @@ namespace ProjekatGurmani1
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage));
+            this.Frame.Navigate(typeof(AdminPregledObjekta));
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
@@ -66,12 +66,6 @@ namespace ProjekatGurmani1
         private void RelativePanel_PointerPressed(object sender, PointerRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MainPage));
-        }
-
-        private void Button_Click1(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(AdminPregledObjekta));
-
         }
     }
 }

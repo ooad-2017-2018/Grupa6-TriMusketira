@@ -7,22 +7,22 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Margin="0,0,0,5" >
+    <Grid >
         <Grid.Background>
             <ImageBrush Stretch="Fill" ImageSource="Slika/Pozadina1.jpg"/>
         </Grid.Background>
 
 
 
-        <RelativePanel HorizontalAlignment="Left" Height="670" Margin="415,10,0,0" VerticalAlignment="Top" Width="796" BorderBrush="Green" BorderThickness="20" Background="White">
+        <RelativePanel HorizontalAlignment="Left" Height="701" Margin="415,10,0,0" VerticalAlignment="Top" Width="796" BorderBrush="Green" BorderThickness="20" Background="White">
             <TextBox x:Name="tekstic" HorizontalAlignment="Left" Height="70" Margin="41,186,0,-73" Text="" VerticalAlignment="Top" Width="380" PlaceholderText="Korisnicko ime ili e-mail" InputScope="EmailNameOrAddress" TextChanged="TextBox_TextChanged"/>
             <PasswordBox x:Name="sifricaa" HorizontalAlignment="Left" Height="73" Margin="46,293,0,-123" VerticalAlignment="Top" Width="380" PlaceholderText="Sifra"/>
-            <Button Content="Prijavite se kao gost" HorizontalAlignment="Stretch" Height="50" VerticalAlignment="Top" Margin="280,510,-523,-527" Background="White" BorderBrush="Green" Foreground="Green" FontSize="24" FontWeight="Bold" RenderTransformOrigin="0.554,-0.526" Click="Button_Click"/>
-            <TextBlock HorizontalAlignment="Left" Height="27" Margin="215,580,-545,-587" Text="Prijavom kao gost ne ostvarujete pravo na ikakve popuste" TextWrapping="Wrap" VerticalAlignment="Top" Width="392" Foreground="Green"/>
+            <Button Content="Prijavite se kao gost" HorizontalAlignment="Stretch" Height="50" VerticalAlignment="Top" Margin="289,531,-532,-548" Background="White" BorderBrush="Green" Foreground="Green" FontSize="24" FontWeight="Bold" RenderTransformOrigin="0.554,-0.526" Click="Button_Click"/>
+            <TextBlock HorizontalAlignment="Left" Height="27" Margin="224,601,-554,-608" Text="Prijavom kao gost ne ostvarujete pravo na ikakve popuste" TextWrapping="Wrap" VerticalAlignment="Top" Width="392" Foreground="Green"/>
             <HyperlinkButton Content="Zaboravili ste sifru?" HorizontalAlignment="Left" Height="35" Margin="471,476,-533,-479" VerticalAlignment="Top" Width="170" Foreground="Green" FontFamily="Segoe UI"/>
             <Button Content="Prijava" HorizontalAlignment="Stretch" Height="50" VerticalAlignment="Top" Margin="210,401,-586,-418" Background="Green" Foreground="White" FontSize="24" FontWeight="Bold" Click="Button_Click_1"/>
             <HyperlinkButton Content="Registrujte se" HorizontalAlignment="Left" Height="70" Margin="161,461,-168,-499" VerticalAlignment="Top" Width="100" Foreground="Green" FontFamily="Segoe UI" RenderTransformOrigin="-0.705,0.506" Click="HyperlinkButton_Click"/>
-            <Image HorizontalAlignment="Left" Height="190" Margin="240,-40,-785,-150" VerticalAlignment="Top" Width="545" Source="Slika/GurmaniLogo.png"/>
+            <Image HorizontalAlignment="Left" Height="215" Margin="245,-65,-785,-150" VerticalAlignment="Top" Width="540" Source="Slika/GurmaniLogo.png"/>
         </RelativePanel>
 
     </Grid>

@@ -38,20 +38,13 @@ namespace ProjekatGurmani1
         
 
             if (tekstic.Text == "admin" ) this.Frame.Navigate(typeof(Admin_pocetna));
-            else if (tekstic.Text == "korisnik") this.Frame.Navigate(typeof(MojProfil));
-            else if (tekstic.Text == "objekat") this.Frame.Navigate(typeof(MojProfil));
+            else if (tekstic.Text == "korisnik") this.Frame.Navigate(typeof(odabirLokacijexaml));
+            else if (tekstic.Text == "objekat") this.Frame.Navigate(typeof(odabirLokacijexaml));
             else if (tekstic.Text == "")
             {
                 var messageDialog = new MessageDialog("Morate popuniti sva polja!");
                 messageDialog.ShowAsync();
             }
-            else
-            {
-                var messageDialog = new MessageDialog("Ne postoji korisnik u bazi!");
-                messageDialog.ShowAsync();
-
-            }
-            
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)

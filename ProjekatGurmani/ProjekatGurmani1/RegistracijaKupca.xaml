@@ -43,8 +43,8 @@
                 <ImageBrush Stretch="Fill" ImageSource="Slika/BackIcon.png"/>
             </RelativePanel.Background>
         </RelativePanel>
-        <TextBlock HorizontalAlignment="Left" Height="60" Margin="125,95,0,0" Text="Registracija" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize="36" FontWeight="Bold"  Foreground="#FF0F9115"/>
-        <Button Content="Button" HorizontalAlignment="Left" Height="95" Margin="15,65,0,0" VerticalAlignment="Top" Width="130" Background="#33008D53" BorderBrush="#FF006100" FocusVisualSecondaryBrush="#9906400D" Opacity="0" Click="Button_Click_1"/>
+        <TextBlock HorizontalAlignment="Left" Height="60" Margin="105,97,0,0" Text="Registracija" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" FontSize="36" FontWeight="Bold"  Foreground="#FF0F9115"/>
+
 
     </Grid>
 </Page>

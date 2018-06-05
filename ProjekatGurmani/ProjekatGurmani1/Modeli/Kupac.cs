@@ -9,7 +9,8 @@ namespace ProjekatGurmani1.Modeli
 {
     public class Kupac : Korisnik
     {
-        public int id { get; set; }
+		public Boolean potvrdjen { get; set; }
+		public int id { get; set; }
         public List<int> narudzbe { get; set; }
 
         public Kupac(int id, string ime, string prezime, string adresa, string telefon, string username, string password, string email, string grad)
@@ -17,7 +18,7 @@ namespace ProjekatGurmani1.Modeli
         {
             this.id = id;
             this.narudzbe = new List<int>();
-
+			this.potvrdjen = false;
         }
         public Kupac() { }
 

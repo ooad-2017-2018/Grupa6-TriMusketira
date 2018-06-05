@@ -21,7 +21,7 @@
             </Image.FocusVisualPrimaryBrush>
         </Image>
         <ListView HorizontalAlignment="Left" Height="355" Margin="53,280,0,0" VerticalAlignment="Top" Width="762" Background="#B2FFFFFF"/>
-        <TextBox x:Name="ime" HorizontalAlignment="Left" Margin="55,200,0,0" VerticalAlignment="Top" Width="760" FocusVisualPrimaryBrush="White" Background="White" Height="67"/>
+        <TextBox x:Name="ime" HorizontalAlignment="Left" Margin="55,200,0,0" VerticalAlignment="Top" Width="760" IsReadOnly="True" FocusVisualPrimaryBrush="White" Background="White" Height="67"/>
         <Button Content="Obrisi" HorizontalAlignment="Left" Margin="865,550,0,0" VerticalAlignment="Top" Width="320" Height="70" Background="White" FontSize="36" Click="Button_Click"/>
         <TextBlock HorizontalAlignment="Left" Height="46" Margin="70,148,0,0" Text="Upisati ime objekta za brisanje:" TextWrapping="Wrap" VerticalAlignment="Top" Width="617" FontSize="36" FocusVisualSecondaryBrush="#99F1DEDE" Foreground="White"/>
         <Ellipse HorizontalAlignment="Left" Height="109" Margin="-290,26,0,0" VerticalAlignment="Top" Width="885" Fill="White" Stroke="#FF0DAA15"  />
@@ -31,8 +31,6 @@
             </RelativePanel.Background>
         </RelativePanel>
         <TextBlock HorizontalAlignment="Left" Height="73" Margin="163,51,0,0" Text="Obrisi objekat" TextWrapping="Wrap" VerticalAlignment="Top" Width="411" FontSize="48" FocusVisualSecondaryBrush="#99F1DEDE" Foreground="#FF669E37" SelectionHighlightColor="#FFBBDE43" FontWeight="Bold" SelectionChanged="TextBlock_SelectionChanged"/>
-
-        <Button Content="Button" HorizontalAlignment="Left" Height="95" Margin="10,35,0,0" VerticalAlignment="Top" Width="130" Background="#33008D53" BorderBrush="#FF006100" FocusVisualSecondaryBrush="#9906400D" Opacity="0" Click="Button_Click_1"/>
 
     </Grid>
 </Page>

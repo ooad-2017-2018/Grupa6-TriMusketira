@@ -43,14 +43,10 @@
                 <TextBlock HorizontalAlignment="Left" Height="27" Text="Datum isteka:" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Margin="10.2,206.2,-96.8,-213.2"/>
                 <TextBox HorizontalAlignment="Left" Height="40" Margin="14.2,277.2,-14.8,-254.8" Text="" VerticalAlignment="Top" Width="291" PlaceholderText="PIN" InputScope="NumericPin"/>
             </RelativePanel>
+
+
         </RelativePanel>
 
-        <RelativePanel HorizontalAlignment="Left" Height="74" Margin="21,76,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="1.12,0.52">
-            <RelativePanel.Background>
-                <ImageBrush Stretch="Fill" ImageSource="Slika/BackIcon.png"/>
-            </RelativePanel.Background>
-        </RelativePanel>
-        <Button Content="Button" HorizontalAlignment="Left" Height="95" Margin="10,70,0,0" VerticalAlignment="Top" Width="130" Background="#33008D53" BorderBrush="#FF006100" FocusVisualSecondaryBrush="#9906400D" Opacity="0" Click="Button_Click_1" RenderTransformOrigin="0.731,0.632"/>
 
     </Grid>
 </Page>

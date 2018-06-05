@@ -11,7 +11,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="Slika/Pozadina2.jpg" Opacity="1"/>
         </Grid.Background>
-        <Rectangle HorizontalAlignment="Left" Height="665" Margin="50,20,0,0" VerticalAlignment="Top" Width="1205" Fill="#CC004221"/>
+        <Rectangle HorizontalAlignment="Left" Height="665" Margin="50,20,0,0" VerticalAlignment="Top" Width="1210" Fill="#CC004221"/>
         <Rectangle HorizontalAlignment="Left" Height="87" Margin="45,63,0,0" VerticalAlignment="Top" Width="695" Fill="White"/>
         <Image HorizontalAlignment="Left" Height="72" Margin="50,48,0,0" VerticalAlignment="Top" Width="110" RenderTransformOrigin="0.5,0.45" Source="Slike/Jelovnik1.jpg">
             <Image.FocusVisualSecondaryBrush>
@@ -22,17 +22,15 @@
             </Image.FocusVisualPrimaryBrush>
         </Image>
         <ListView HorizontalAlignment="Left" Height="397" Margin="100,263,0,0" VerticalAlignment="Top" Width="622" Background="#B2FFFFFF" SelectionChanged="ListView_SelectionChanged"/>
-        <TextBox HorizontalAlignment="Left" Margin="100,185,0,0" Text="" VerticalAlignment="Top" Width="620" FocusVisualPrimaryBrush="White" Background="White" Height="55" PlaceholderText="Zahtjevi za registraciju"/>
+        <TextBox HorizontalAlignment="Left" Margin="100,185,0,0" Text="" VerticalAlignment="Top" Width="620" IsReadOnly="True" FocusVisualPrimaryBrush="White" Background="White" Height="55" PlaceholderText="Zahtjevi za registraciju"/>
         <Button Content="Prijavljeni kupci" HorizontalAlignment="Left" Margin="802,45,0,0" VerticalAlignment="Top" Height="64" Width="338" Background="White" FontSize="24"/>
         <Button Content="Prijavljeni objekti" HorizontalAlignment="Left" Margin="795,130,0,0" VerticalAlignment="Top" Height="64" Width="345" Background="White" FontSize="24"/>
         <Button Content="Pregled kupaca" HorizontalAlignment="Left" Margin="800,213,0,0" VerticalAlignment="Top" Height="62" Width="340" Background="White" FontSize="24" Click="Button_Click"/>
-        <Button Content="Obriši kupca" HorizontalAlignment="Left" Margin="795,369,0,0" VerticalAlignment="Top" Height="66" Width="345" Background="White" FontSize="24" Click="Button_Click_2"/>
-        <Button Content="Obriši objekat" HorizontalAlignment="Left" Margin="800,454,0,0" VerticalAlignment="Top" Height="76" Width="345" Background="White" FontSize="24" Click="Button_Click_4"/>
-        <Button Content="Odjavi se" HorizontalAlignment="Left" Margin="785,600,0,0" VerticalAlignment="Top" Width="355" Height="70" Background="White" FontSize="24" Click="Button_Click_3"/>
+        <Button Content="Pregled objekata" HorizontalAlignment="Left" Margin="800,289,0,0" VerticalAlignment="Top" Height="66" Width="340" Background="White" FontSize="24" Click="Button_Click_1"/>
+        <Button Content="Obriši kupca" HorizontalAlignment="Left" Margin="805,369,0,0" VerticalAlignment="Top" Height="66" Width="335" Background="White" FontSize="24" Click="Button_Click_2"/>
+        <Button Content="Obriši objekat" HorizontalAlignment="Left" Margin="805,465,0,0" VerticalAlignment="Top" Height="76" Width="335" Background="White" FontSize="24" Click="Button_Click_4"/>
+        <Button Content="Odjavi se" HorizontalAlignment="Left" Margin="775,595,0,0" VerticalAlignment="Top" Width="455" Height="70" Background="White" FontSize="24" Click="Button_Click_3"/>
         <Image x:Name="back" HorizontalAlignment="Left" Height="80" Margin="70,70,0,0" VerticalAlignment="Top" Width="115" Source="Slika/BackIcon.png"/>
-
-        <Button Content="Button" HorizontalAlignment="Left" Height="95" Margin="40,60,0,0" VerticalAlignment="Top" Width="130" Background="#33008D53" BorderBrush="#FF006100" FocusVisualSecondaryBrush="#9906400D" Opacity="0" Click="Button_Click_1"/>
-        <Button Content="Pregled objekta" HorizontalAlignment="Left" Margin="795,288,0,0" VerticalAlignment="Top" Height="62" Width="340" Background="White" FontSize="24" Click="Button_Click1"/>
 
     </Grid>
 </Page>

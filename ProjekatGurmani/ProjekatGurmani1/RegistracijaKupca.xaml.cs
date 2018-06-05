@@ -48,17 +48,8 @@ namespace ProjekatGurmani1
                 messageDialog.ShowAsync();
             }
 
-            if (ime.Text == "" && k.prezime == "" && k.telefon == "" && k.adresa == "" && k.email == "")
-            {
-                var messageDialog1 = new MessageDialog("Popuniti sva polja!");
-                messageDialog1.ShowAsync();
-            }
-     
-            else
-            {
-                var messageDialog1 = new MessageDialog("Uspjesna registracija!");
-                messageDialog1.ShowAsync();
-            }
+            var messageDialog1 = new MessageDialog("Uspjesna registracija!");
+            messageDialog1.ShowAsync();
 
             kupacBaza.unesiKupca(k);
         }
@@ -67,11 +58,6 @@ namespace ProjekatGurmani1
         private void RelativePanel_PointerPressed(object sender, PointerRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Admin_pocetna));
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(MainPage));
         }
     }
 }

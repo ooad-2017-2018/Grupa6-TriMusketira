@@ -20,19 +20,21 @@
             <TextBlock HorizontalAlignment="Left" Height="40" Margin="483,352,-657.6,-342" Text="Vase narudzbe:" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" FontSize="24" Foreground="White"/>
             <PersonPicture HorizontalAlignment="Left" Height="231" Margin="119,139,-350,-270" VerticalAlignment="Top" Width="305"/>
             <ListView HorizontalAlignment="Left" Height="223" VerticalAlignment="Top" Width="798" Margin="382,407,-1177,-630" Background="LightGray"/>
-            <Button Content="Uredi" HorizontalAlignment="Left" Height="72" VerticalAlignment="Top" Width="277" Margin="83,423,-294,-462" FontSize="24" Foreground="White" Background="#33639527" BorderBrush="White"  BorderThickness="4" Click="Button_Click"/>
-            <Button Content="Uredu" HorizontalAlignment="Left" Height="72" VerticalAlignment="Top" Width="280" Margin="90,530,-304,-569" FontSize="24" Foreground="White" Background="#33639527" BorderBrush="White"  BorderThickness="4" Click="Button_Click_2"/>
+            <Button Content="Uredi" HorizontalAlignment="Left" Height="72" VerticalAlignment="Top" Width="277" Margin="83,423,-294,-462" FontSize="24" Foreground="White" Background="#33639527" BorderBrush="White"  BorderThickness="4"/>
+            <Button Content="Uredu" HorizontalAlignment="Left" Height="72" VerticalAlignment="Top" Width="280" Margin="90,530,-304,-569" FontSize="24" Foreground="White" Background="#33639527" BorderBrush="White"  BorderThickness="4"/>
+            <RelativePanel HorizontalAlignment="Left" Height="291" Margin="107,409,-274,-612" VerticalAlignment="Top" Width="283" RenderTransformOrigin="1.12,0.52">
+                <RelativePanel.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="Slike/GurmaniLogo.png"/>
+                </RelativePanel.Background>
+            </RelativePanel>
             <Image HorizontalAlignment="Left" Height="0" VerticalAlignment="Top" Width="0"/>
         </RelativePanel>
         <Ellipse HorizontalAlignment="Left" Height="95" Margin="-120,50,0,0" VerticalAlignment="Top" Width="555" Fill="White" Stroke="#FF0DAA15"  />
-        <RelativePanel HorizontalAlignment="Left" Height="74" Margin="40,61,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="1.12,0.52">
+        <RelativePanel HorizontalAlignment="Left" Height="74" Margin="17,59,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="1.12,0.52">
             <RelativePanel.Background>
                 <ImageBrush Stretch="Fill" ImageSource="Slika/BackIcon.png"/>
             </RelativePanel.Background>
         </RelativePanel>
-        
-       <TextBlock HorizontalAlignment="Left" Height="45" Margin="170,75,0,0" Text="Moj profil" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" FontSize="36" FontWeight="Bold"  Foreground="#FF0F9115"/>
-        <Button Content="Button" HorizontalAlignment="Left" Height="95" Margin="35,110,0,0" VerticalAlignment="Top" Width="130" Background="#33008D53" BorderBrush="#FF006100" FocusVisualSecondaryBrush="#9906400D" Opacity="0" Click="Button_Click_1" RenderTransformOrigin="0.731,0.632"/>
-
+        <TextBlock HorizontalAlignment="Left" Height="45" Margin="170,75,0,0" Text="Moj profil" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" FontSize="36" FontWeight="Bold"  Foreground="#FF0F9115"/>
     </Grid>
 </Page>
