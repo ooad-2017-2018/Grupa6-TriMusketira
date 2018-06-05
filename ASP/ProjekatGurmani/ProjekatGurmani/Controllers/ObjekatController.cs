@@ -15,6 +15,7 @@ namespace ProjekatGurmani.Controllers
         private GurmaniContext db = new GurmaniContext();
 
         // GET: Objekat
+        [Authorize(Roles = "Administrator, Kupac, Objekat")]
         public ActionResult Index()
         {
             return View(db.Objekti.ToList());
