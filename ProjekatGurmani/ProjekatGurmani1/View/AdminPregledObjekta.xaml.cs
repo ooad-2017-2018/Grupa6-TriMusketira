@@ -12,8 +12,6 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using ProjekatGurmani1.DB;
-using ProjekatGurmani1.Modeli;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -22,32 +20,26 @@ namespace ProjekatGurmani1
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class AdminObrisiObjekat : Page
+    public sealed partial class AdminPregledObjekta : Page
     {
-        public AdminObrisiObjekat()
+        public AdminPregledObjekta()
         {
             this.InitializeComponent();
         }
 
-        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+		private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+		{
+
+		}
+
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
 
-        private void RelativePanel_PointerPressed(object sender, PointerRoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Admin_pocetna));
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            DBObjekat objekatBaza = new DBObjekat();
-
-            objekatBaza.ucitajObjekte();
-            foreach (Objekat k in objekatBaza.Objekti)
-            {
-                if (ime.Text == k.ime + " " + k.prezime) objekatBaza.brisiObjekat(k);
-            }
         }
     }
 }

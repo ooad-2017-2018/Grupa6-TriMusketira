@@ -22,14 +22,11 @@ namespace ProjekatGurmani1
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class AdminObrisiKupca : Page
+    public sealed partial class AdminObrisiObjekat : Page
     {
-        public AdminObrisiKupca()
+        public AdminObrisiObjekat()
         {
             this.InitializeComponent();
-          /*  var currentView = SystemNavigationManager.GetForCurrentView();
-            currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
-            SystemNavigationManager.GetForCurrentView().BackRequested += ThisPage_BackRequested;*/
         }
 
         private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
@@ -44,14 +41,18 @@ namespace ProjekatGurmani1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            DBKupac kupacBaza = new DBKupac();
+            DBObjekat objekatBaza = new DBObjekat();
 
-            kupacBaza.ucitajKupce();
-            foreach (Kupac k in kupacBaza.Kupci)
+            objekatBaza.ucitajObjekte();
+            foreach (Objekat k in objekatBaza.Objekti)
             {
-                if (imeKupca.Text == k.ime + " " + k.prezime) kupacBaza.brisiKupca(k);
+                if (ime.Text == k.ime + " " + k.prezime) objekatBaza.brisiObjekat(k);
             }
         }
-    }
 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Admin_pocetna));
+        }
+    }
 }

@@ -22,7 +22,7 @@
             </Image.FocusVisualPrimaryBrush>
         </Image>
         <ListView HorizontalAlignment="Left" Height="402" Margin="108,213,0,0" VerticalAlignment="Top" Width="607" Background="#B2FFFFFF"/>
-        <TextBox HorizontalAlignment="Left" Margin="100,148,0,0" Text="" VerticalAlignment="Top" Width="610" IsReadOnly="True" FocusVisualPrimaryBrush="White" Background="White" Height="52" FontSize="24" PlaceholderText="Narudzbe"/>
+        <TextBox HorizontalAlignment="Left" Margin="100,148,0,0" Text="" VerticalAlignment="Top" Width="610" FocusVisualPrimaryBrush="White" Background="White" Height="52" FontSize="24" PlaceholderText="Narudzbe"/>
         <TextBlock HorizontalAlignment="Left" Margin="169,60,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="470" FontSize="36"/>
         <Rectangle HorizontalAlignment="Left" Height="83" Margin="735,57,0,0" VerticalAlignment="Top" Width="61" FocusVisualPrimaryBrush="#FFEBEBF0" Fill="#FFF3F0F0"/>
         <ListView HorizontalAlignment="Left" Height="170" Margin="811,160,0,0" VerticalAlignment="Top" Width="314" Background="#99F5EEEE"/>
@@ -30,6 +30,8 @@
         <Button Content="Deaktiviraj" HorizontalAlignment="Left" Margin="805,380,0,0" VerticalAlignment="Top" Height="70" Width="297" Background="#FFEEE9E9" FontSize="24"/>
         <Button Content="Nazad" HorizontalAlignment="Left" Margin="805,480,0,0" VerticalAlignment="Top" Height="71" Width="295" Background="#FFEEE9E9" FontSize="24" RenderTransformOrigin="0.47,-1.132"/>
         <Image HorizontalAlignment="Left" Height="60" Margin="105,55,0,0" VerticalAlignment="Top" Width="120" Source="Slika/BackIcon.png"/>
+
+        <Button Content="Button" HorizontalAlignment="Left" Height="95" Margin="65,35,0,0" VerticalAlignment="Top" Width="130" Background="#33008D53" BorderBrush="#FF006100" FocusVisualSecondaryBrush="#9906400D" Opacity="0" Click="Button_Click_1" RenderTransformOrigin="0.731,0.632"/>
 
     </Grid>
 </Page>

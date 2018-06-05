@@ -92,21 +92,6 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="AdminObrisiKupca.xaml.cs">
-      <DependentUpon>AdminObrisiKupca.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="AdminObrisiObjekat.xaml.cs">
-      <DependentUpon>AdminObrisiObjekat.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="AdminPocetna.xaml.cs">
-      <DependentUpon>AdminPocetna.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="AdminPregledKupaca.xaml.cs">
-      <DependentUpon>AdminPregledKupaca.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="AdminPregledObjekta.xaml.cs">
-      <DependentUpon>AdminPregledObjekta.xaml</DependentUpon>
-    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -125,9 +110,6 @@
     </Compile>
     <Compile Include="JelovnikObjekta.xaml.cs">
       <DependentUpon>JelovnikObjekta.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Modeli\Administrator.cs" />
     <Compile Include="Modeli\Jelo.cs" />
@@ -151,12 +133,19 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegistracijaKupca.xaml.cs" />
     <Compile Include="SnizenjaObjekat.xaml.cs" />
-    <Compile Include="UrediProfilKupca.xaml.cs" />
-    <Compile Include="UrediProfilObjekta.xaml.cs" />
+    <Compile Include="UrediProfilKupca.xaml.cs">
+      <DependentUpon>UrediProfilKupca.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\VMAdministrator.cs" />
-    <Compile Include="ViewModel\VMJelo.cs" />
     <Compile Include="ViewModel\VMKupac.cs" />
+    <Compile Include="ViewModel\VMNarudzba.cs" />
     <Compile Include="ViewModel\VMObjekat.cs" />
+    <Compile Include="View\AdminObrisiKupca.xaml.cs" />
+    <Compile Include="View\AdminObrisiObjekat.xaml.cs" />
+    <Compile Include="View\AdminPocetna.xaml.cs" />
+    <Compile Include="View\AdminPregledKupaca.xaml.cs" />
+    <Compile Include="View\AdminPregledObjekta.xaml.cs" />
+    <Compile Include="View\MainPage.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -200,26 +189,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="AdminObrisiKupca.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="AdminObrisiObjekat.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="AdminPocetna.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="AdminPregledKupaca.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="AdminPregledObjekta.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="GlavnaKupac.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -229,10 +198,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="JelovnikObjekta.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -261,10 +226,30 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="UrediProfilKupca.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AdminObrisiKupca.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UrediProfilObjekta.xaml">
+    <Page Include="View\AdminObrisiObjekat.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\AdminPocetna.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\AdminPregledKupaca.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\AdminPregledObjekta.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

@@ -49,39 +49,7 @@ namespace ProjekatGurmani1.DB
                 Debug.WriteLine("Exception: " + e.Message);
             }
         }
-		public void ucitajNeregistrovaneKupce()
-		{
-			try
-			{
-				Kupci = new List<Kupac>();
-				String query = "SELECT * FROM Kupac;";
-				DBConnectionString s = new DBConnectionString();
-				using (SqlConnection con = new SqlConnection(s.GetString()))
-				{
-					con.Open();
-					if (con.State == System.Data.ConnectionState.Open)
-					{
-						SqlCommand cmd = con.CreateCommand();
-						cmd.CommandText = query;
-						SqlDataReader reader = cmd.ExecuteReader();
-						while (reader.Read())
-						{
-							Kupac a = new Kupac(Convert.ToInt32(reader.GetString(0)), reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetString(4), reader.GetString(5), reader.GetString(6), reader.GetString(7), reader.GetString(8));
-							DBNarudzba n = new DBNarudzba();
-							n.ucitajNarudzbeKupca(Convert.ToInt32(reader.GetString(0)));
-							a.narudzbe = n.narudzbeKupca;
-							if(a.potvrdjen==false) Kupci.Add(a);
-						}
-					}
-					con.Close();
-				}
-			}
-			catch (Exception e)
-			{
-				Debug.WriteLine("Exception: " + e.Message);
-			}
-		}
-		public int brisiKupca(Kupac a)
+        public int brisiKupca(Kupac a)
         {
             try
             {

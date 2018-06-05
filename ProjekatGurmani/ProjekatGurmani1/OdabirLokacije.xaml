@@ -14,7 +14,9 @@
             <ImageBrush Stretch="Fill" ImageSource="Slika/Pozadina3.jpg"/>
         </Grid.Background>
 
-        <RelativePanel HorizontalAlignment="Left" Height="570" Margin="55,80,0,0" VerticalAlignment="Top" Width="1145" Opacity="0.8" Background="#FF006633" FocusVisualPrimaryBrush="#FF006633"/>
+        <RelativePanel HorizontalAlignment="Left" Height="570" Margin="55,80,0,0" VerticalAlignment="Top" Width="1145" Opacity="0.8" Background="#FF006633" FocusVisualPrimaryBrush="#FF006633">
+            <Button Content="Naruci" HorizontalAlignment="Left" Margin="805,20,-1140,-20" VerticalAlignment="Stretch" Width="335" Background="#FF0A8146" FontSize="36" Foreground="#FFFBFBFB" FontWeight="Bold" Click="Button_Click"/>
+        </RelativePanel>
 
         <TextBlock HorizontalAlignment="Left" Height="206" Margin="169,225,0,0" Text="Ukoliko zelite naruciti hranu unesite sljedece podatke kako bismo vam olaksali ptretragu za objektima koje se nalaze u blizini i izvrsavaju dostavu u tu oblast grada..." TextWrapping="Wrap" VerticalAlignment="Top" Width="1020" FontSize="36" FontWeight="Bold" FontFamily="Cooper Black" Foreground="White" LineHeight="12" TextAlignment="Center" RenderTransformOrigin="0.506,0.898" />
         <ComboBox HorizontalAlignment="Left" Height="60" Margin="150,445,0,0" VerticalAlignment="Top" Width="445" Opacity="0.78"/>
@@ -30,5 +32,7 @@
             </RelativePanel.Background>
         </RelativePanel>
         <HyperlinkButton Content="Preskoci" HorizontalAlignment="Left" Height="70" Margin="570,735,0,0" VerticalAlignment="Top" Width="275" FontSize="36" Foreground="#FFF3F3F3"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="95" Margin="10,70,0,0" VerticalAlignment="Top" Width="130" Background="#33008D53" BorderBrush="#FF006100" FocusVisualSecondaryBrush="#9906400D" Opacity="0" Click="Button_Click_1" RenderTransformOrigin="0.731,0.632"/>
+
     </Grid>
 </Page>

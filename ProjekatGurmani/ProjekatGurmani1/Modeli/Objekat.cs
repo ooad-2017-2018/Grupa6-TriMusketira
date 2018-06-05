@@ -10,8 +10,7 @@ namespace ProjekatGurmani1.Modeli
 {
     public class Objekat : Korisnik
     {
-		public Boolean potvrdjen { get; set; }
-		public int id { get; set; }
+        public int id { get; set; }
         public List<int> jela { get; set; }
 
         public Objekat(int id, string ime, string prezime, string adresa, string telefon, string username, string password, string email, string grad)
@@ -19,9 +18,8 @@ namespace ProjekatGurmani1.Modeli
         {
             this.id = id;
             this.jela = new List<int>();
-			this.potvrdjen = false;
 
-		}
+        }
         public Objekat() { }
 
 
