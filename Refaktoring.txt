@@ -1,0 +1,17 @@
+Refaktoring
+
+1. Rename a variable with a clearer or more informative name
+-U Jelo modelu drze se podaci o nazivu jela i id objekta kojem jelo pipada, 
+prema tome mijenjamo imena atributima string naziv, int id u string nazivJela i int idObjekta, respektivno.
+Radi konzistentnosti analogno radimo i za ostala polja koja se odnose na jela.
+-Analogno cinimo i za osobine za odgovarajuca polja, tj. mijenjamo public string Naziv { get => naziv; set => naziv = value; }
+u public string NazivJela { get => nazivJela; set => nazivJela = value; } itd.
+
+2. Pass a whole object rather than specific fields
+-U konstruktoru klase Jelo umjesto citavog objekta(odnosono reference objekta) tipa Objekat, predajemo polje idObjekta,
+buduci da je samo to polje potrebno za dobivanje potrebnih informacija o objektima.
+
+3. Remove Set() routines for fields that cannot be changed
+- Uklonjeni sljedeći seteri
+	Jelo - idObjekta,
+	Narudzba - idKupca, itd.
